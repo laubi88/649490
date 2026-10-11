@@ -64,7 +64,9 @@ Die 5 Clips sind keine fünf Varianten desselben Outros. Laut Videovorlage, Absc
 
 Die Regel „jeder Clip genau einmal pro Video“ gilt weiter. Deshalb bekommen A3a, A3b und A3c denselben Stil, aber unterschiedliche Bewegung oder Anordnung.
 
-**Rene entscheidet vor dem Rendern:** nur die Endcard (A1) oder das ganze Set (A1, A2, A3a–c). Empfehlung: das ganze Set, sonst ist es nicht einheitlich.
+**Entschieden (Rene, 11.10.2026): das ganze Set** (A1, A2, A3a–c).
+
+**Logo (Rene, 11.10.2026):** Die Frau mit Fackel ist eine fiktive Figur, kein offizielles Logo. Eine Logodatei gibt es nicht. Damit das Set einheitlich ist, wird in **allen** Teilen dasselbe Medaillon `medaillon_tuerkis.png` als Markenzeichen genutzt. Keine anderen Figuren (Athena, Statue mit Buch) mehr.
 
 ### A1 Endcard
 Vorgaben vollständig in `outro/STYLE_GUIDE.md` und `outro/SHOTLIST.md`. Kurz:
@@ -86,10 +88,20 @@ Vorgaben vollständig in `outro/STYLE_GUIDE.md` und `outro/SHOTLIST.md`. Kurz:
 
 ## 4. Auftrag B: Beitrags-Clips (Text-Clips)
 
-Format: 1080×1920, 30 fps, 9 Mbit/s. Tonspur still. Zu jedem Clip zusätzlich das Schlussbild als PNG.
-Hintergrund `marmor_9x16.jpg`, Medaillon klein (Ø 220 px) oben oder unten, Text zentriert.
-Schriftgrößen: Haupttext mindestens 90 px, Quellenzeile mindestens 40 px. Text bleibt innerhalb x 90–990 und y 250–1500 (Richtwert gegen die Shorts-Bedienelemente, auf dem Handy prüfen).
-Wird ein Clip als Short veröffentlicht, kommt ans Ende A2 in 9:16 (Shorts-Regel aus `stoische-karriere-vidiq-regeln`).
+**Ziel (Rene, 11.10.2026): Veröffentlichung als YouTube-Beitrag (Community-Tab).**
+
+Technische Grenzen laut YouTube-Hilfe (Artikel 7124474, Stand 11.10.2026):
+- Ein Beitrag kann Text, bis zu **10 Bilder oder GIFs** (je **höchstens 16 MB**, JPG, PNG, GIF oder WEBP, empfohlen **1:1**), eine Umfrage oder ein **Link auf ein vorhandenes YouTube-Video** enthalten.
+- Eine **MP4-Datei lässt sich nicht direkt in einen Beitrag hochladen.** Ein Video im Beitrag ist immer ein schon hochgeladenes YouTube-Video (Suche, URL oder Auswahl aus dem Kanal).
+
+Daraus folgt das Ausgabeformat je Beitrags-Clip:
+1. **Animiertes GIF, 1080×1080**, höchstens 16 MB. Bei 8–15 s und vollen 30 fps ist das bei 1080 px nicht zu halten. Deshalb 15 fps und eine eigene Palette mit Dithering (`ffmpeg palettegen`/`paletteuse`). Liegt die Datei über 16 MB, zuerst auf 12 fps gehen, erst dann auf 900×900. Marmor-Verläufe auf Streifenbildung prüfen.
+2. **PNG, 1080×1080**: Schlussbild als Standbild-Alternative. Bei Zitaten ist das oft lesbarer als ein GIF.
+3. Optional **MP4, 1080×1920**, als Short hochladen und danach im Beitrag verlinken. Dann kommt ans Ende A2 in 9:16 (Shorts-Regel).
+
+Gestaltung 1:1: Hintergrund `marmor_9x16.jpg` mittig auf 1080×1080 zuschneiden oder `werkzeuge/marmor.py marmor_1x1.jpg 1080 1080` erzeugen. Medaillon Ø 200 px, Text zentriert, Haupttext mindestens 80 px, Quellenzeile mindestens 36 px, Rand 80 px rundum. Lesbarkeit im Feed prüfen: auf 400 px Breite verkleinert noch lesbar.
+GIFs laufen im Feed in Endlosschleife: Das letzte Bild blendet sanft auf das erste zurück, kein harter Sprung.
+Umwandlung (Beispiel): `ffmpeg -i B2_Z1.mp4 -vf "fps=15,scale=1080:1080:flags=lanczos,palettegen=stats_mode=diff" pal.png` und danach `ffmpeg -i B2_Z1.mp4 -i pal.png -lavfi "fps=15,scale=1080:1080:flags=lanczos[x];[x][1:v]paletteuse=dither=sierra2_4a" -loop 0 B2_Z1.gif`. Dateigröße prüfen (höchstens 16 MB).
 Alle Texte unten sind **Vorschläge**. Rene gibt sie vor dem Rendern frei.
 
 ### B1 Teaser „Neues Video“ (10 s je Clip)
@@ -102,6 +114,7 @@ Daten aus vidIQ (abgerufen am 11.10.2026, Kanal UCQdZS4fnVeekSV4bYzY2eHg):
 | Grübeln beenden: Die Harvard-Methode gegen Gedankenkarussell | KseoXjgLpGo | 8:44 | `NACHTS DREHT SICH ALLES IM KOPF?` | `GRÜBELN BEENDEN` |
 | Respektlos behandelt? So änderst du das Machtverhältnis sofort | 7WD2tXnbczI | 8:13 | `WIRST DU ÜBERGANGEN?` | `RESPEKT ZURÜCKHOLEN` |
 
+Im Beitragstext steht der Videolink `https://youtu.be/<ID>`. Ob YouTube ein GIF und einen Video-Anhang im selben Beitrag zulässt, ist nicht geprüft. Notfalls nur GIF plus Link im Text.
 „Harvard“ kommt nur in den Clip-Text, wenn die Quelle in `02_Quellen_Faktencheck` des Videos steht. Bitte vorher prüfen.
 Keine Ziffern im Clip-Text, also „VIER“ statt „4“, wie bei der Thumbnail-Regel.
 
@@ -138,7 +151,6 @@ Keine Produktwerbung, nur der Kanal. „Jede Woche neue Videos“ nur verwenden,
 
 ## 6. Offene Punkte für Rene
 
-- Nur Endcard oder ganzes Outro-Set (Abschnitt 3)?
-- Wo werden die Beitrags-Clips veröffentlicht: als Shorts, Instagram oder WhatsApp-Status? Davon hängen Länge und Shorts-Ende ab.
+- Erledigt: ganzes Set. Veröffentlichung der Beitrags-Clips als YouTube-Beitrag. Das Medaillon ist fiktiv und wird einheitlich als Markenzeichen genutzt.
+- Beitrags-Clips zusätzlich als Short (9:16 MP4)? Für einen Beitrag reicht GIF plus PNG.
 - Texte der Teaser, Zitate und Werbung freigeben oder ändern.
-- Ist das Medaillon „Frau mit Fackel“ aus CTA_3 dein festes Kanal-Logo? Wenn es eine Logodatei gibt, wird die genommen.
