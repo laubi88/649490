@@ -1,6 +1,6 @@
 # Shotlist – Kanal-Outro Stoische Karriere (Entwurf, wartet auf Freigabe)
 
-Format 1920×1080 · 30 fps (oder 24, siehe Style Guide) · 10,0 s · eine durchgehende Einstellung, kein Schnitt
+Format 1920×1080 · 30 fps · 10,0 s · eine durchgehende Einstellung, kein Schnitt
 
 ## Layout (Pixel, Ursprung oben links)
 

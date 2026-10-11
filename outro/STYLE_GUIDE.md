@@ -25,10 +25,10 @@ Ein **einziges** Outro als Code (HyperFrames), das an jedes Langvideo angehängt
 ## 3. Feste Vorgaben
 
 ### Format
-- 1920×1080, **30 fps** (Skill-Vorgabe), H.264 High, yuv420p, CRF ≤ 16
+- 1920×1080, **30 fps**, H.264 **9 Mbit/s**, Schlüsselbild alle 60 Bilder, AAC 160 kbit/s (Qualitätsregel Skill stoische-karriere-videovorlage, Abschnitt 7)
 - Länge **10,0 s**
 - Tonspur: AAC 48 kHz Stereo, **still**. CLAUDE.md sagt Clip-Ton 0, Musik kommt im Schnitt dazu. Die stille Spur sorgt dafür, dass sich das Outro in CapCut ohne Spurprobleme ans Video hängen lässt.
-- Hinweis: Die bisherigen Clips laufen mit 24 fps. Das Outro sollte die fps des Hauptvideos haben, sonst ruckelt es beim Übergang. Falls deine Videos mit 24 fps exportiert werden, rendere ich mit 24 fps. **Bitte bestätigen.**
+- 30 fps ist durch die Qualitätsregel bestätigt. Die 24-fps-Altclips werden beim Schnitt ohnehin auf 30 fps umgerechnet.
 
 ### Farben
 | Token | Wert | Verwendung |
@@ -36,13 +36,13 @@ Ein **einziges** Outro als Code (HyperFrames), das an jedes Langvideo angehängt
 | `--bg` | `#0B0D0E` | Grundfläche, fast Schwarz |
 | `--marmor` | dunkler Marmor-Verlauf `#15191B` → `#0B0D0E`, feine Äderung bei 6 % Deckkraft | Hintergrund |
 | `--weiss` | `#F2F2EE` | Kanalname, Haupttext |
-| `--tuerkis` | `#2EC4B6` | Akzent: Handle, Linie, Glocke, Fokuspunkt |
-| `--tuerkis-glow` | `#2EC4B6` bei 35 %, Blur 18 px | nur weiches Leuchten, kein Neon |
+| `--tuerkis` | `#00E5FF` | Akzent: Handle, Linie, Glocke, Fokuspunkt |
+| `--tuerkis-glow` | `#00E5FF` bei 35 %, Blur 18 px | nur weiches Leuchten, kein Neon |
 
 Keine knalligen Farben, kein Feuer-Orange. **Konflikt:** Deine 5 Clips sind komplett Gold/Feuer. Der Skill schreibt Weiß + Türkis vor. Ich setze den Skill um. Falls Gold gewollt ist, muss der Skill geändert werden, nicht das Outro.
 
 ### Schrift
-- **Bebas Neue** (SIL Open Font License 1.1, kommerziell frei), Datei aus `google/fonts` auf GitHub. Sie wird lokal eingebettet und nicht per CDN geladen.
+- **Bebas Neue** (SIL Open Font License 1.1, kommerziell frei), Datei aus `google/fonts` auf GitHub, liegt in `projekt/assets/fonts/`. Rene hat dem Download am 11.10.2026 nachträglich zugestimmt.
 - Kanalname `STOISCHE KARRIERE`: 148 px, Laufweite +4 %, `--weiss`
 - Handle `@Stoische.Karriere`: 56 px, Laufweite +6 %, `--tuerkis`. Das Handle bleibt in Groß-/Kleinschreibung wie auf YouTube, weil es ein Name und kein Titel ist.
 - CTA-Zeile **optional, Standard: weg**. Der klickbare Abonnieren-Kreis von YouTube ist der CTA. Zusätzlicher Text daneben ist doppelt und frisst die Freifläche.
