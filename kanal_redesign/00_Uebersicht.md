@@ -42,6 +42,6 @@ Titel ändern war nicht Teil des Auftrags. Punkte 1 und 2 sind deshalb nur gemel
 1. Texte freigeben oder ändern: Kanaltexte, Trailer, V15, V16 und die sieben Shorts.
 2. Titel von V15 und V16 in vidIQ bewerten (Ziel ab 75) und jeweils ein „Vorbild“-Video suchen. Das kostet Credits, deshalb habe ich es nicht gemacht.
 3. Den Podcast-Link nennen.
-4. Fehlende Ordnerdateien: V15 hat seit 12.10.2026 `05_Flow_Prompts_Zusatzclips_EN.txt` (Clips 46 bis 50) und ein Test-Thumbnail mit Medaillon. Für V15 und V16 fehlen noch 12 YouTube-Paket, 14 bis 17 und anker.txt (entstehen bei Produktion und Schnitt), für V16 zusätzlich 05.
+4. Fehlende Ordnerdateien: V15 hat seit 12.10.2026 `05_Flow_Prompts_Zusatzclips_EN.txt` (Clips 46 bis 50) und ein Test-Thumbnail mit Medaillon. Für V15 und V16 fehlen noch 12 YouTube-Paket, 14 bis 17 und anker.txt (entstehen bei Produktion und Schnitt). V16 hat seit 12.10.2026 ebenfalls `05_Flow_Prompts_Zusatzclips_EN.txt`.
 5. Hook V15 und V16 am 12.10.2026 neu (Anti-43-Sekunden-Regel): Befund aus Gollwitzer (V15) und Kross (V16) bei rund 0:30 bis 0:43. Bei V15 vor der Vertonung den Gollwitzer-Satz gegen das PDF prüfen (siehe 02_Quellen_Faktencheck).
 6. Titel V15 festgelegt: „4 Dinge, die ein Mann für sich BEHÄLT | Stoizismus“.

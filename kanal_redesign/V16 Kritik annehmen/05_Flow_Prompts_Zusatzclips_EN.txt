@@ -1,0 +1,107 @@
+V16 Kritik annehmen – Flow-Prompts Zusatzclips 46 bis 50
+Stand: 12.10.2026, Entwurf zur Freigabe durch Rene. Format nach Skill flow-und-cta.
+Grundlage: überarbeiteter Sprechertext (Hook mit Kross-Befund ab 0:30).
+
+Allgemein für alle fünf Clips:
+- 8 s, 16:9, 1080p, keine Tonspur nötig. Erzeugen in Flow, Prompt unverändert auf Englisch einfügen.
+- Jeder Clip kommt genau einmal im Video vor und steht im 15_Schnittplan an der genannten Stelle.
+- Nach dem Erzeugen: Wasserzeichen-Prüfung je Sekunde (vier Ecken und Mitte), Hände, Gesichter, Flackern, Sprünge. Clip mit Fehler neu erzeugen, nicht retuschieren.
+- Farben: nur Marmorweiß, Schwarz und ein Hauch Türkis. Kein Kerzen- oder Feuerlicht, weil es Orange ins Bild bringt.
+
+
+CLIP 46
+Einsatz: Block 1, erster Satz „Dein Chef nennt deinen Bericht vor allen unbrauchbar.“ (0:00)
+Länge: 8 s, 16:9, 1080p, keine Tonspur nötig
+Inhalt (Deutsch, eine Zeile): Eine große Marmorfigur zeigt auf eine kleinere, die vor einer Runde anderer Figuren steht.
+
+PROMPT:
+[Subject] A tall weathered Carrara marble statue of a Roman senator in a toga pointing his arm at a younger marble statue of a man standing alone in the middle of a semicircle of seated marble statues,
+[Action] the pointing arm stops, the younger statue slowly lowers his head, the seated statues remain still, subtle and calm movement,
+[Setting] dark Roman council chamber with stone benches, background fading into black,
+[Light] extreme low key lighting, single hard cool spotlight from above on the younger statue, deep shadows around him, faint turquoise reflection on the marble floor,
+[Camera] slow dolly in toward the younger statue, slightly high angle, shallow depth of field,
+[Style] photorealistic, cinematic, 35 mm, subtle film grain,
+[Exclude] no text, no letters, no logo, no watermark, no modern objects, no real human face, no fire, no candles, no colors other than marble white, black and a hint of turquoise
+
+PRÜFUNG: Wasserzeichen (Ecken und Mitte, je Sekunde), Hände und Arme ohne Verzerrung, Flackern, Sprünge
+
+
+CLIP 47
+Einsatz: Block 1, Befund „Forscher ließen Teilnehmer kurzfristig eine Rede halten.“ (rund 0:30)
+Länge: 8 s, 16:9, 1080p, keine Tonspur nötig
+Inhalt (Deutsch, eine Zeile): Marmorfigur steht auf einem Rednerpodest vor leeren Steinrängen und richtet sich ruhig auf.
+
+PROMPT:
+[Subject] Weathered ancient Roman Carrara marble statue of a man in a toga standing on a stone speaker's platform, facing rows of stone benches in a small amphitheater,
+[Action] the statue slowly lifts his chin and straightens his shoulders, one hand opens calmly at his side, subtle and calm movement,
+[Setting] small Roman odeon at night, stone benches fading into black,
+[Light] extreme low key lighting, single hard cool rim light from behind the statue, deep shadows, faint turquoise glow along the edge of the platform,
+[Camera] slow arc from behind the statue to his profile, eye level, shallow depth of field,
+[Style] photorealistic, cinematic, 35 mm, subtle film grain,
+[Exclude] no text, no letters, no logo, no watermark, no modern objects, no microphones, no real human face, no fire, no colors other than marble white, black and a hint of turquoise
+
+PRÜFUNG: Wasserzeichen (Ecken und Mitte, je Sekunde), Gesicht und Hände ohne Verzerrung, Flackern, Sprünge
+
+
+CLIP 48
+Einsatz: Block 2, beim Namen „Epiktet.“
+Länge: 8 s, 16:9, 1080p, keine Tonspur nötig
+Inhalt (Deutsch, eine Zeile): Marmorbüste eines bärtigen Lehrers mit schlichtem Gewand, ruhiger Blick, Kamera fährt nah heran.
+
+PROMPT:
+[Subject] Weathered ancient Greek Carrara marble bust of a bearded teacher with a plain simple cloak, calm and steady gaze, cracks and erosion in the marble,
+[Action] dust slowly drifts through a single light beam in front of the bust, the bust stays still, subtle and calm movement,
+[Setting] bare stone niche in a dark school room, background fading into black,
+[Light] extreme low key lighting, single hard cool rim light from the left, deep shadows, faint turquoise reflection in the dust,
+[Camera] slow push in from medium shot to close up of the eyes, eye level, shallow depth of field,
+[Style] photorealistic, cinematic, 50 mm, subtle film grain,
+[Exclude] no text, no letters, no logo, no watermark, no modern objects, no real human face, no chains, no fire, no colors other than marble white, black and a hint of turquoise
+
+PRÜFUNG: Wasserzeichen (Ecken und Mitte, je Sekunde), Gesicht ohne Verzerrung, Flackern, Sprünge
+
+
+CLIP 49
+Einsatz: Block 4, beim Namen „Mark Aurel.“ / „Er war Kaiser von Rom.“
+Länge: 8 s, 16:9, 1080p, keine Tonspur nötig
+Inhalt (Deutsch, eine Zeile): Marmorstatue eines Kaisers neigt sich über einen Steintisch zu einer kleineren Figur, die etwas zeigt.
+
+PROMPT:
+[Subject] Weathered ancient Roman Carrara marble statue of a bearded emperor with a laurel wreath seated at a stone table, a smaller marble statue of an advisor standing beside him pointing at an open scroll on the table,
+[Action] the emperor slowly leans forward toward the scroll and tilts his head as if listening, subtle and calm movement,
+[Setting] dark imperial study with marble columns, background fading into black,
+[Light] extreme low key lighting, single hard cool rim light from the right, deep shadows, faint turquoise reflection on the table,
+[Camera] slow dolly in from wide shot to the emperor's face, eye level, shallow depth of field,
+[Style] photorealistic, cinematic, 35 mm, subtle film grain,
+[Exclude] no text, no letters, no readable writing on the scroll, no logo, no watermark, no modern objects, no real human face, no fire, no gold, no colors other than marble white, black and a hint of turquoise
+
+PRÜFUNG: Wasserzeichen (Ecken und Mitte, je Sekunde), Lorbeerkranz nicht golden, Hände ohne Verzerrung, Flackern, Sprünge
+
+
+CLIP 50
+Einsatz: Block 6, Anfang „Werkzeug vier.“ / „Mit deinem Namen denken.“
+Länge: 8 s, 16:9, 1080p, keine Tonspur nötig
+Inhalt (Deutsch, eine Zeile): Marmorfigur blickt in eine stille Wasserfläche, ihr Spiegelbild wird klar.
+
+PROMPT:
+[Subject] Weathered ancient Roman Carrara marble statue of a man in a toga kneeling at the edge of a still black water basin, looking down at his own reflection,
+[Action] a single ripple spreads across the water and slowly calms until the reflection of the statue becomes sharp and clear, subtle and calm movement,
+[Setting] dark Roman courtyard at night, columns fading into black,
+[Light] extreme low key lighting, single hard cool moonlight from above left, deep shadows, faint turquoise shimmer on the water surface,
+[Camera] slow tilt down from the statue's face to the reflection in the water, shallow depth of field,
+[Style] photorealistic, cinematic, 35 mm, subtle film grain,
+[Exclude] no text, no letters, no logo, no watermark, no modern objects, no real human face, no fire, no colors other than marble white, black and a hint of turquoise
+
+PRÜFUNG: Wasserzeichen (Ecken und Mitte, je Sekunde), Spiegelbild passt zur Figur, Flackern, Sprünge
+
+
+Übersicht für den 15_Schnittplan
+
+| Clip | Block | Anker |
+|---|---|---|
+| 46 | Block 1 | „Dein Chef nennt deinen Bericht vor allen unbrauchbar.“ (0:00) |
+| 47 | Block 1 | „Forscher ließen Teilnehmer kurzfristig eine Rede halten.“ (rund 0:30) |
+| 48 | Block 2 | „Epiktet.“ |
+| 49 | Block 4 | „Mark Aurel.“ |
+| 50 | Block 6 | „Werkzeug vier.“ |
+
+Alle übrigen Stellen bekommen Standard-Marmorclips aus 1 bis 45, jeder genau einmal.
