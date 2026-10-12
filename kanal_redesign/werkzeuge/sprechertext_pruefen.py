@@ -1,4 +1,5 @@
-"""Prüft Sprechertexte (alles nach 'TEXT:' bis zur nächsten Leerzeile) gegen die Kanalregeln.
+"""Prüft Sprechertexte (alles nach 'TEXT:' bis zu zwei Leerzeilen in Folge oder zur nächsten 'DATEI:') gegen die Kanalregeln.
+Einzelne Leerzeilen zwischen den Sätzen sind erlaubt und beenden den Block nicht.
 Aufruf: python sprechertext_pruefen.py DATEI [DATEI ...]   -> Exitcode 1 bei Verstößen."""
 import re, sys
 GESPERRT = ["stoa", "stoiker", "stoisch", "punkt", "stress", "job", "meeting", "team", "check",
@@ -7,14 +8,17 @@ ABK = re.compile(r"\b(z\s?\.\s?b|usw|bzw|etc|ca|d\s?\.\s?h|u\s?\.\s?a|evtl|ggf|i
 fehler = 0
 for pfad in sys.argv[1:]:
     zeilen = open(pfad, encoding="utf-8").read().splitlines()
-    im_text, datei, saetze, woerter = False, "", 0, 0
+    im_text, datei, saetze, woerter, leer = False, "", 0, 0, 0
     for nr, z in enumerate(zeilen, 1):
         if z.startswith("DATEI:"):
-            datei = z[6:].strip(); continue
+            datei, im_text = z[6:].strip(), False; continue
         if z.strip() == "TEXT:":
-            im_text = True; continue
+            im_text, leer = True, 0; continue
         if im_text and not z.strip():
-            im_text = False; continue
+            leer += 1
+            if leer >= 2: im_text = False
+            continue
+        leer = 0
         if not im_text:
             continue
         s = z.strip(); w = s.split(); saetze += 1; woerter += len(w)

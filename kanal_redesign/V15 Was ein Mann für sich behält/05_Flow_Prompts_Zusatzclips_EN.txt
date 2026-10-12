@@ -1,0 +1,107 @@
+V15 Was ein Mann für sich behält – Flow-Prompts Zusatzclips 46 bis 50
+Stand: 12.10.2026, Entwurf zur Freigabe durch Rene. Format nach Skill flow-und-cta.
+Grundlage: überarbeiteter Sprechertext (Hook mit Gollwitzer-Befund ab 0:30).
+
+Allgemein für alle fünf Clips:
+- 8 s, 16:9, 1080p, keine Tonspur nötig. Erzeugen in Flow, Prompt unverändert auf Englisch einfügen.
+- Jeder Clip kommt genau einmal im Video vor und steht im 15_Schnittplan an der genannten Stelle.
+- Nach dem Erzeugen: Wasserzeichen-Prüfung je Sekunde (vier Ecken und Mitte), Hände, Gesichter, Flackern, Sprünge. Clip mit Fehler neu erzeugen, nicht retuschieren.
+- Farben: nur Marmorweiß, Schwarz und ein Hauch Türkis. Kein Kerzen- oder Feuerlicht, weil es Orange ins Bild bringt.
+
+
+CLIP 46
+Einsatz: Block 1, erster Satz „Dein Chef erfährt von deiner Bewerbung, bevor du mit ihm sprichst.“ (0:00)
+Länge: 8 s, 16:9, 1080p, keine Tonspur nötig
+Inhalt (Deutsch, eine Zeile): Zwei Marmorfiguren flüstern im Säulengang, im Hintergrund dreht eine dritte Figur langsam den Kopf zu ihnen.
+
+PROMPT:
+[Subject] Two weathered ancient Roman Carrara marble statues of men in togas standing close together in a colonnade, one leaning toward the other's ear as if whispering, a third larger marble statue of a man in the blurred background,
+[Action] the whispering statue leans in slowly, the background statue slowly turns its head toward the two, subtle and calm movement,
+[Setting] long dark Roman colonnade, columns fading into black,
+[Light] extreme low key lighting, single hard cool rim light from the left, deep shadows, faint turquoise reflection on the marble,
+[Camera] slow dolly in toward the two foreground statues, eye level, shallow depth of field, focus pull to the background statue at the end,
+[Style] photorealistic, cinematic, 35 mm, subtle film grain,
+[Exclude] no text, no letters, no logo, no watermark, no modern objects, no real human face, no fire, no candles, no colors other than marble white, black and a hint of turquoise
+
+PRÜFUNG: Wasserzeichen (Ecken und Mitte, je Sekunde), Hände und Gesichter, Flackern, Sprünge
+
+
+CLIP 47
+Einsatz: Block 1, Befund „Forscher gaben Jurastudenten fünfundvierzig Minuten für Strafrechtsfälle.“ (rund 0:31)
+Länge: 8 s, 16:9, 1080p, keine Tonspur nötig
+Inhalt (Deutsch, eine Zeile): Junge Marmorfiguren sitzen an Steintischen über Schriftrollen, vorn rinnt eine Sanduhr.
+
+PROMPT:
+[Subject] Several weathered Carrara marble statues of young Roman students seated at long stone tables, bent over open papyrus scrolls, a large stone hourglass in the foreground,
+[Action] sand runs steadily through the hourglass, one student statue in the middle slowly leans back and lets his scroll roll closed, the others keep working, subtle and calm movement,
+[Setting] dark Roman lecture hall with high arches fading into black,
+[Light] extreme low key lighting, single hard cool rim light from above right, deep shadows, faint turquoise glint on the hourglass glass,
+[Camera] slow lateral tracking shot along the tables, eye level, hourglass sharp in the foreground, students softly out of focus,
+[Style] photorealistic, cinematic, 35 mm, subtle film grain,
+[Exclude] no text, no letters, no readable writing on the scrolls, no logo, no watermark, no modern objects, no clocks, no real human face, no fire, no colors other than marble white, black and a hint of turquoise
+
+PRÜFUNG: Wasserzeichen (Ecken und Mitte, je Sekunde), Schriftrollen ohne lesbare Schrift, Hände, Flackern, Sprünge
+
+
+CLIP 48
+Einsatz: Block 2, beim Namen „Zenon.“
+Länge: 8 s, 16:9, 1080p, keine Tonspur nötig
+Inhalt (Deutsch, eine Zeile): Marmorstatue eines alten bärtigen Philosophen, Mund geschlossen, hört aufmerksam zu.
+
+PROMPT:
+[Subject] Weathered ancient Greek Carrara marble statue of an elderly bearded philosopher in a simple cloak, seated on wide stone steps under a painted portico, lips firmly closed, head slightly tilted as if listening,
+[Action] the head turns very slowly a few degrees toward the camera, the eyes stay calm, dust drifts through the light beam, subtle and calm movement,
+[Setting] ancient Athenian portico with columns, background fading into black,
+[Light] extreme low key lighting, single hard cool rim light from the right, deep shadows, faint turquoise reflection in the dust,
+[Camera] slow push in from medium shot to close up of the face, eye level, shallow depth of field,
+[Style] photorealistic, cinematic, 50 mm, subtle film grain,
+[Exclude] no text, no letters, no logo, no watermark, no modern objects, no real human face, no fire, no colors other than marble white, black and a hint of turquoise
+
+PRÜFUNG: Wasserzeichen (Ecken und Mitte, je Sekunde), Gesicht ohne Verzerrung, Flackern, Sprünge
+
+
+CLIP 49
+Einsatz: Block 5, ab „Ein Weinstock trägt seine Trauben und verlangt danach nichts mehr.“
+Länge: 8 s, 16:9, 1080p, keine Tonspur nötig
+Inhalt (Deutsch, eine Zeile): In Marmor gemeißelter Weinstock mit Trauben, ein Lichtstreif wandert langsam darüber.
+
+PROMPT:
+[Subject] Weathered ancient Roman Carrara marble relief of a grapevine with heavy bunches of grapes and leaves, deeply carved, cracks and erosion in the stone,
+[Action] a narrow beam of cool light slowly travels across the relief from left to right, revealing the grapes one bunch after another, subtle and calm movement,
+[Setting] dark wall of a Roman villa, the relief is the only visible element, everything else fades into black,
+[Light] extreme low key lighting, single hard raking light, deep shadows in the carving, faint turquoise tint at the edge of the beam,
+[Camera] slow macro slide parallel to the relief, shallow depth of field,
+[Style] photorealistic, cinematic, macro lens, subtle film grain,
+[Exclude] no text, no letters, no logo, no watermark, no modern objects, no human figures, no real grapes, no green or purple colors, no fire, no colors other than marble white, black and a hint of turquoise
+
+PRÜFUNG: Wasserzeichen (Ecken und Mitte, je Sekunde), keine Farben außer Weiß, Schwarz, Türkis, Flackern, Sprünge
+
+
+CLIP 50
+Einsatz: Block 6, Anfang „Werkzeug vier.“ / „Deine Pläne, bis sie stehen.“
+Länge: 8 s, 16:9, 1080p, keine Tonspur nötig
+Inhalt (Deutsch, eine Zeile): Marmorfigur rollt an einem Steintisch eine Schriftrolle zusammen und legt sie in eine Steintruhe, der Deckel schließt sich.
+
+PROMPT:
+[Subject] Weathered ancient Roman Carrara marble statue of a mature man in a toga at a heavy stone desk, a rolled papyrus scroll in his hands, an open stone chest beside the desk,
+[Action] he slowly rolls the scroll closed, places it into the chest and lowers the stone lid, then rests his hand on the closed lid, subtle and calm movement,
+[Setting] dark Roman study chamber, arched window with night sky, background fading into black,
+[Light] extreme low key lighting, single hard cool rim light from the window on the right, deep shadows, faint turquoise reflection on the lid,
+[Camera] slow dolly in from medium shot to the hands on the lid, eye level, shallow depth of field,
+[Style] photorealistic, cinematic, 35 mm, subtle film grain,
+[Exclude] no text, no letters, no readable writing, no logo, no watermark, no modern objects, no real human face, no fire, no candles, no wax seal, no colors other than marble white, black and a hint of turquoise
+
+PRÜFUNG: Wasserzeichen (Ecken und Mitte, je Sekunde), Hände ohne Verzerrung, Deckel schließt ohne Sprung, Flackern
+
+
+Übersicht für den 15_Schnittplan
+
+| Clip | Block | Anker |
+|---|---|---|
+| 46 | Block 1 | „Dein Chef erfährt von deiner Bewerbung …“ (0:00) |
+| 47 | Block 1 | „Forscher gaben Jurastudenten …“ (rund 0:31) |
+| 48 | Block 2 | „Zenon.“ |
+| 49 | Block 5 | „Ein Weinstock trägt seine Trauben …“ |
+| 50 | Block 6 | „Werkzeug vier.“ |
+
+Alle übrigen Stellen bekommen Standard-Marmorclips aus 1 bis 45, jeder genau einmal.

@@ -4,10 +4,14 @@ Stand: 12.10.2026, Entwurf zur Freigabe durch Rene
 
 Grund für das Thema: Das Outro von V14 (Manipulation erkennen) kündigt an: „Nächste Woche geht es um vier Dinge. Vier Dinge, die ein Mann für sich behält.“ V15 löst diese Ankündigung ein.
 
-Titelvorschläge (vidIQ Titel Wertung fehlt noch, Ziel ab 75; Vorbild Konkurrenzvideo noch suchen):
-1. 4 Dinge, die ein Mann für sich BEHÄLT | Stoizismus  (50 Zeichen)
-2. Selbstrespekt: 4 Dinge, die du für dich BEHÄLTST | Stoizismus  (59 Zeichen)
-3. Weniger erzählen: 4 Dinge, die STARKE Männer behalten | Stoizismus  (prüfen: 66 Zeichen, zu lang, nur kürzen)
+Titel (Rene, 12.10.2026: Titel 1 steht fest; vidIQ Titel Wertung fehlt noch, Ziel ab 75; Vorbild Konkurrenzvideo noch suchen):
+1. FESTGELEGT: 4 Dinge, die ein Mann für sich BEHÄLT | Stoizismus  (50 Zeichen)
+Alternativen für einen späteren Titeltest (beide nachgezählt, je eine Zahl, ein Wort in Großbuchstaben):
+2. Zu viel erzählen kostet dich RESPEKT: 4 Regeln | Stoizismus  (59 Zeichen)
+3. Wer alles erzählt, VERLIERT: 4 Dinge für dich | Stoizismus  (58 Zeichen)
+Hinweis: Die frühere Variante „Selbstrespekt: 4 Dinge, die du für dich BEHÄLTST“ hat 61 Zeichen, nicht 59 wie früher notiert.
+
+Thumbnail (Test mit Medaillon als Platzhalter, echte Büste folgt): Zeile 1 „WAS ER“ (Türkis), Zeile 2 „VERSCHWEIGT“ (Weiß). Kein Wort aus dem Titel.
 
 Angehefteter Kommentar (Auswahl zur CTA2 Frage):
 Was erzählst du zu oft? 1 Streit von zu Hause, 2 Anvertrautes, 3 Pläne, die noch nicht stehen
@@ -19,14 +23,16 @@ DATEI: V15_Block1
 TEXT:
 Dein Chef erfährt von deiner Bewerbung, bevor du mit ihm sprichst.
 Du hattest es nur einem Kollegen erzählt.
-Und deine Mutter weiß von jedem Streit mit deiner Partnerin.
+Deine Mutter kennt jeden Streit mit deiner Partnerin.
 Ein Mann wirkt nicht stark durch das, was er erzählt.
 Er wirkt stark durch das, was er für sich behält.
-Heute bekommst du vier Dinge, die ab jetzt bei dir bleiben.
-Eines stammt von einem Kaiser, der Gutes tat und darüber schwieg.
-Eines kommt aus der Forschung über laut angekündigte Pläne.
-Sie zeigt, warum solche Pläne seltener gelingen.
-Und am Ende kennst du den Satz, den du nie mehr sagst.
+Heute bekommst du vier Dinge, die bei dir bleiben.
+Und einen Satz, den du danach nie wieder sagst.
+Forscher gaben Jurastudenten fünfundvierzig Minuten für Strafrechtsfälle.
+Bei einem Teil nahm der Versuchsleiter ihren Vorsatz zur Kenntnis.
+Diese Studenten arbeiteten danach weniger lange an den Fällen.
+Warum das so ist, zeige ich dir beim vierten Ding.
+Vorher geht es um euren Streit, um Geheimnisse und um gute Taten.
 
 
 DATEI: V15_Block2
@@ -158,6 +164,7 @@ Deine Pläne, bis sie stehen.
 Dieses Werkzeug macht es wahrscheinlicher, dass deine Pläne gelingen.
 Ein Psychologe aus Konstanz hat das mit Kollegen untersucht.
 Sein Name ist Gollwitzer.
+Die Jurastudenten vom Anfang stammen aus seinen Versuchen.
 Die Teilnehmer hatten sich ein Ziel gesetzt, das zu ihrem Selbstbild passte.
 Bei einem Teil nahm der Versuchsleiter den Vorsatz ausdrücklich zur Kenntnis.
 Bei den anderen überging er ihn.

@@ -1,6 +1,14 @@
 V15 Was ein Mann für sich behält – Quellen und Faktencheck
 Geprüft am 12.10.2026 (Websuche, Primärquellen soweit erreichbar)
 
+Block 1 – Hook, Befund Gollwitzer (neu am 12.10.2026, Sekunde 0:30 bis 0:43)
+Aussage im Text: Jurastudenten hatten fünfundvierzig Minuten für Strafrechtsfälle. Bei einem Teil nahm der Versuchsleiter ihren Vorsatz zur Kenntnis. Diese Studenten arbeiteten danach weniger lange an den Fällen.
+Beleg: Gollwitzer, Sheeran, Michalski & Seifert (2009), Psychological Science 20(5), 612–618 (Quelle siehe Block 6). Laut Text der Studie (Suchauszüge aus dem Konstanzer und dem NYU-Volltext, 12.10.2026): Jurastudenten einer deutschen Universität bekamen Strafrechtsfälle und 45 Minuten Zeit; gemessen wurde die Zeit, die sie an den Fällen arbeiteten. Bemerkte Vorsätze wurden weniger intensiv umgesetzt als ignorierte (Abstract, Studien 1 bis 3).
+Offen: Die Volltexte (uni-konstanz.de, wp.nyu.edu) waren aus der Cloud gesperrt. Die genauen Mittelwerte in Minuten und die Studiennummer (Suchauszüge nennen teils Studie 2, teils Studie 3) sind NICHT geprüft. Deshalb nennt der Text keine Minutenzahl für die Gruppen. Die verbreitete Angabe „33 statt 45 Minuten“ stammt aus Vorträgen und ist hier nicht belegt, nicht verwenden.
+Vor der Vertonung: PDF am PC öffnen und den Satz „weniger lange“ gegen die Ergebnisse prüfen.
+https://www.socmot.uni-konstanz.de/sites/default/files/09_Gollwitzer_Sheeran_Seifert_Michalski_When_Intentions_.pdf
+https://bpb-us-e1.wpmucdn.com/wp.nyu.edu/dist/c/6235/files/2019/02/gollwitzer-et-al-2009-when-intentions-go-public.pdf
+
 Block 2 – Zenon
 Aussage im Text: Ein junger Mann redete viel Unsinn; Zenon sagte sinngemäß, wir haben zwei Ohren und einen Mund, damit wir mehr hören und weniger reden.
 Beleg: Diogenes Laertius, Leben und Meinungen berühmter Philosophen VII,23. Griechisch: „δύο ὦτα ἔχομεν, στόμα δὲ ἕν“. Die verbreitete Fassung „doppelt so viel zuhören“ ist eine spätere Umformung, im Text steht nur „mehr hören, weniger reden“.

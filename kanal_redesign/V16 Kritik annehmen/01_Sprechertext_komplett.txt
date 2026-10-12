@@ -27,9 +27,11 @@ Kritik trifft dich nicht, weil sie immer falsch ist.
 Sie trifft dich, weil du sofort antworten willst.
 Heute bekommst du vier Werkzeuge, mit denen du ruhig bleibst.
 Ohne einzuknicken und ohne zurückzuschlagen.
-Eines stammt von einem Kaiser, der sich gern korrigieren ließ.
-Eines kommt aus Versuchen mit Menschen, die unter Druck reden mussten.
-Am Ende kennst du die Frage, mit der Kritik dich stärkt.
+Forscher ließen Teilnehmer kurzfristig eine Rede halten.
+Ein Teil sprach sich vorher innerlich mit dem eigenen Namen an.
+Unabhängige Beobachter bewerteten genau diese Reden als besser.
+Wie das in zwei Sekunden beim Chef wirkt, kommt bei Werkzeug vier.
+Und am Ende kennst du die Frage, mit der Kritik dich stärkt.
 
 
 DATEI: V16_Block2
@@ -166,7 +168,7 @@ In sieben Versuchen mit fast sechshundert Teilnehmern.
 Die Teilnehmer sollten über eine belastende Lage nachdenken.
 Die einen dachten dabei in der ersten Person.
 Die anderen sprachen sich innerlich mit ihrem eigenen Namen an.
-In einem Versuch mussten alle kurzfristig eine Rede halten.
+Die Rede vom Anfang war einer dieser Versuche.
 Wer mit seinem Namen dachte, sprach besser.
 Das urteilten Beobachter, die die Gruppen nicht kannten.
 Diese Teilnehmer zeigten weniger Anspannung und grübelten danach weniger.
