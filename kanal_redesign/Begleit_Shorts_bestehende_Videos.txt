@@ -1,0 +1,94 @@
+Begleit-Shorts für bestehende Videos
+Stand: 12.10.2026, Entwurf zur Freigabe durch Rene
+
+Auswahl: die fünf älteren Longform-Videos mit den meisten Aufrufen (vidIQ, 11.10.2026), die noch keinen Begleit-Short haben.
+Grundlage: das Transkript des jeweiligen Videos (vidIQ). Jeder Short nimmt nur Inhalte, die im Video vorkommen. Nichts ist neu erfunden.
+V12, V13 und V14 haben schon Shorts („Gemocht oder respektiert?“, „Nachts geht der Streit in deinem Kopf weiter“, „Druck in Gesprächen?“).
+
+Für alle gilt:
+- 30 bis 35 Sekunden, höchstens rund 36 Sekunden. Valentino 0,90.
+- Erstes Bild: Statue plus das angegebene Wort in Großbuchstaben.
+- Ende: Logo-Clip A2 im Hochformat, darunter @Stoische.Karriere. Gesprochen „Stoische Karriere“ aus einer vorhandenen Outro-Tonspur (nicht im TEXT).
+- Im YouTube Studio mit dem Longform als verwandtes Video verknüpfen.
+- Nicht alle an einem Tag veröffentlichen (Regel: nie mehrere Videos am selben Tag).
+
+
+Short A – zu „Drohen vs. Handeln: Warum man den Mann, der wirklich geht, niemals vergisst“
+Video: https://youtu.be/cvK_8HG2FQ4 (331 Aufrufe am 11.10.2026)
+Erstes Bild: GEHEN
+DATEI: Short_Gehen
+TEXT:
+Er hat dreimal gesagt, dass er geht.
+Er ist immer noch da.
+Und sie glaubt ihm kein Wort mehr.
+Eine Drohung soll eine Reaktion erzwingen.
+Eine Entscheidung sagst du einmal, und dann handelst du.
+Jede Drohung, die du nicht wahr machst, nimmt deinen Worten Gewicht.
+Warum man den Mann nicht vergisst, der wirklich geht, zeigt das Video.
+
+
+Short B – zu „Handy weg, Fokus an: 7 Regeln für den perfekten Start“
+Video: https://youtu.be/38xGP4NU2W8 (304 Aufrufe)
+Erstes Bild: TELEFON
+DATEI: Short_Telefon
+TEXT:
+Dein Wecker klingelt.
+Deine Hand greift zum Telefon, bevor die Augen offen sind.
+Und dein Tag gehört schon anderen.
+Regel eins.
+Das Telefon bleibt morgens zwanzig Minuten liegen.
+Leg es abends in ein anderes Zimmer.
+Dann eröffnest du deinen Tag selbst und nicht dein Chef.
+Die anderen sechs Regeln zeigt dir das ganze Video.
+
+
+Short C – zu „Warum Kälte keine Stärke ist | Bleib gelassen in jedem Streit“
+Video: https://youtu.be/uFUc7Ku3iMU (226 Aufrufe)
+Erstes Bild: KÄLTE
+DATEI: Short_Kaelte
+TEXT:
+Sie sagt beim Abendessen einen Satz, der sitzt.
+Du machst dicht, kein Wort und kein Blick.
+Viele Männer halten das für Stärke.
+Seneca.
+Sinngemäß.
+Das größte Heilmittel gegen den Zorn ist der Aufschub.
+Also sag ruhig, ich bin gerade zu aufgebracht, um fair zu sein.
+Gib mir zwanzig Minuten, dann reden wir weiter.
+Drei weitere Übungen zeigt dir das ganze Video.
+
+
+Short D – zu „Wie du dich nie wieder provozieren lässt – Die stoische Methode“
+Video: https://youtu.be/Lresm2yBPU4 (224 Aufrufe)
+Hinweis: Das Video handelt von den vier Tugenden im Beruf, nicht vor allem von Provokation. Der Short nimmt deshalb die Übung zur Mäßigung, die am besten zum Titel passt.
+Erstes Bild: AUSBRUCH
+DATEI: Short_Ausbruch
+TEXT:
+Du kannst jahrelang hart arbeiten.
+Und mit einem einzigen Ausbruch deinen Respekt verspielen.
+Mark Aurel.
+Sinngemäß.
+Bringt dich etwas aus der Ruhe, kehre rasch zu dir zurück.
+Darum schiebst du deine Antwort zehn Minuten auf.
+Dann fragst du dich, muss ich das sagen, und genau so?
+Vier Fragen für schwierige Entscheidungen zeigt dir das ganze Video.
+
+
+Short E – zu „Einmal erklären ist Information, dreimal ist Betteln“
+Video: https://youtu.be/H8OsyZ5SVlI (212 Aufrufe)
+Erstes Bild: ERKLÄREN
+DATEI: Short_Erklaeren
+TEXT:
+Du hast ihr drei Absätze geschrieben.
+Sie hat mit einem einzigen Wort geantwortet.
+Aha.
+Einmal erklären ist Information.
+Zweimal ist Rechtfertigung, dreimal ist betteln.
+Danach sagst du einen klaren Satz und hältst die Stille aus.
+Warum Erklären dich kleiner macht, zeigt dir das ganze Video.
+
+
+Quellen der Zitate in den Shorts:
+- Short C: Seneca, Über den Zorn II,29,1 „Maximum remedium irae mora est.“ (kommt so auch im Video vor)
+- Short D: Mark Aurel, Selbstbetrachtungen VI,11 (kommt im Video sinngemäß vor: „kehre rasch zu dir selbst zurück“)
+- Short A: Inhalt aus dem Video, kein Zitat

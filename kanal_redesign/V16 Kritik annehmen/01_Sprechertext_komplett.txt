@@ -1,0 +1,218 @@
+V16 Kritik annehmen
+Säule B, Gelassenheit und Emotionskontrolle (mit Bezug zum Beruf)
+Stand: 12.10.2026, Entwurf zur Freigabe durch Rene
+
+Grund für das Thema: Das Outro von V15 kündigt „Kritik vom Chef“ an. Wird V16 geändert, muss auch der Outro-Satz in V15 geändert werden.
+Abgrenzung zu älteren Videos: Aufschub und zwanzig Minuten Pause (V9, Kälte), nicht mehr rechtfertigen (V7, Einmal erklären) und Epiktet Handbuch Kapitel zwanzig (V9) kommen hier bewusst NICHT vor.
+
+Titelvorschläge (vidIQ Titel Wertung fehlt noch, Ziel ab 75; Vorbild Konkurrenzvideo noch suchen):
+1. Kritik annehmen: 4 Wege, RUHIG zu bleiben | Stoizismus  (54 Zeichen)
+2. Kritik vom Chef: 4 Werkzeuge gegen den ÄRGER | Stoizismus  (58 Zeichen)
+3. Kritik ohne Kränkung: 4 RUHIGE Antworten | Stoizismus  (52 Zeichen)
+
+Angehefteter Kommentar (Auswahl zur CTA2 Frage):
+Von wem trifft dich Kritik am härtesten? 1 Chef, 2 Partnerin, 3 Familie
+
+Vertonung: Valentino, Geschwindigkeit 0,90. Die Zeilen DATEI und TEXT werden nicht gesprochen.
+Achtung Block 6: Der Beispielname „Markus“ wird gesprochen. Wenn Rene einen anderen Namen will, vor dem Einsprechen ändern.
+
+
+DATEI: V16_Block1
+TEXT:
+Dein Chef nennt deinen Bericht vor allen unbrauchbar.
+Dir schießt das Blut in den Kopf.
+Abends sagt deine Partnerin, du hörst nie zu.
+Und du verteidigst dich, bevor sie ausgeredet hat.
+Kritik trifft dich nicht, weil sie immer falsch ist.
+Sie trifft dich, weil du sofort antworten willst.
+Heute bekommst du vier Werkzeuge, mit denen du ruhig bleibst.
+Ohne einzuknicken und ohne zurückzuschlagen.
+Eines stammt von einem Kaiser, der sich gern korrigieren ließ.
+Eines kommt aus Versuchen mit Menschen, die unter Druck reden mussten.
+Am Ende kennst du die Frage, mit der Kritik dich stärkt.
+
+
+DATEI: V16_Block2
+TEXT:
+Warum fällt es so schwer, Kritik ruhig anzuhören?
+Weil sie sich nicht wie ein Urteil über deine Arbeit anfühlt.
+Sie fühlt sich an wie ein Urteil über dich.
+Also verteidigst du nicht den Bericht, sondern dich selbst.
+Und wer sich verteidigt, hört nicht mehr zu.
+Genau dann entgeht dir das, was an der Kritik stimmen könnte.
+Epiktet.
+Er lehrte in Nikopolis, nachdem er frei geworden war.
+Seinen Schülern gab er einen unbequemen Rat.
+Sinngemäß.
+Willst du vorankommen, dann ertrage es.
+Lass dich in äußeren Dingen ruhig für dumm halten.
+Er meinte nicht, dass du dumm bist.
+Er meinte, dass dein Ansehen nicht in deiner Hand liegt.
+Dein Fortschritt aber schon.
+Wer jede Kritik abwehrt, schützt sein Ansehen und bleibt stehen.
+Wer sie prüft, riskiert kurz sein Gesicht und wird besser.
+
+
+DATEI: V16_Block3
+TEXT:
+Werkzeug eins.
+Erst fragen, dann antworten.
+Kritik kommt oft sehr allgemein.
+Unbrauchbar.
+Du hörst nie zu.
+So ein Satz lässt dir scheinbar nur zwei Wege.
+Du schluckst ihn, oder du wehrst ihn ab.
+Das Werkzeug öffnet einen dritten Weg.
+Du lässt ausreden und stellst eine einzige genaue Frage.
+Beim Chef klingt das so.
+Was genau fehlt Ihnen im Bericht?
+Zu Hause klingt es so.
+Wann hast du dich zuletzt nicht gehört gefühlt?
+Erzähl mir ein Beispiel.
+Die Frage hat zwei Wirkungen.
+Erstens gewinnst du Zeit, und dein Puls kommt runter.
+Zweitens wird aus einem Urteil eine Aufgabe.
+Aus unbrauchbar wird vielleicht, die Zahlen vom Mai fehlen.
+Aus nie zuhören wird, gestern beim Essen warst du am Telefon.
+Mit einer Aufgabe kannst du arbeiten.
+Mit einem Urteil nicht.
+Wichtig ist dabei dein Ton.
+Du fragst, um zu verstehen, nicht um zu widerlegen.
+
+
+DATEI: V16_CTA1
+TEXT:
+Welche Kritik hat dich zuletzt länger beschäftigt als nötig?
+Ruhe unter Kritik baut man nicht an einem Abend.
+Darum kommt hier jede Woche ein Werkzeug dazu.
+Wenn dich dieser Teil weitergebracht hat, lass einen Daumen hoch da.
+Aktiviere die Glocke.
+Und abonniere diesen Kanal.
+Und jetzt zurück zur Kritik.
+Was ist, wenn sie zum Teil stimmt?
+
+
+DATEI: V16_Block4
+TEXT:
+Werkzeug zwei.
+Der wahre Kern.
+Dieses Werkzeug macht aus Kritik einen Vorteil für dich.
+Mark Aurel.
+Er war Kaiser von Rom.
+Kaum jemand hätte ihm widersprechen dürfen.
+Trotzdem schrieb er sich in seine Notizen.
+Sinngemäß.
+Zeigt mir jemand einen Fehler, ändere ich mich gern.
+Ich suche die Wahrheit, und die hat noch niemandem geschadet.
+Schaden nimmt nur, wer an seinem Irrtum festhält.
+So gehst du vor.
+Auch unfaire Kritik enthält oft einen wahren Kern.
+Den suchst du, bevor du irgendetwas zurückweist.
+Dann sprichst du ihn aus, kurz und ohne aber.
+Im Betrieb klingt das so.
+Die Zahlen fehlen, da haben Sie recht.
+Morgen früh liegen sie vor.
+Zu Hause klingt es so.
+Gestern war ich am Telefon, das stimmt.
+Beim Essen bleibt es ab jetzt in der Tasche.
+Was nicht stimmt, darfst du danach ruhig richtigstellen.
+Ein Satz reicht.
+Wer den wahren Kern zuerst zugibt, dem glaubt man auch den Rest.
+
+
+DATEI: V16_Block5
+TEXT:
+Werkzeug drei.
+Die Rückfrage nach einer Woche.
+Die meisten Männer wollen Kritik so schnell wie möglich vergessen.
+Genau deshalb wirkt dieses Werkzeug so stark.
+Du kommst von dir aus auf die Kritik zurück.
+Eine Woche später fragst du nach.
+Beim Chef klingt das so.
+Sie hatten letzte Woche die Berichte angesprochen.
+Passt es jetzt so für Sie?
+Zu Hause klingt es so.
+Du hattest gesagt, dass ich nicht zuhöre.
+Merkst du einen Unterschied?
+Diese Frage zeigt zwei Dinge.
+Du hast zugehört, und du hast gehandelt.
+Das erwartet kaum jemand.
+Darum bleibt es hängen.
+Und noch etwas passiert.
+Wer nachfragt, bestimmt selbst, wann das Thema abgeschlossen ist.
+Du wartest nicht mehr ängstlich auf die nächste Kritik.
+Ist die Antwort ja, ist die Sache erledigt.
+Ist die Antwort nein, weißt du genau, woran du bist.
+
+
+DATEI: V16_CTA2
+TEXT:
+Von wem trifft dich Kritik am härtesten?
+Beim Chef oder zu Hause?
+Schreib es unter dieses Video.
+Andere Männer lesen mit und merken, dass sie nicht allein sind.
+Lass einen Daumen hoch da.
+Aktiviere die Glocke.
+Und abonniere diesen Kanal.
+
+
+DATEI: V16_Block6
+TEXT:
+Werkzeug vier.
+Mit deinem Namen denken.
+Dieses Werkzeug hilft dir in der Sekunde, in der Kritik trifft.
+Forscher um Ethan Kross aus Michigan haben es untersucht.
+In sieben Versuchen mit fast sechshundert Teilnehmern.
+Die Teilnehmer sollten über eine belastende Lage nachdenken.
+Die einen dachten dabei in der ersten Person.
+Die anderen sprachen sich innerlich mit ihrem eigenen Namen an.
+In einem Versuch mussten alle kurzfristig eine Rede halten.
+Wer mit seinem Namen dachte, sprach besser.
+Das urteilten Beobachter, die die Gruppen nicht kannten.
+Diese Teilnehmer zeigten weniger Anspannung und grübelten danach weniger.
+Die Forscher nennen das Abstand zu sich selbst.
+Du schaust auf dich wie ein Freund von außen.
+So wendest du es an.
+Der Chef kritisiert dich, und dir wird heiß.
+Du sagst innerlich deinen Namen und eine Frage.
+Setz deinen eigenen Namen ein.
+Zum Beispiel so.
+Markus, was ist hier gerade wirklich passiert?
+Zu Hause genauso.
+Markus, was will sie mir eigentlich sagen?
+Das dauert zwei Sekunden.
+Aber es holt dich aus dem Angriff zurück in den Kopf.
+
+
+DATEI: V16_Block7
+TEXT:
+Du hast jetzt vier Werkzeuge.
+Erst fragen, dann antworten.
+Der wahre Kern.
+Die Rückfrage nach einer Woche.
+Und mit deinem Namen denken.
+Keines davon macht dich klein.
+Sie machen aus einem Angriff eine Aufgabe.
+Mark Aurel.
+Auch dazu steht ein Gedanke in seinen Notizen.
+Sinngemäß.
+Schmerzt dich etwas von außen, ist es nicht die Sache selbst.
+Es ist dein Urteil darüber.
+Und dieses Urteil kannst du sofort auslöschen.
+Deine Aufgabe für diese Woche.
+Bei der nächsten Kritik stellst du zuerst eine einzige Frage.
+Was genau soll anders werden?
+Erst dann antwortest du.
+
+
+DATEI: V16_Outro
+TEXT:
+Was hörst du ab heute in jeder Kritik zuerst?
+Wer Kritik ruhig prüft, wird mit jeder Kritik stärker.
+Nächste Woche geht es um deinen Aufstieg im Beruf.
+Wie du weiterkommst, ohne dich zu verbiegen, zeigt dir das nächste Video.
+Lass einen Daumen hoch da.
+Aktiviere die Glocke.
+Und abonniere unseren Kanal.
+Stoische.
+Karriere.

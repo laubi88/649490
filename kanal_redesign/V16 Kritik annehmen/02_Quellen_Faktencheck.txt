@@ -1,0 +1,27 @@
+V16 Kritik annehmen – Quellen und Faktencheck
+Geprüft am 12.10.2026 (Websuche, Primärquellen soweit erreichbar)
+
+Block 2 – Epiktet
+Aussage im Text: Willst du vorankommen, dann lass dich in äußeren Dingen ruhig für dumm halten (sinngemäß).
+Beleg: Epiktet, Handbüchlein (Encheiridion) Kapitel 13. Carter: „If you want to improve, be content to be thought foolish and stupid with regard to external things.“ Higginson: „foolish and dull with regard to externals“.
+https://classics.mit.edu/Epictetus/epicench.html
+https://cts.perseids.org/read/greekLit/tlg0557/tlg002/perseus-eng4/13
+„Er lehrte in Nikopolis, nachdem er frei geworden war.“ Epiktet wurde freigelassen und gründete nach der Ausweisung der Philosophen aus Rom seine Schule in Nikopolis (Epirus). Standardwissen der Philosophiegeschichte.
+
+Block 4 – Mark Aurel, Wahrheit schadet niemandem
+Beleg: Selbstbetrachtungen VI,21. Wenn mich jemand überzeugen und zeigen kann, dass ich falsch denke oder handle, ändere ich mich gern; ich suche die Wahrheit, durch die nie jemand Schaden nahm; Schaden nimmt, wer in seinem Irrtum und seiner Unwissenheit bleibt (Long, sinngemäß).
+https://kwize.com/Meditations/565-62
+
+Block 6 – Kross
+Kross, E. et al. (2014). Self-talk as a regulatory mechanism: How you do it matters. Journal of Personality and Social Psychology, 106(2), 304–324. DOI 10.1037/a0035173
+Inhalt laut Abstract: Sieben Studien, N = 585. Nicht-Ich-Pronomen und eigener Name beim Nachdenken stärken die Selbstdistanzierung. Studie 3 (öffentliche Rede): Die Namensgruppe wurde von unabhängigen Beurteilern besser bewertet, zeigte weniger Belastung und grübelte danach weniger. Effekte nicht abhängig von sozialer Ängstlichkeit (Studie 6).
+https://pubmed.ncbi.nlm.nih.gov/24467424/
+https://rascl.berkeley.edu/assets/files/self-talk_as_a_regulatory_mechanism_how_you_do_it_matters.pdf
+Offen: Die Vorbereitungszeit der Rede ist im Volltext nicht geprüft. Im Text steht deshalb nur „kurzfristig“.
+Ethan Kross: University of Michigan.
+
+Block 7 – Mark Aurel, dein Urteil
+Beleg: Selbstbetrachtungen VIII,47. Wenn dich etwas Äußeres schmerzt, ist es nicht die Sache, sondern dein Urteil darüber; und es liegt in deiner Macht, dieses Urteil sofort auszulöschen (Long, sinngemäß).
+https://lexundria.com/m_aur_med/8.47/lg
+
+Regelprüfung Sprechertext: automatisch mit werkzeuge/sprechertext_pruefen.py.

@@ -138,7 +138,7 @@ Alle Zitate sind eigene, sinngemäße Übersetzungen. Deshalb steht in der Quell
 | Z6 | NICHT DIE DINGE BEUNRUHIGEN UNS, SONDERN UNSERE MEINUNG ÜBER SIE | EPIKTET · HANDBÜCHLEIN · SINNGEMÄSS | Encheiridion 5 |
 
 Römische Ziffern in der Quellenzeile sind Werkangaben und keine Zahlen im Fließtext. Wenn Rene auch das nicht will, die Buchangabe weglassen.
-Passende Kombinationen für einen Hinweis auf ein Video: Z1 → Grübeln beenden, Z2 → Respektlos behandelt, Z6 → Manipulation erkennen.
+Passende Kombinationen für einen Hinweis auf ein Video (laut Transkripten, 12.10.2026): Z1 → Grübeln beenden (KseoXjgLpGo, dort zitiert), Z2 → Warum Kälte keine Stärke ist (uFUc7Ku3iMU, dort zitiert), Z5 → Wie du dich nie wieder provozieren lässt (Lresm2yBPU4, dort zitiert), Z6 → Manipulation erkennen (thematisch passend).
 
 ### B3 Kanal-Werbung (15 s)
 Ablauf: `STOIZISMUS UND PSYCHOLOGIE` → `FÜR MÄNNER IM BERUF UND ZU HAUSE` → drei Wörter nacheinander `RESPEKT` · `GELASSENHEIT` · `KARRIERE` (Themensäulen A, B, C aus den vidIQ-Regeln) → `JEDE WOCHE NEUE VIDEOS` → Medaillon + `@Stoische.Karriere`.
@@ -179,3 +179,8 @@ Maße (Drittquellen, die offizielle Hilfeseite 2972003 war aus der Cloud nicht e
 - Profilbild 800×800 empfohlen, Anzeige als Kreis ab 98×98. Die Angaben zur Höchstgröße der Datei schwanken zwischen 2 und 15 MB. Die PNGs liegen mit 0,8 MB unter allen genannten Grenzen.
 
 Hochladen macht Rene selbst (YouTube Studio → Anpassung → Branding). Vor dem Hochladen in der Studio-Vorschau prüfen, ob die Darstellung auf Handy, Desktop und TV passt.
+
+## 8. Kanal-Redesign und Skripte (12.10.2026)
+
+Alles in `kanal_redesign/`, Übersicht in `kanal_redesign/00_Uebersicht.md`: Kanaltexte, Kanaltrailer, V15 und V16 komplett (Sprechertext, Quellen, Short) und fünf Begleit-Shorts für ältere Videos.
+Vor dem Vertonen jede Datei mit `python kanal_redesign/werkzeuge/sprechertext_pruefen.py <datei>` prüfen. Sie muss 0 Verstöße zeigen.

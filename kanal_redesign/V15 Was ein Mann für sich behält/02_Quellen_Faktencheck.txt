@@ -1,0 +1,31 @@
+V15 Was ein Mann für sich behält – Quellen und Faktencheck
+Geprüft am 12.10.2026 (Websuche, Primärquellen soweit erreichbar)
+
+Block 2 – Zenon
+Aussage im Text: Ein junger Mann redete viel Unsinn; Zenon sagte sinngemäß, wir haben zwei Ohren und einen Mund, damit wir mehr hören und weniger reden.
+Beleg: Diogenes Laertius, Leben und Meinungen berühmter Philosophen VII,23. Griechisch: „δύο ὦτα ἔχομεν, στόμα δὲ ἕν“. Die verbreitete Fassung „doppelt so viel zuhören“ ist eine spätere Umformung, im Text steht nur „mehr hören, weniger reden“.
+https://sententiaeantiquae.com/2015/11/21/listen-twice-speak-once-and-cite-your-sources-epictetus-and-socrates-didnt-have-two-ears-one-mouth/
+
+Block 2 – „Er gründete die Schule, aus der der Stoizismus kommt.“
+Zenon von Kition gilt als Gründer der stoischen Schule (Standardwissen, jede Philosophiegeschichte).
+
+Block 5 – Mark Aurel, Weinstock
+Beleg: Selbstbetrachtungen V,6. Ein Mensch, der Gutes getan hat, ruft niemanden herbei, sondern geht zur nächsten Tat über, wie ein Weinstock, der zur rechten Zeit wieder Trauben trägt und nach seiner Frucht nichts weiter verlangt (Übersetzung George Long, sinngemäß).
+https://wist.info/marcus-aureleus/77557/
+
+Block 5 – „Nach allem, was ich für dich getan habe.“
+Rückbezug auf V14 (Manipulation erkennen), wo dieser Satz als Schuld-Druck der Partnerin vorkam. Kein Fakt, sondern Stilmittel.
+
+Block 6 – Gollwitzer
+Gollwitzer, P. M., Sheeran, P., Michalski, V. & Seifert, A. E. (2009). When intentions go public: Does social reality widen the intention-behavior gap? Psychological Science, 20(5), 612–618.
+Inhalt laut Abstract: Vier Experimente. Identitätsbezogene Vorsätze, die von anderen bemerkt wurden, wurden weniger intensiv umgesetzt als ignorierte (Studien 1–3). Effekt nur bei hoher Bindung an das Ziel (Studie 3). Studie 4: Das Bemerktwerden gibt ein verfrühtes Gefühl, die angestrebte Identität schon zu besitzen. Beispiel im Abstract: Jurafachzeitschriften lesen, um Jurist zu werden.
+Gollwitzer lehrt an der Universität Konstanz (und an der New York University).
+https://www.socmot.uni-konstanz.de/sites/default/files/09_Gollwitzer_Sheeran_Seifert_Michalski_When_Intentions_.pdf
+https://www.psychologicalscience.org/journals/psychological-science/j.1467-9280.2009.02336.x/
+Einschränkung im Text genannt: ein einzelner Fachartikel. Nicht behaupten: „Wer Pläne erzählt, scheitert.“
+
+Block 7 – Mark Aurel, das meiste ist nicht nötig
+Beleg: Selbstbetrachtungen IV,24. Das meiste, was wir sagen und tun, ist nicht notwendig; wer es weglässt, hat mehr Muße und weniger Unruhe (Übersetzung George Long, sinngemäß).
+https://lexundria.com/m_aur_med/4.24/lg
+
+Regelprüfung Sprechertext: automatisch mit werkzeuge/sprechertext_pruefen.py (Satzlänge höchstens zwölf Wörter, keine Ziffern, keine Bindestriche, keine gesperrten Wörter, keine Abkürzungen).
