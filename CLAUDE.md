@@ -102,7 +102,7 @@ Daraus folgt das Ausgabeformat je Beitrags-Clip:
 Gestaltung 1:1: Hintergrund `marmor_9x16.jpg` mittig auf 1080×1080 zuschneiden oder `werkzeuge/marmor.py marmor_1x1.jpg 1080 1080` erzeugen. Medaillon Ø 200 px, Text zentriert, Haupttext mindestens 80 px, Quellenzeile mindestens 36 px, Rand 80 px rundum. Lesbarkeit im Feed prüfen: auf 400 px Breite verkleinert noch lesbar.
 GIFs laufen im Feed in Endlosschleife: Das letzte Bild blendet sanft auf das erste zurück, kein harter Sprung.
 Umwandlung (Beispiel): `ffmpeg -i B2_Z1.mp4 -vf "fps=15,scale=1080:1080:flags=lanczos,palettegen=stats_mode=diff" pal.png` und danach `ffmpeg -i B2_Z1.mp4 -i pal.png -lavfi "fps=15,scale=1080:1080:flags=lanczos[x];[x][1:v]paletteuse=dither=sierra2_4a" -loop 0 B2_Z1.gif`. Dateigröße prüfen (höchstens 16 MB).
-Alle Texte unten sind **Vorschläge**. Rene gibt sie vor dem Rendern frei.
+**Texte freigegeben (Rene, 12.10.2026: „ja“).** Die Texte unten gelten so. Änderungen nur auf Renes Wunsch.
 
 ### B1 Teaser „Neues Video“ (10 s je Clip)
 Ablauf: Frage (0–3 s) → Thema (3–6,5 s) → `NEUES VIDEO AUF DEM KANAL` (6,5–8,5 s) → `@Stoische.Karriere` (8,5–10 s).
@@ -153,4 +153,23 @@ Keine Produktwerbung, nur der Kanal. „Jede Woche neue Videos“ nur verwenden,
 
 - Erledigt: ganzes Set. Veröffentlichung der Beitrags-Clips als YouTube-Beitrag. Das Medaillon ist fiktiv und wird einheitlich als Markenzeichen genutzt.
 - Beitrags-Clips zusätzlich als Short (9:16 MP4)? Für einen Beitrag reicht GIF plus PNG.
-- Texte der Teaser, Zitate und Werbung freigeben oder ändern.
+- Erledigt: Texte der Teaser, Zitate und Werbung freigegeben.
+- Profilbild: A (ganzes Medaillon) oder B (Ausschnitt Kopf und Fackel)? Empfehlung B, siehe Abschnitt 7.
+
+## 7. Kanal-Branding: Profilbild und Banner (in der Cloud-Sitzung fertig erstellt)
+
+Dateien in `kanal_branding/`, erzeugt mit `outro/werkzeuge/branding.py` (deterministisch, Bebas Neue, Medaillon `#00E5FF`):
+
+| Datei | Größe | Zweck |
+|---|---|---|
+| `profilbild_A_medaillon.png` | 800×800 | ganzes Medaillon |
+| `profilbild_B_ausschnitt.png` | 800×800 | Kopf und Fackel, **Empfehlung**: bleibt bei 32–48 px erkennbar, A wird dort zum Fleck |
+| `vorschau_profilbild_klein.png` | – | A und B als Kreis in 160/98/48/32 px auf hellem und dunklem Grund |
+| `banner_2560x1440.jpg` | 2560×1440, rund 0,25 MB | Kanalbanner |
+| `vorschau_banner_sichere_flaeche.jpg` | – | rot: sichere Fläche 1546×423 (überall sichtbar), gelb: Desktop-Streifen. Nur zur Kontrolle, nicht hochladen |
+
+Maße (Drittquellen, die offizielle Hilfeseite 2972003 war aus der Cloud nicht erreichbar):
+- Banner 16:9, mindestens 2048×1152, empfohlen 2560×1440, höchstens 6 MB. Sichere Fläche 1235×338 bei 2048×1152. Das ist dasselbe Verhältnis wie 1546×423 bei 2560×1440, die Angaben widersprechen sich also nicht.
+- Profilbild 800×800 empfohlen, Anzeige als Kreis ab 98×98. Die Angaben zur Höchstgröße der Datei schwanken zwischen 2 und 15 MB. Die PNGs liegen mit 0,8 MB unter allen genannten Grenzen.
+
+Hochladen macht Rene selbst (YouTube Studio → Anpassung → Branding). Vor dem Hochladen in der Studio-Vorschau prüfen, ob die Darstellung auf Handy, Desktop und TV passt.
