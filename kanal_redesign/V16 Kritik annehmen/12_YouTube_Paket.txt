@@ -4,13 +4,17 @@ Grundlage: Skill stoische-karriere-vidiq-regeln (Titel, Thumbnail, Beschreibung,
 
 
 1. TITEL
-Noch nicht festgelegt. Vorschlag als Hauptvorschlag:
-Kritik annehmen: 4 Wege, RUHIG zu bleiben | Stoizismus  (54 Zeichen)
+Noch nicht festgelegt (Renes Wahl). Hauptvorschlag nach vidIQ Wertung:
+Kritik annehmen: 4 Wege, RUHIG zu bleiben | Stoizismus  (54 Zeichen, vidIQ 81)
 Prüfung: Suchbegriff „Kritik annehmen“ am Anfang, eine Zahl (vier Werkzeuge), ein Wort in Großbuchstaben, Endung | Stoizismus, keine Frage, unter 60 Zeichen.
 Alternativen:
-- Kritik vom Chef: 4 Werkzeuge gegen den ÄRGER | Stoizismus  (57 Zeichen)
-- Kritik ohne Kränkung: 4 RUHIGE Antworten | Stoizismus  (53 Zeichen)
-Offen: Renes Wahl, vidIQ Titel Wertung (Ziel ab 75) und Vorbild. Beides kostet Credits, nur nach Renes Ja.
+- Kritik vom Chef: 4 Werkzeuge gegen den ÄRGER | Stoizismus  (57 Zeichen, vidIQ 80)
+- Kritik ohne Kränkung: 4 RUHIGE Antworten | Stoizismus  (53 Zeichen, vidIQ 79)
+vidIQ Titel Wertung am 12.10.2026 mit Kanal-ID. Alle drei über dem Ziel 75. Die Werte liegen eng beieinander, der Unterschied ist klein.
+Vorbild (vidIQ YouTube Suche, Region DE, 12.10.2026): Ein starkes direktes Vorbild zu „Kritik annehmen“ gibt es nicht.
+- „Gelassen Kritik annehmen können ohne es persönlich zu nehmen“, RedeFabrik (525.000 Abonnenten), 23.226 Aufrufe: gleiches Thema, aber für die Kanalgröße schwach.
+- „So kann Sie niemand mehr ärgern! … Vera F. Birkenbihl“, Lernen der Zukunft (417.000 Abonnenten), 1.660.382 Aufrufe: Nachbarthema (sich nicht ärgern lassen), zeigt die Nachfrage nach Ruhe unter Angriff.
+Folgerung: Titel 2 mit „Chef“ und „ÄRGER“ trifft das Nachbarthema am besten, Titel 1 hat die höchste Wertung. Renes Wahl.
 
 
 2. THUMBNAIL PLAN
@@ -60,12 +64,18 @@ Achtung: Das Outro von V16 kündigt V17 „Aufstieg im Beruf, ohne dich zu verbi
 
 
 4. TAGS (höchstens 480 Zeichen, Reihenfolge: Themenbegriffe, dann Kernset)
-Suchmengen fehlen: Die vidIQ Keyword Recherche kostet Credits und ist noch nicht gemacht. Vor dem Einfügen mit vidIQ prüfen und Mengen mit Hinweis weltweit oder Deutschland notieren.
+Suchmengen (vidIQ Keyword Recherche, 12.10.2026; Monatswerte auf YouTube weltweit, „DE“ = davon in Deutschland, soweit vidIQ es angibt):
+- kritik annehmen: unter 750 (sehr gering), ebenso mit kritik umgehen, kritik nicht persönlich nehmen, kritikfähigkeit, konstruktive kritik
+- kritik: rund 4.200
+- kommunikation: rund 5.000
+- persönlichkeitsentwicklung: rund 44.500 weltweit, DE rund 22.400, Wettbewerb 30 von 100
+- psychologie: rund 241.000 weltweit, DE rund 71.800, Wettbewerb 60 von 100 (stark umkämpft)
+Folgerung: Wie bei V15 trägt die Suche wenig. Tags nehmen die Begriffe mit Menge auf, die zum Inhalt passen.
 
 ---
-kritik annehmen, mit kritik umgehen, kritik vom chef, kritikfähigkeit, ruhig bleiben, nicht persönlich nehmen, selbstgespräch, gelassenheit, emotionen kontrollieren, epiktet, mark aurel, stoizismus im alltag, stoische philosophie, stoizismus, selbstbewusstsein stärken, männer
+kritik annehmen, kritik vom chef, mit kritik umgehen, kritik nicht persönlich nehmen, kritik, kommunikation, gelassenheit, selbstgespräch, persönlichkeitsentwicklung, psychologie, epiktet, mark aurel, stoizismus im alltag, stoische philosophie, stoizismus, männer
 ---
-Länge der Liste: 276 Zeichen inklusive Kommas (Grenze 480).
+Länge der Liste: 263 Zeichen inklusive Kommas (Grenze 480).
 Nicht verwenden: „stoisch bleiben“ (Regel).
 
 

@@ -6,10 +6,14 @@ Grundlage: Skill stoische-karriere-vidiq-regeln (Titel, Thumbnail, Beschreibung,
 1. TITEL
 FESTGELEGT (Rene, 12.10.2026): 4 Dinge, die ein Mann für sich BEHÄLT | Stoizismus  (50 Zeichen)
 Prüfung: eine Zahl (vier Dinge), ein Wort in Großbuchstaben, Endung | Stoizismus, keine Frage, unter 60 Zeichen.
-Offen: vidIQ Titel Wertung (Ziel ab 75) und Vorbild (Konkurrenzvideo mit Titel, Kanal, Aufrufen). Beides kostet vidIQ Credits, nur nach Renes Ja.
+vidIQ Titel Wertung (12.10.2026, mit Kanal-ID): 82. Ziel ab 75 erreicht.
 Alternativen für einen späteren Titeltest:
-- Zu viel erzählen kostet dich RESPEKT: 4 Regeln | Stoizismus  (59 Zeichen)
-- Wer alles erzählt, VERLIERT: 4 Dinge für dich | Stoizismus  (58 Zeichen)
+- Zu viel erzählen kostet dich RESPEKT: 4 Regeln | Stoizismus  (59 Zeichen, vidIQ 77)
+- Wer alles erzählt, VERLIERT: 4 Dinge für dich | Stoizismus  (58 Zeichen, vidIQ 79)
+Vorbild (vidIQ YouTube Suche, Region DE, 12.10.2026):
+„8 Dinge die man still aus dem Leben ENTFERNEN muss | Stoizismus“, Kanal Stoische Zeiten (95.400 Abonnenten), 135.819 Aufrufe, veröffentlicht 18.10.2025, Outlier Faktor rund 23.
+Was wir übernehmen: Muster Zahl plus Dinge plus ein Wort in Großbuchstaben plus „| Stoizismus“. Was wir anders machen: vier statt acht, Thema Verschwiegenheit statt Loslassen, rund neun statt 37 Minuten, Belege statt Hörbuch.
+Weiteres Video zum gleichen Thema: „Behalten Sie Ihre 7 Dinge privat!!“, Kanal Stoische Weisheit, 7.147 Aufrufe (schwach, kein Vorbild).
 
 
 2. THUMBNAIL PLAN
@@ -60,13 +64,20 @@ Prüfen vor dem Einfügen: Kapitelzeiten, Podcast-Link, Link V16. Höchstens dre
 
 
 4. TAGS (höchstens 480 Zeichen, Reihenfolge: Themenbegriffe, dann Kernset)
-Suchmengen fehlen: Die vidIQ Keyword Recherche kostet Credits und ist noch nicht gemacht. Vor dem Einfügen mit vidIQ prüfen und Mengen mit Hinweis weltweit oder Deutschland notieren.
+Suchmengen (vidIQ Keyword Recherche, 12.10.2026; Monatswerte auf YouTube weltweit, „DE“ = davon in Deutschland, soweit vidIQ es angibt):
+- selbstrespekt: unter 750 (sehr gering), ebenso selbstrespekt stärken, selbstrespekt lernen
+- persönlichkeitsentwicklung: rund 44.500 weltweit, DE rund 22.400, Wettbewerb 30 von 100
+- psychologie deutsch: rund 20.800, Wettbewerb 17 von 100
+- emotionale intelligenz: rund 16.100
+- selbstwert: rund 4.400
+- grenzen setzen: rund 4.000
+Folgerung: Der Titel lebt nicht von der Suche. Das passt zu den Kanaldaten (Aufrufe fast nur über verwandte Videos und Abo-Feed). Die Tags nehmen deshalb die Begriffe mit Menge auf, die zum Inhalt passen.
 Die Liste unterscheidet sich bewusst vom Tag-Block von V14 (Regel: nicht bei jedem Video derselbe Block).
 
 ---
-selbstrespekt, verschwiegenheit, diskretion, schweigen ist gold, weniger reden, nicht alles erzählen, ziele für sich behalten, vertrauen im beruf, beziehung streit, mark aurel, zenon, stoizismus im alltag, stoische philosophie, stoizismus, selbstbewusstsein stärken, männer
+was ein mann für sich behält, nicht alles erzählen, verschwiegenheit, diskretion, selbstrespekt, ziele für sich behalten, selbstwert, grenzen setzen, persönlichkeitsentwicklung, psychologie deutsch, emotionale intelligenz, mark aurel, zenon, stoizismus im alltag, stoische philosophie, stoizismus, männer
 ---
-Länge der Liste: 273 Zeichen inklusive Kommas (Grenze 480).
+Länge der Liste: 304 Zeichen inklusive Kommas (Grenze 480).
 Nicht verwenden: „stoisch bleiben“ (Regel).
 
 
