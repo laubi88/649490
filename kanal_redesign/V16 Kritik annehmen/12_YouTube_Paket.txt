@@ -1,0 +1,100 @@
+V16 Kritik annehmen – YouTube Paket
+Stand: 12.10.2026, Entwurf zur Freigabe durch Rene. Nichts davon ist hochgeladen oder im Kanal eingetragen.
+Grundlage: Skill stoische-karriere-vidiq-regeln (Titel, Thumbnail, Beschreibung, Tags, Rhythmus, Messen), Skills packaging-agent und thumbnail-agent.
+
+
+1. TITEL
+Noch nicht festgelegt. Vorschlag als Hauptvorschlag:
+Kritik annehmen: 4 Wege, RUHIG zu bleiben | Stoizismus  (54 Zeichen)
+Prüfung: Suchbegriff „Kritik annehmen“ am Anfang, eine Zahl (vier Werkzeuge), ein Wort in Großbuchstaben, Endung | Stoizismus, keine Frage, unter 60 Zeichen.
+Alternativen:
+- Kritik vom Chef: 4 Werkzeuge gegen den ÄRGER | Stoizismus  (57 Zeichen)
+- Kritik ohne Kränkung: 4 RUHIGE Antworten | Stoizismus  (53 Zeichen)
+Offen: Renes Wahl, vidIQ Titel Wertung (Ziel ab 75) und Vorbild. Beides kostet Credits, nur nach Renes Ja.
+
+
+2. THUMBNAIL PLAN
+Text: Zeile 1 „ERST“ in Türkis #00E5FF, Zeile 2 „FRAGEN“ in Weiß, Schrift Anton.
+Ungleich Titel: kein Wort aus einem der drei Titel. Der Text verrät das erste Werkzeug nur als Befehl und lässt offen, welche Frage.
+Ersatz, falls Rene lieber das vierte Werkzeug zeigt: „MIT DEINEM“ / „NAMEN“.
+Anordnung: Text links auf Schattenverlauf, Marmor rechts. Wechsel zu V15 (Brustbild): diesmal Nahaufnahme der Augen einer Büste, anderer Hintergrund.
+Datei: V16 Kritik annehmen THUMBNAIL.jpg
+Stand jetzt: nur Test mit Medaillon (THUMBNAIL_TEST_Medaillon.jpg), nicht hochladen.
+
+
+3. BESCHREIBUNG (zum Einfügen)
+Die ersten 150 Zeichen enthalten Problem, Suchbegriff und Stoizismus. Der Podcast-Link folgt nach dem ersten Absatz.
+
+---
+Kritik vom Chef trifft dich und du verteidigst dich sofort? Kritik annehmen, ohne einzuknicken: vier Werkzeuge aus dem Stoizismus und der Psychologie.
+
+[Podcast-Link von Rene einsetzen]
+
+Erst fragen, dann antworten. Den wahren Kern finden. Nach einer Woche nachfragen. Und mit deinem eigenen Namen denken, wenn dir heiß wird. Zu jedem Werkzeug bekommst du Sätze im Wortlaut: einmal beim Chef, einmal zu Hause.
+
+Kapitel:
+[Zeiten nach dem Schnitt aus den gemessenen Startzeiten eintragen, erstes Kapitel 0:00, mindestens zehn Sekunden Abstand]
+0:00 Warum Kritik dich so trifft
+X:XX Epiktet: lass dich für dumm halten
+X:XX Werkzeug eins: Erst fragen, dann antworten
+X:XX Werkzeug zwei: Der wahre Kern (Mark Aurel)
+X:XX Werkzeug drei: Die Rückfrage nach einer Woche
+X:XX Werkzeug vier: Mit deinem Namen denken (Kross Studie)
+X:XX Deine Aufgabe für diese Woche
+
+Quellen:
+Epiktet, Handbüchlein, Kapitel 13 (sinngemäß)
+Mark Aurel, Selbstbetrachtungen VI,21 und VIII,47 (sinngemäß)
+Kross, E. et al. (2014). Self-talk as a regulatory mechanism: How you do it matters. Journal of Personality and Social Psychology, 106(2), 304–324.
+
+Letztes Video: 4 Dinge, die ein Mann für sich BEHÄLT [Link nach dem Upload von V15 nachtragen]
+Nächstes Video: Aufstieg im Beruf, ohne dich zu verbiegen [Link nach dem Upload von V17 nachtragen]
+
+Hinweis: Die Stimme und Teile der Bilder sind mit KI erstellt.
+
+#Stoizismus #KritikAnnehmen #Gelassenheit
+---
+
+Prüfen vor dem Einfügen: Kapitelzeiten, Podcast-Link, Links V15 und V17. Höchstens drei Hashtags (sind drei).
+Achtung: Das Outro von V16 kündigt V17 „Aufstieg im Beruf, ohne dich zu verbiegen“ an. Bekommt V17 ein anderes Thema, vorher den Outro-Satz ändern.
+
+
+4. TAGS (höchstens 480 Zeichen, Reihenfolge: Themenbegriffe, dann Kernset)
+Suchmengen fehlen: Die vidIQ Keyword Recherche kostet Credits und ist noch nicht gemacht. Vor dem Einfügen mit vidIQ prüfen und Mengen mit Hinweis weltweit oder Deutschland notieren.
+
+---
+kritik annehmen, mit kritik umgehen, kritik vom chef, kritikfähigkeit, ruhig bleiben, nicht persönlich nehmen, selbstgespräch, gelassenheit, emotionen kontrollieren, epiktet, mark aurel, stoizismus im alltag, stoische philosophie, stoizismus, selbstbewusstsein stärken, männer
+---
+Länge der Liste: 276 Zeichen inklusive Kommas (Grenze 480).
+Nicht verwenden: „stoisch bleiben“ (Regel).
+
+
+5. ANGEHEFTETER KOMMENTAR (wiederholt die CTA2 Frage)
+---
+Von wem trifft dich Kritik am härtesten?
+1 Chef
+2 Partnerin
+3 Familie
+Schreib die Zahl unter dieses Video.
+---
+
+
+6. UPLOAD SLOT
+Das Outro von V15 verspricht V16 für „nächste Woche“. Deshalb eine Woche nach V15:
+- Wenn V15 am Sonntag, 18.10.2026 erscheint: V16 am Sonntag, 25.10.2026, 18 Uhr, Short am Montag, 26.10.
+- Wenn V15 am Dienstag, 20.10.2026 erscheint: V16 am Dienstag, 27.10.2026, 18 Uhr, Short am Mittwoch, 28.10.
+Ein bis zwei Tage vorher als Geplant hochladen. Nie mehrere Videos am selben Tag.
+
+
+7. MESSZETTEL (nach dem Upload ausfüllen)
+| Messgröße | Ziel oder Messlatte | Wert |
+|---|---|---|
+| vidIQ Titel Wertung | ab 75 | |
+| vidIQ Thumbnail Wertung | über 70 | |
+| Aufrufe nach 24 Stunden | rund 8 | |
+| Aufrufe nach 7 Tagen | rund 66 (Spanne 35 bis 99) | |
+| Durchschnittliche Wiedergabedauer | | |
+| Zuschauerbindung bei Sekunde 43 | höher als bei V14 (neuer Hook) | |
+| Quellen der Aufrufe: Suche | soll wachsen | |
+| Quellen der Aufrufe: verwandte Videos | soll wachsen | |
+| Lage CTA1 / CTA2 in Prozent | 30 bis 40 / rund 70 | |

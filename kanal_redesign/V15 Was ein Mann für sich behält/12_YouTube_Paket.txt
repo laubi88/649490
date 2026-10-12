@@ -1,0 +1,105 @@
+V15 Was ein Mann für sich behält – YouTube Paket
+Stand: 12.10.2026, Entwurf zur Freigabe durch Rene. Nichts davon ist hochgeladen oder im Kanal eingetragen.
+Grundlage: Skill stoische-karriere-vidiq-regeln (Titel, Thumbnail, Beschreibung, Tags, Rhythmus, Messen), Skills packaging-agent und thumbnail-agent.
+
+
+1. TITEL
+FESTGELEGT (Rene, 12.10.2026): 4 Dinge, die ein Mann für sich BEHÄLT | Stoizismus  (50 Zeichen)
+Prüfung: eine Zahl (vier Dinge), ein Wort in Großbuchstaben, Endung | Stoizismus, keine Frage, unter 60 Zeichen.
+Offen: vidIQ Titel Wertung (Ziel ab 75) und Vorbild (Konkurrenzvideo mit Titel, Kanal, Aufrufen). Beides kostet vidIQ Credits, nur nach Renes Ja.
+Alternativen für einen späteren Titeltest:
+- Zu viel erzählen kostet dich RESPEKT: 4 Regeln | Stoizismus  (59 Zeichen)
+- Wer alles erzählt, VERLIERT: 4 Dinge für dich | Stoizismus  (58 Zeichen)
+
+
+2. THUMBNAIL PLAN
+Text: Zeile 1 „WAS ER“ in Türkis #00E5FF, Zeile 2 „VERSCHWEIGT“ in Weiß, Schrift Anton.
+Ungleich Titel: kein Wort aus dem Titel im Thumbnail. Der Text öffnet die Frage, was genau ein Mann verschweigt.
+Anordnung: Text links auf Schattenverlauf, Marmorbüste rechts, Brustbild mit Blick zum Text. Ecke unten rechts frei.
+Wechsel zu V14: Nähe und Hintergrund anders wählen als beim Thumbnail von V14 (vor dem Erzeugen ansehen).
+Datei: V15 Was ein Mann für sich behält THUMBNAIL.jpg
+Erzeugen, sobald die Büste im Ordner liegt:
+  python thumbnail_maker.py --zeile1 "WAS ER" --zeile2 "VERSCHWEIGT" --bild "<Büste>.png" -o "kanal_redesign/V15 Was ein Mann für sich behält/V15 Was ein Mann für sich behält THUMBNAIL.jpg"
+Stand jetzt: nur Test mit Medaillon (THUMBNAIL_TEST_Medaillon.jpg), nicht hochladen.
+
+
+3. BESCHREIBUNG (zum Einfügen)
+Die ersten 150 Zeichen enthalten Problem, Suchbegriff und Stoizismus. Der Podcast-Link folgt nach dem ersten Absatz.
+
+---
+Du erzählst zu viel und verlierst dabei Respekt? Vier Dinge, die ein Mann für sich behält, aus dem Stoizismus und der Psychologie, für den Beruf und zu Hause.
+
+[Podcast-Link von Rene einsetzen]
+
+Euer Streit, was man dir anvertraut, deine guten Taten und deine Pläne, bis sie stehen. Zu jedem Werkzeug bekommst du Sätze im Wortlaut: einmal beim Chef, einmal zu Hause.
+
+Kapitel:
+[Zeiten nach dem Schnitt aus den gemessenen Startzeiten eintragen, erstes Kapitel 0:00, mindestens zehn Sekunden Abstand]
+0:00 Warum Erzählen dich Respekt kostet
+X:XX Zenon: zwei Ohren, ein Mund
+X:XX Werkzeug eins: Euer Streit bleibt zwischen euch
+X:XX Werkzeug zwei: Was man dir anvertraut
+X:XX Werkzeug drei: Gutes tun und schweigen (Mark Aurel)
+X:XX Werkzeug vier: Pläne für dich behalten (Gollwitzer Studie)
+X:XX Deine Aufgabe für diese Woche
+
+Quellen:
+Zenon: Diogenes Laertius, Leben und Meinungen berühmter Philosophen VII,23 (sinngemäß)
+Mark Aurel, Selbstbetrachtungen V,6 und IV,24 (sinngemäß)
+Gollwitzer, P. M., Sheeran, P., Michalski, V. & Seifert, A. E. (2009). When intentions go public: Does social reality widen the intention-behavior gap? Psychological Science, 20(5), 612–618.
+
+Letztes Video: Manipulation ERKENNEN: 4 stoische Regeln https://youtu.be/383ATxhCPK0
+Nächstes Video: Kritik annehmen [Link nach dem Upload von V16 nachtragen]
+
+Hinweis: Die Stimme und Teile der Bilder sind mit KI erstellt.
+
+#Stoizismus #Selbstrespekt #MarkAurel
+---
+
+Prüfen vor dem Einfügen: Kapitelzeiten, Podcast-Link, Link V16. Höchstens drei Hashtags (sind drei).
+
+
+4. TAGS (höchstens 480 Zeichen, Reihenfolge: Themenbegriffe, dann Kernset)
+Suchmengen fehlen: Die vidIQ Keyword Recherche kostet Credits und ist noch nicht gemacht. Vor dem Einfügen mit vidIQ prüfen und Mengen mit Hinweis weltweit oder Deutschland notieren.
+Die Liste unterscheidet sich bewusst vom Tag-Block von V14 (Regel: nicht bei jedem Video derselbe Block).
+
+---
+selbstrespekt, verschwiegenheit, diskretion, schweigen ist gold, weniger reden, nicht alles erzählen, ziele für sich behalten, vertrauen im beruf, beziehung streit, mark aurel, zenon, stoizismus im alltag, stoische philosophie, stoizismus, selbstbewusstsein stärken, männer
+---
+Länge der Liste: 273 Zeichen inklusive Kommas (Grenze 480).
+Nicht verwenden: „stoisch bleiben“ (Regel).
+
+
+5. ANGEHEFTETER KOMMENTAR (wiederholt die CTA2 Frage)
+---
+Was erzählst du zu oft, obwohl es niemanden etwas angeht?
+1 Streit von zu Hause
+2 Was man mir anvertraut hat
+3 Pläne, die noch nicht stehen
+Schreib die Zahl unter dieses Video.
+---
+
+
+6. UPLOAD SLOT
+Regel: Slots Dienstag 18 Uhr, Freitag 15 Uhr, Sonntag 18 Uhr, optional Samstag 14 Uhr. Nie mehrere Videos am selben Tag. Ein bis zwei Tage vorher als Geplant hochladen. Short einen Tag nach dem Longform.
+Zusammenhang: Das Outro von V14 (erschienen am 11.10.2026) verspricht V15 für „nächste Woche“. Das Outro von V15 verspricht V16 für „nächste Woche“.
+Vorschlag:
+- V15 Longform: Sonntag, 18.10.2026, 18 Uhr (hält das Versprechen aus V14). Als Geplant hochladen bis Freitag, 16.10.
+- V15 Short: Montag, 19.10.2026 (kein Longform an diesem Tag).
+- Rückfall, wenn die Produktion nicht bis 16.10. steht: Dienstag, 20.10.2026, 18 Uhr, Short Mittwoch, 21.10.
+- Dann V16 eine Woche nach V15 (siehe 12_YouTube_Paket von V16).
+Die Begleit-Shorts für ältere Videos nicht auf diese Tage legen.
+
+
+7. MESSZETTEL (nach dem Upload ausfüllen)
+| Messgröße | Ziel oder Messlatte | Wert |
+|---|---|---|
+| vidIQ Titel Wertung | ab 75 | |
+| vidIQ Thumbnail Wertung | über 70 | |
+| Aufrufe nach 24 Stunden | rund 8 | |
+| Aufrufe nach 7 Tagen | rund 66 (Spanne 35 bis 99) | |
+| Durchschnittliche Wiedergabedauer | | |
+| Zuschauerbindung bei Sekunde 43 | höher als bei V14 (neuer Hook) | |
+| Quellen der Aufrufe: Suche | soll wachsen | |
+| Quellen der Aufrufe: verwandte Videos | soll wachsen | |
+| Lage CTA1 / CTA2 in Prozent | 30 bis 40 / rund 70 | |
