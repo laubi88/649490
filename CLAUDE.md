@@ -97,7 +97,13 @@ Technische Grenzen laut YouTube-Hilfe (Artikel 7124474, Stand 11.10.2026):
 Daraus folgt das Ausgabeformat je Beitrags-Clip:
 1. **Animiertes GIF, 1080×1080**, höchstens 16 MB. Bei 8–15 s und vollen 30 fps ist das bei 1080 px nicht zu halten. Deshalb 15 fps und eine eigene Palette mit Dithering (`ffmpeg palettegen`/`paletteuse`). Liegt die Datei über 16 MB, zuerst auf 12 fps gehen, erst dann auf 900×900. Marmor-Verläufe auf Streifenbildung prüfen.
 2. **PNG, 1080×1080**: Schlussbild als Standbild-Alternative. Bei Zitaten ist das oft lesbarer als ein GIF.
-3. Optional **MP4, 1080×1920**, als Short hochladen und danach im Beitrag verlinken. Dann kommt ans Ende A2 in 9:16 (Shorts-Regel).
+3. **MP4, 1080×1920, als Short (Rene, 12.10.2026: ja).** Eigenes Layout, nicht das 1:1-Bild hochskaliert:
+   - Hintergrund `marmor_9x16.jpg`, Medaillon Ø 260 px, Haupttext mindestens 96 px, Quellenzeile mindestens 44 px
+   - Text innerhalb x 90–990 und y 250–1500. Das ist ein Richtwert gegen die Shorts-Bedienelemente, auf dem Handy prüfen.
+   - Ans Ende kommt A2 in 9:16, gesprochen „Stoische Karriere“ aus der Outro-Tonspur, darunter `@Stoische.Karriere` (Shorts-Regel aus `stoische-karriere-vidiq-regeln`)
+   - 30 fps, 9 Mbit/s, AAC 160 kbit/s. Musik nur, wenn Rene sie liefert. Kein ElevenLabs.
+   - Der fertige Short kann danach im Beitrag als vorhandenes YouTube-Video verlinkt werden.
+   - Nicht alle Shorts am selben Tag veröffentlichen. Rhythmusregel aus `stoische-karriere-vidiq-regeln`: nie mehrere Videos am selben Tag.
 
 Gestaltung 1:1: Hintergrund `marmor_9x16.jpg` mittig auf 1080×1080 zuschneiden oder `werkzeuge/marmor.py marmor_1x1.jpg 1080 1080` erzeugen. Medaillon Ø 200 px, Text zentriert, Haupttext mindestens 80 px, Quellenzeile mindestens 36 px, Rand 80 px rundum. Lesbarkeit im Feed prüfen: auf 400 px Breite verkleinert noch lesbar.
 GIFs laufen im Feed in Endlosschleife: Das letzte Bild blendet sanft auf das erste zurück, kein harter Sprung.
@@ -152,9 +158,9 @@ Keine Produktwerbung, nur der Kanal. „Jede Woche neue Videos“ nur verwenden,
 ## 6. Offene Punkte für Rene
 
 - Erledigt: ganzes Set. Veröffentlichung der Beitrags-Clips als YouTube-Beitrag. Das Medaillon ist fiktiv und wird einheitlich als Markenzeichen genutzt.
-- Beitrags-Clips zusätzlich als Short (9:16 MP4)? Für einen Beitrag reicht GIF plus PNG.
+- Erledigt: Beitrags-Clips zusätzlich als Short (9:16 MP4), Rene am 12.10.2026.
 - Erledigt: Texte der Teaser, Zitate und Werbung freigegeben.
-- Profilbild: A (ganzes Medaillon) oder B (Ausschnitt Kopf und Fackel)? Empfehlung B, siehe Abschnitt 7.
+- Profilbild: Rene will A und B (12.10.2026). Ein YouTube-Kanal hat aber genau **ein** Profilbild. Beide Dateien bleiben. Rene entscheidet beim Hochladen, welches aktiv ist (Empfehlung B).
 
 ## 7. Kanal-Branding: Profilbild und Banner (in der Cloud-Sitzung fertig erstellt)
 
