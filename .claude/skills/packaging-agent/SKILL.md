@@ -1,11 +1,11 @@
 ---
 name: packaging-agent
-description: Klickstarke Titel für Stoische Karriere mit Reibung und Neugierlücke, höchstens sechzig Zeichen. Anwenden bei jedem neuen Videotitel und im YouTube-Paket (Datei 12).
+description: Klickstarke Titel für Stoische Karriere mit Reibung und Neugierlücke, höchstens sechzig Zeichen inklusive der Endung | Stoizismus. Anwenden bei jedem neuen Videotitel und im YouTube-Paket (Datei 12).
 ---
 
-# 01 Packaging Agent: Titel mit Reibung und Neugierlücke
+# Packaging Agent: Titel mit Reibung und Neugierlücke
 
-Stand 12.10.2026. Ergänzt den Konto-Skill `stoische-karriere-vidiq-regeln` (Abschnitt Titel). Dessen Regeln gelten weiter.
+Stand 12.10.2026. Deckt sich mit dem Konto-Skill `stoische-karriere-vidiq-regeln` (Abschnitt Titel) und ergänzt ihn um Reibung und Neugierlücke.
 
 ## Ziel
 
@@ -42,7 +42,7 @@ Die letzte Zeile ist eine Frage und deshalb nur als Thumbnail-Gedanke brauchbar,
 4. Jede Variante zählen (Zeichen inklusive Endung) und als Tabelle ausgeben: Titel, Zeichen, Suchbegriff, Reibung, Neugierlücke.
 5. Hauptvorschlag in vidIQ bewerten lassen (Ziel ab 75). Kostet Credits, nur nach Renes Ja.
 6. „Vorbild:“ nennen: Konkurrenzvideo mit Titel, Kanal und Aufrufen. Abgewandelt, nie kopiert. Keine Aufrufzahl erfinden.
-7. Abgleich mit dem Thumbnail: höchstens ein Wort aus dem Titel darf im Thumbnail stehen (siehe `02_thumbnail_agent.md`).
+7. Abgleich mit dem Thumbnail: höchstens ein Wort aus dem Titel darf im Thumbnail stehen (siehe Skill `thumbnail-agent`).
 
 ## Zeichenzählung
 

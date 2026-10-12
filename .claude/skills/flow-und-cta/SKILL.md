@@ -1,11 +1,11 @@
 ---
 name: flow-und-cta
-description: Prompt-Format für die themenspezifischen Zusatzclips 46 bis 50 in Flow und Schnittplan mit CTA 1, CTA 2 und OUTRO für Stoische Karriere.
+description: Prompt-Format für die themenspezifischen Zusatzclips 46 bis 50 in Flow und Schnittplan mit CTA 1, CTA 2 und OUTRO für Stoische Karriere. Anwenden bei 05_Flow_Prompts_Zusatzclips_EN und 15_Schnittplan.
 ---
 
-# 04 Flow-Prompts und Schnittplan
+# Flow-Prompts und Schnittplan
 
-Stand 12.10.2026. Ergänzt die Konto-Skills `stoische-karriere-videovorlage` (Abschnitt 4 Werbeclips, 5 Bildplan, 7 Schnitt) und CLAUDE.md A3. Zeitpunkte aus `03_retention_skript.md`.
+Stand 12.10.2026. Deckt sich mit dem Konto-Skill `stoische-karriere-videovorlage` (Abschnitt 3 CTA-Positionen, 4 Werbeclips, 5 Bildplan, 7 Schnitt) und CLAUDE.md M3 und M4. Zeitpunkte aus dem Skill `retention-skript`.
 
 ## Teil 1: Zusatzclips 46 bis 50
 
@@ -42,9 +42,14 @@ Regeln:
 
 ### Reihenfolge der Tonspuren
 
-Block1 → Block2 → Block3 → Block4 → Block5 → **CTA1** → Block6 → Block7 → **CTA2** → **Outro** → Endcard
+Block1 → Block2 → Block3 → **CTA1** → Block4 → Block5 → **CTA2** → Block6 → Block7 → **Outro** → Logo → Endcard
 
-CTA1 liegt bei rund siebzig Prozent, CTA2 bei 8:00, Outro ab 8:10 (CLAUDE.md A5). Die genaue Lage von CTA1 hängt von den gemessenen Blocklängen ab. Wenn CTA1 nach Werkzeug drei bei rund siebzig Prozent fällt, steht er dort. Fällt er mitten in ein Werkzeug, Rene vor dem Schnitt fragen.
+- Bis 2:00 kein CTA und kein CTA-Einblender.
+- CTA1 direkt nach Werkzeug eins (Block 3), Soll 30 bis 40 Prozent der Laufzeit.
+- CTA2 direkt nach Werkzeug drei (Block 5), Soll rund 70 Prozent.
+- Outro am Ende, die letzten rund zwanzig Sekunden Sprechertext. Das Logo startet bei „Stoische.“, danach folgt die Endcard.
+
+Nach dem Schnitt die echten Prozentwerte aus den gemessenen Startzeiten ausrechnen und im Prüfprotokoll notieren. Liegt ein CTA außerhalb des Sollbereichs, Rene vor dem Endrender fragen, statt Blöcke eigenmächtig umzustellen.
 
 ### Tabelle
 
@@ -52,10 +57,11 @@ CTA1 liegt bei rund siebzig Prozent, CTA2 bei 8:00, Outro ab 8:10 (CLAUDE.md A5)
 |---|---|---|---|---|---|---|
 | 1 | 0:00 | … | Block1 | Themenclip | 46 | erster Satz |
 | … | | | | | | |
-| CTA1 | … | … | CTA1 | Themenclip, ab „Wenn dich dieser Teil“ Einblender CTA1 (neu: A3a), ab „Und jetzt zurück“ Themenclip | … | „Wenn dich dieser Teil weitergebracht hat …“ |
-| CTA2 | 8:00 | 8:10 | CTA2 | Themenclip, bei Daumen oder Glocke Einblender CTA2 (neu: A3b) | … | Kommentarfrage |
-| OUTRO | 8:10 | … | Outro | Themenclip, ab „Lass einen Daumen hoch da.“ Outro-Werbung (neu: A3c), bei „Stoische. Karriere.“ Logo (neu: A2), danach Endcard | – | „Lass einen Daumen hoch da.“ |
-| END | … | +10 s | Musik oder Stille | Endcard (neu: A1), mindestens fünf Sekunden für YouTube-Endcards | – | – |
+| CTA1 | … (30 bis 40 %, nicht vor 2:00) | +rund 20 s | CTA1 | Themenclip, ab „Wenn dich dieser Teil“ Einblender CTA1 (neu: A3a), ab „Und jetzt zurück“ Themenclip | … | „Wenn dich dieser Teil weitergebracht hat …“ |
+| CTA2 | … (rund 70 %) | +rund 20 s | CTA2 | Themenclip, ab „Lass einen Daumen hoch da.“ Einblender CTA2 (neu: A3b) | … | „Lass einen Daumen hoch da.“ |
+| OUTRO | … (letzte rund 20 s Sprechertext) | Ende Outro | Outro | Themenclip, ab „Lass einen Daumen hoch da.“ Outro-Werbung (neu: A3c), bei „Stoische. Karriere.“ Logo (neu: A2), danach Endcard | – | „Lass einen Daumen hoch da.“ |
+| LOGO | bei „Stoische.“ im Outro | +4 s | Ende der Outro-Tonspur (gesprochen „Stoische. Karriere.“) | Logo-Sting (neu: A2) | – | „Stoische.“ |
+| END | nach dem Logo | +10 s | Musik oder Stille | Endcard (neu: A1). YouTube-Abspann in den letzten 5 bis 20 s | – | – |
 
 Die Spalte Clip-Nr nennt jeden Clip genau einmal. Clips 1 bis 45 und 46 bis 50 gemischt nach Inhalt, die stärksten Clips an die stärksten Stellen (Block 1 Anfang, Denker in Block 2, Beispiel in Werkzeug eins, Anfang Werkzeug vier).
 

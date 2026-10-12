@@ -1,32 +1,35 @@
 # CLAUDE.md – Master-Regeln für den Kanal Stoische Karriere
 
 Stand: 12.10.2026. Kanal: Stoische Karriere (@Stoische.Karriere). Stoizismus und Psychologie für Männer im Beruf und zu Hause.
-Teil A (dieser Abschnitt) gilt für jede Arbeit in diesem Repo. Teil B weiter unten ist die Übergabe für Outro, Beitrags-Clips und Branding vom 11.10.2026 und gilt unverändert weiter.
+Teil A (Abschnitte M0 bis M5) gilt für jede Arbeit in diesem Repo. Teil B weiter unten ist die Übergabe für Outro, Beitrags-Clips und Branding (11. und 12.10.2026). Teil A und Teil B sind aufeinander abgestimmt. Die Kürzel A1, A2, A3a bis A3c und B1 bis B3 bezeichnen immer die Clips aus Teil B, die Kürzel M0 bis M5 die Abschnitte von Teil A.
 
-## A0. Arbeitsablauf: welche Datei wann lesen (Pflicht)
+## M0. Skills: welcher wann
 
-Die Produktions-Skills liegen in `.claude/skills/` als einzelne Dateien. Claude Code lädt diese Dateien **nicht von selbst** (automatisch geladen wird nur `.claude/skills/<name>/SKILL.md`). Deshalb gilt: vor der jeweiligen Aufgabe die passende Datei mit dem Read-Werkzeug vollständig lesen.
+Die Produktions-Skills liegen als echte Claude-Code-Skills in `.claude/skills/<name>/SKILL.md` und werden automatisch erkannt.
 
-| Aufgabe | Datei |
+| Aufgabe | Skill |
 |---|---|
-| Titel, Verpackung, Neugierlücke | `.claude/skills/01_packaging_agent.md` |
-| Thumbnail planen und erzeugen | `.claude/skills/02_thumbnail_agent.md`, Werkzeug `thumbnail_maker.py` |
-| Sprechertext, Hook, CTA-Zeitpunkte | `.claude/skills/03_retention_skript.md` |
-| Zusatzclips 46 bis 50 (Flow-Prompts) und Schnittplan | `.claude/skills/04_flow_und_cta.md` |
+| Titel, Verpackung, Neugierlücke | `packaging-agent` |
+| Thumbnail planen und erzeugen | `thumbnail-agent`, Werkzeug `thumbnail_maker.py` |
+| Sprechertext, Hook, CTA-Zeitpunkte | `retention-skript` |
+| Zusatzclips 46 bis 50 (Flow-Prompts) und Schnittplan | `flow-und-cta` |
 
-Zusätzlich gelten die Konto-Skills `stoische-karriere-videovorlage`, `stoische-karriere-vidiq-regeln`, `stoische-karriere-untertitel-stil` und `opus-motion-design-hyperframes`. Wo Teil A etwas anderes sagt, gilt Teil A (neuere Anweisung von Rene, 12.10.2026). Die Abweichungen stehen in A5.
+Zusätzlich gelten die Konto-Skills `stoische-karriere-videovorlage`, `stoische-karriere-vidiq-regeln`, `stoische-karriere-untertitel-stil` und `opus-motion-design-hyperframes`. Die Repo-Skills widersprechen ihnen nicht. Wo sie strenger oder neuer sind, steht es in M5.
 
-## A1. Visuelle Identität
+## M1. Visuelle Identität
 
 - Bildwelt: verwitterter römischer Carrara-Marmor (Statuen, Büsten, Säulen, Torbögen) im extremen Low-Key-Licht. Fast schwarzer Hintergrund, ein hartes Kantenlicht von der Seite, tiefe Schatten, keine aufgehellten Flächen.
 - Farben: nur Weiß `#FFFFFF` und Türkis `#00E5FF` als Akzent auf dunklem Marmor oder Schwarz. Kein Gold, kein Orange, kein Rot, keine weiteren Akzentfarben.
-- Türkis markiert das aktive oder wichtige Element (zweite Thumbnail-Zeile, gesprochenes Wort im Untertitel, Quellenzeile, Abo-Symbol). Weiß ist die Grundfarbe für Text.
-- Schriften: Thumbnails und Overlays Anton (Ersatz Bebas Neue), Untertitel und Motion-Grafik Bebas Neue. Immer Großbuchstaben.
+- Türkis markiert das aktive oder hervorgehobene Element: erste Thumbnail-Zeile, gesprochenes Wort im Untertitel, Quellenzeile, Abo-Symbol. Weiß ist die Grundfarbe für Text.
+- Schriften, immer in Großbuchstaben:
+  - Thumbnails: **Anton** (`schriften/Anton-Regular.ttf`, Lizenz `schriften/OFL.txt`).
+  - Untertitel, Outro-Set, Beitrags-Clips und Kanal-Branding: **Bebas Neue** (`outro/projekt/assets/fonts/`, siehe Teil B).
 - Markenzeichen: das türkise Medaillon `outro/projekt/assets/img/medaillon_tuerkis.png` (fiktive Figur, kein offizielles Logo).
 - Keine modernen Gegenstände, kein echtes Gesicht, kein YouTube-Logo, kein Wasserzeichen in irgendeinem Bild.
-- Qualität Video: 1920×1080 oder 1080×1920, 30 fps, H.264 9 Mbit/s, Schlüsselbild alle 60 Bilder, AAC 160 kbit/s.
+- Video: 1920×1080 oder 1080×1920, 30 fps, H.264 9 Mbit/s, Schlüsselbild alle 60 Bilder, AAC 160 kbit/s.
+- Thumbnail: 1920×1080, JPG unter 2 MB. Zeile 1 Türkis (klein), Zeile 2 Weiß (groß), zwei bis vier Wörter. Details im Skill `thumbnail-agent`.
 
-## A2. Valentino-Sprachregeln (jeder Sprechertext)
+## M2. Valentino-Sprachregeln (jeder Sprechertext)
 
 Der Sprechertext wird mit der Stimme Valentino bei Geschwindigkeit 0,90 eingesprochen. Damit die Stimme sauber liest, gilt ohne Ausnahme:
 
@@ -35,42 +38,52 @@ Der Sprechertext wird mit der Stimme Valentino bei Geschwindigkeit 0,90 eingespr
 3. **Höchstens zwölf Wörter pro Satz.**
 4. **Genau ein Satz pro Absatz**, zwischen den Absätzen eine Leerzeile.
 5. **Keine englischen Wörter.** Eindeutschen: Job → Arbeit oder Stelle, Meeting → Besprechung, Team → Mannschaft oder Kollegen, Feedback → Rückmeldung, Deadline → Frist, Boss → Chef, Coach → Trainer, Check → Prüfung, okay → gut, sorry → Entschuldigung, cool → gelassen, Update → Neuigkeit.
-6. **Gesperrte Wörter streichen:** Stoa, Stoiker, stoisch, Punkt. Laut Konto-Skill zusätzlich: Stress. Erlaubt bleibt „Stoizismus“.
+6. **Gesperrte Wörter streichen:** Stoa, Stoiker, stoisch, Punkt, Stress. Erlaubt bleibt „Stoizismus“.
    Einzige Ausnahme: der Kanalname im Outro als zwei Absätze „Stoische.“ und „Karriere.“. In CTA1 und CTA2 heißt es „diesen Kanal“.
 7. Keine Abkürzungen (zum Beispiel statt z. B.), korrekte Umlaute.
 8. Blocknamen, Überschriften und die Zeile `DATEI:` werden nie gesprochen.
 9. Namen von Denkern als eigener Satz („Seneca.“). Wörtliche Zitate vorher als sinngemäß ankündigen.
 
-Prüfung vor jeder Vertonung: `python kanal_redesign/werkzeuge/sprechertext_pruefen.py <datei>` muss 0 Verstöße melden. Das Skript prüft die Regeln 1 bis 7 auf Zeilenbasis. Englische Wörter erkennt es nur aus seiner Liste, deshalb zusätzlich selbst lesen.
+Prüfung vor jeder Vertonung: `python kanal_redesign/werkzeuge/sprechertext_pruefen.py <datei>` muss 0 Verstöße melden. Das Skript prüft die Regeln 1 bis 7 zeilenweise. Englische Wörter erkennt es nur aus seiner Liste, deshalb zusätzlich selbst lesen.
 
-## A3. Clip-Regeln
+## M3. Clip-Regeln
 
 - **Clips 1 bis 45:** Standard-Marmorclips. Allgemeines Bildmaterial im Kanallook, für jedes Video frei verwendbar, wenn der Clip zum gesprochenen Inhalt passt.
-- **Clips 46 bis 50:** themenspezifische Zusatzclips. Werden je Video neu mit englischem Prompt in Flow geplant (Format in `.claude/skills/04_flow_und_cta.md`) und in `05_Flow_Prompts_Zusatzclips_EN` des Videoordners abgelegt.
-- Jeder Clip kommt pro Video genau einmal vor. Reicht das Material nicht, wird ein Zusatzclip geplant, kein Clip wiederholt.
-- Vor dem Einbau jeden Clip auf Wasserzeichen prüfen: je Sekunde ein Stichbild, alle vier Ecken und die Mitte. Clip mit Wasserzeichen oder Bildfehler wird ersetzt, nicht retuschiert.
+- **Clips 46 bis 50:** themenspezifische Zusatzclips. Sie werden je Video neu mit englischem Prompt in Flow geplant (Format im Skill `flow-und-cta`) und in `05_Flow_Prompts_Zusatzclips_EN` des Videoordners abgelegt.
+- Jeder Clip kommt pro Video genau einmal vor. Reicht das Material nicht, wird ein Zusatzclip geplant und kein Clip wiederholt.
+- Vor dem Einbau jeden Clip auf Wasserzeichen prüfen: je Sekunde ein Stichbild, alle vier Ecken und die Mitte. Ein Clip mit Wasserzeichen oder Bildfehler wird ersetzt, nicht retuschiert.
 - Weiche Blende 0,8 s zwischen den Clips, kein Standbild, kein Schwarzbild.
+- Werbe-Einblender, Logo und Endcard: bis das neue Set aus Teil B (A1, A2, A3a bis A3c) fertig ist, die Alt-Clips laut Videovorlage Abschnitt 4.
 
-## A4. Werkzeuge und Grenzen
+## M4. CTA-Positionen und Videolänge
 
-- `thumbnail_maker.py` (Hauptverzeichnis): erzeugt Thumbnails 1280×720 im Kanallook. Aufruf und Regeln im Kopf der Datei und in `02_thumbnail_agent.md`. Braucht Python 3 mit Pillow und NumPy.
-- Verboten: ElevenLabs, DaVinci Resolve. Nichts hochladen, nichts löschen, keine Kanaleinstellungen ändern ohne Renes Ja. Downloads nur mit Renes Erlaubnis.
+| Teil | Lage | Länge |
+|---|---|---|
+| Hook | 0:00 bis rund 0:55, Anti-43-Sekunden-Hook | |
+| CTA-Verbot | 0:00 bis 2:00 | |
+| CTA 1 | direkt nach Werkzeug eins, bei 30 bis 40 Prozent der Laufzeit | rund 20 s |
+| CTA 2 | direkt nach Werkzeug drei, bei rund 70 Prozent | rund 20 s |
+| Outro | am Ende, die letzten rund 20 s Sprechertext | 15 bis 20 s |
+| Logo (A2) und Endcard (A1) | nach dem Outro | 4 s und 10 s |
+
+Videolänge acht bis zwölf Minuten. Die Zeitpunkte richten sich nach der echten Länge und werden nach dem Schnitt aus den gemessenen Startzeiten nachgerechnet. Details und Rechenbeispiele im Skill `retention-skript`.
+
+## M5. Werkzeuge, Grenzen und Entscheidungen
+
+- `thumbnail_maker.py` (Hauptverzeichnis): Thumbnails 1920×1080 unter 2 MB, Schrift Anton. Braucht Python 3 mit Pillow und NumPy. Aufruf im Kopf der Datei und im Skill `thumbnail-agent`.
+- Verboten: ElevenLabs, DaVinci Resolve. Nichts hochladen, nichts löschen, keine Kanaleinstellungen ändern ohne Renes Ja. Downloads nur mit Renes Erlaubnis (Anton: erlaubt am 12.10.2026).
 - Keine Fakten, Zahlen oder Zitate erfinden. Jede Angabe mit geprüfter Quelle in `02_Quellen_Faktencheck`.
 - Rhythmus: nie mehrere Videos am selben Tag.
 
-## A5. Neue Regeln vom 12.10.2026, die ältere Skill-Regeln ersetzen
+Entscheidungen von Rene am 12.10.2026, die ältere Angaben in den Konto-Skills genauer fassen:
 
-| Thema | Bisher (Konto-Skill) | Neu (Rene, 12.10.2026) |
+| Thema | Konto-Skill | Gilt jetzt |
 |---|---|---|
-| Thumbnail-Farben | Zeile 1 Türkis (klein), Zeile 2 Weiß (groß) | Zeile 1 Weiß, Zeile 2 Türkis |
-| Thumbnail-Wörter | zwei bis vier | genau zwei bis drei |
-| Thumbnail-Größe | 1920×1080 | 1280×720 (YouTube-Empfehlung, Skript `thumbnail_maker.py`) |
-| CTA1 | nach Werkzeug eins, 30 bis 40 Prozent | bei rund 70 Prozent |
-| CTA2 | nach Werkzeug drei, rund 70 Prozent | bei 8:00 |
-| Outro | nach Block 7 | ab 8:10 |
-| Hook | Kernsatz nach fünfzehn Sekunden | Anti-43-Sekunden-Hook von 0:00 bis 0:55 |
+| Erster CTA | nicht in den ersten 60 s | nicht vor 2:00 |
+| Videolänge | Videovorlage: 7 bis 9 min, vidIQ-Regeln: 8 bis 12 min | 8 bis 12 min |
+| Clips | „bis zu zwei“ bzw. „fünf bis acht“ Zusatzclips | Zusatzclips tragen die Nummern 46 bis 50 |
 
-Folge aus CTA2 bei 8:00 und Outro ab 8:10: CTA2 hat nur rund zehn Sekunden statt zwanzig. Details in `03_retention_skript.md`.
+Thumbnail-Maße, Thumbnail-Farben und CTA-Positionen entsprechen unverändert den Konto-Skills und Teil B.
 
 ---
 

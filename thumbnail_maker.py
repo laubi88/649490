@@ -1,33 +1,33 @@
 """Thumbnail-Generator für Stoische Karriere (Pillow, deterministisch).
 
-Erzeugt ein 1280x720-JPG im Kanal-Look:
+Erzeugt ein 1920x1080-JPG (unter 2 MB) im Kanal-Look:
   dunkler Carrara-Marmor im Low-Key-Licht, Schattenverlauf links,
-  Marmorbüste rechts, Text links: Zeile 1 Weiß #FFFFFF, Zeile 2 Türkis #00E5FF.
+  Marmorbüste rechts, Text links: Zeile 1 Türkis #00E5FF (klein), Zeile 2 Weiß #FFFFFF (groß).
 
 Aufruf (Beispiele):
-  python thumbnail_maker.py --zeile1 "ER" --zeile2 "SCHWEIGT" --bild buese.png -o "V15 Was ein Mann für sich behält THUMBNAIL.jpg"
-  python thumbnail_maker.py --zeile1 "NIE MEHR" --zeile2 "KLEIN" --bild standbild.jpg --fokus 0.8 -o test.jpg
+  python thumbnail_maker.py --zeile1 "WAS ER" --zeile2 "VERSCHWEIGT" --bild buese.png -o "V15 Was ein Mann für sich behält THUMBNAIL.jpg"
+  python thumbnail_maker.py --zeile1 "NIE MEHR" --zeile2 "KLEIN BEIGEBEN" --bild standbild.jpg --fokus 0.8 -o test.jpg
 
 --bild  PNG mit Transparenz (freigestellte Büste)  -> wird rechts auf den Marmor gesetzt.
         JPG/PNG ohne Transparenz (Standbild 16:9)   -> füllt das Bild, Ausschnitt per --fokus.
         ohne --bild                                 -> nur Marmor (Probeansicht für den Text).
 
-Regeln, die das Skript erzwingt (Abbruch mit Exitcode 1): zwei bis drei Wörter gesamt,
+Regeln, die das Skript erzwingt (Abbruch mit Exitcode 1): zwei bis vier Wörter gesamt,
 keine Ziffern, keine Bindestriche. Englische Wörter kann es nicht sicher erkennen: selbst prüfen.
-Schrift: Anton (laut Untertitel-Skill), Ersatz Bebas Neue. Anton liegt nicht im Repo,
-Pfad mit --schrift angeben oder als schriften/Anton-Regular.ttf ablegen.
+Schrift: Anton (schriften/Anton-Regular.ttf, SIL Open Font License 1.1, Lizenz in schriften/OFL.txt).
+Fehlt die Datei, nimmt das Skript Bebas Neue als Ersatz und meldet das.
 """
 import argparse, re, subprocess, sys, tempfile
 from pathlib import Path
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, ImageOps
 
-W, H = 1280, 720
+W, H = 1920, 1080
 WEISS, TUERKIS, SCHWARZ = (255, 255, 255), (0, 229, 255), (0, 0, 0)
 ROOT = Path(__file__).resolve().parent
 MARMOR_SKRIPT = ROOT / "outro" / "werkzeuge" / "marmor.py"
 SCHRIFTEN = [ROOT / "schriften" / "Anton-Regular.ttf",
              ROOT / "outro" / "projekt" / "assets" / "fonts" / "BebasNeue-Regular.ttf"]
-RAND_LINKS = 64            # Abstand Text zum linken Rand
+RAND_LINKS = 96            # Abstand Text zum linken Rand
 TEXT_MAX_BREITE = 0.52     # Text bleibt in der linken Hälfte, die Büste rechts frei
 MAX_BYTES = 2 * 1024 * 1024  # 2 MB, Grenze für Upload vom Handy
 
@@ -40,8 +40,8 @@ def text_pruefen(z1, z2):
     woerter = (z1 + " " + z2).split()
     if not z1.strip() or not z2.strip():
         fehler("beide Zeilen brauchen Text")
-    if not 2 <= len(woerter) <= 3:
-        fehler(f"{len(woerter)} Wörter, erlaubt sind genau zwei bis drei")
+    if not 2 <= len(woerter) <= 4:
+        fehler(f"{len(woerter)} Wörter, erlaubt sind zwei bis vier")
     if re.search(r"\d", z1 + z2):
         fehler("Ziffern sind im Thumbnail-Text verboten, Zahlen ausschreiben")
     if re.search(r"[-–—]", z1 + z2):
@@ -106,18 +106,18 @@ def schrift_laden(pfad):
     for k in kandidaten:
         if k.is_file():
             if "Anton" not in k.name:
-                print(f"Hinweis: Schrift {k.name} (Ersatz). Hauptschrift laut Skill ist Anton.")
+                print(f"Hinweis: Schrift {k.name} (Ersatz). Standard ist schriften/Anton-Regular.ttf.")
             return str(k)
     fehler("keine Schrift gefunden, --schrift angeben")
 
 
 def text_setzen(im, z1, z2, schrift):
     max_breite = W * TEXT_MAX_BREITE
-    g2 = 250  # Startgröße Zeile 2, wird bei Bedarf verkleinert
+    g2 = 330  # Startgröße Zeile 2, wird bei Bedarf verkleinert
     while True:
         g1 = round(g2 * 0.62)
         f1, f2 = ImageFont.truetype(schrift, g1), ImageFont.truetype(schrift, g2)
-        if max(f1.getlength(z1), f2.getlength(z2)) <= max_breite or g2 <= 90:
+        if max(f1.getlength(z1), f2.getlength(z2)) <= max_breite or g2 <= 135:
             break
         g2 -= 4
     # Höhe über die echten Buchstaben-Kästen (Großbuchstaben, keine Unterlängen)
@@ -130,13 +130,13 @@ def text_setzen(im, z1, z2, schrift):
 
     ebene = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(ebene)
-    for txt, f, y, farbe, g in ((z1, f1, y1, WEISS, g1), (z2, f2, y2, TUERKIS, g2)):
+    for txt, f, y, farbe, g in ((z1, f1, y1, TUERKIS, g1), (z2, f2, y2, WEISS, g2)):
         d.text((RAND_LINKS, y), txt, font=f, fill=farbe + (255,), anchor="ls",
                stroke_width=max(2, round(g * 0.035)), stroke_fill=SCHWARZ + (255,))
     # weicher Schatten: Textmaske verschoben und weichgezeichnet
     schatten = Image.new("RGBA", (W, H), SCHWARZ + (0,))
     schatten.putalpha(ebene.getchannel("A").point(lambda a: round(a * 0.85)))
-    schatten = schatten.transform((W, H), Image.AFFINE, (1, 0, -6, 0, 1, -8)).filter(ImageFilter.GaussianBlur(14))
+    schatten = schatten.transform((W, H), Image.AFFINE, (1, 0, -9, 0, 1, -12)).filter(ImageFilter.GaussianBlur(21))
     im.alpha_composite(schatten)
     im.alpha_composite(ebene)
     return block, g1, g2
@@ -153,11 +153,11 @@ def speichern(im, ziel):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--zeile1", required=True, help="Zeile 1, Weiß")
-    ap.add_argument("--zeile2", required=True, help="Zeile 2, Türkis #00E5FF")
+    ap.add_argument("--zeile1", required=True, help="Zeile 1, Türkis #00E5FF, kleiner")
+    ap.add_argument("--zeile2", required=True, help="Zeile 2, Weiß #FFFFFF, groß")
     ap.add_argument("--bild", help="Büste (PNG mit Transparenz) oder Standbild")
     ap.add_argument("--fokus", type=float, default=0.75, help="Ausschnitt bei Standbildern, 0 links bis 1 rechts")
-    ap.add_argument("--schrift", help="Pfad zur TTF, Standard Anton, sonst Bebas Neue")
+    ap.add_argument("--schrift", help="Pfad zur TTF, Standard schriften/Anton-Regular.ttf")
     ap.add_argument("-o", "--ausgabe", default="thumbnail.jpg")
     a = ap.parse_args()
 
@@ -179,7 +179,7 @@ def main():
 
     anteil = block / H * 100
     print(f"OK {ziel} {W}x{H}, JPG Qualität {q}, {ziel.stat().st_size / 1024:.0f} KB")
-    print(f"Text: '{z1}' weiß {g1} px / '{z2}' türkis {g2} px, Textblock {anteil:.0f} % der Bildhöhe")
+    print(f"Text: '{z1}' türkis {g1} px / '{z2}' weiß {g2} px, Textblock {anteil:.0f} % der Bildhöhe")
     if anteil < 20:
         print("WARNUNG: Textblock unter 20 % der Bildhöhe, Wörter kürzen")
     print(f"Lesbarkeit prüfen: {vorschau}")
