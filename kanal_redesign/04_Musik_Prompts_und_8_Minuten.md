@@ -2,7 +2,7 @@
 
 Stand: 13.10.2026. Grundlage: Renes Auftrag vom 13.10.2026. Erzeugen und Herunterladen macht Rene selbst in der Musik-App. Kein ElevenLabs.
 
-## 1. Zwölf Text-to-Music-Prompts (Englisch, ohne Gesang, ohne Streicher)
+## 1. Sechzehn Text-to-Music-Prompts (Englisch, ohne Gesang)
 
 Hinweise vor dem Einfügen:
 - Keine Film- oder Komponistennamen in den Prompt schreiben. Viele Musikgeneratoren lehnen solche Prompts ab, und es erhöht das Risiko von Content-ID-Treffern.
@@ -69,6 +69,33 @@ Modern documentary underscore, instrumental, no vocals. Curious plucked synth pa
 Warm hopeful cinematic underscore, instrumental, no vocals. Slowly rising warm analog synth chords, soft clean electric guitar harmonics, a gentle low pulse that grows a little brighter over time, like sunrise over a quiet city. Confident and uplifting without being cheesy, no big drop. 76 BPM, steady volume under narration, no strings, no choir. Seamless and loopable.
 ```
 
+## Heroisch und euphorisch (Western-Showdown, Comeback, Sieg)
+
+Renes Wunsch vom 13.10.2026: filmische, euphorische, spannende Musik wie in Western oder Action- und Boxfilmen. Künstler- und Filmnamen bleiben aus den Prompts draußen, die Stilmittel sind beschrieben.
+Wichtig: Diese Tracks haben eine Melodie und Blechbläser. Unter dem Sprechertext kämpfen sie mit Valentinos Stimme. Deshalb einsetzen für den Hook-Anfang (erste Sekunden), Übergänge, Outro, Endcard und Shorts, im Sprechertext nur sehr leise (eher 29 dB unter der Stimme).
+
+### Track 13 – Western-Showdown (Grenzen setzen, Konfrontation)
+```
+Epic western showdown film score, instrumental, no vocals, no whistling. Twangy reverb-drenched electric guitar playing a slow lonely motif, deep tolling bell, sparse dramatic timpani rolls, a heroic solo trumpet answering from far away, dry desert wind texture. Tension builds slowly like two men facing each other at high noon, proud and fearless, not sad. 70 BPM, steady build, no choir. Seamless and loopable.
+```
+
+### Track 14 – Comeback-Training (Disziplin, Morgenroutine, Aufstieg)
+```
+Triumphant training montage film score, instrumental, no vocals. Bold brass fanfare motif, driving rock drums, punchy electric bass, energetic piano octaves, a steadily rising feeling of determination and comeback, getting stronger every bar. Euphoric, motivating and heroic, major key. 100 BPM, builds over the whole track, no choir, no solo violin. Seamless and loopable.
+```
+
+### Track 15 – Letzter Stand (Respekt, Mut, gegen Widerstand)
+```
+Heroic action film score, instrumental, no vocals. Powerful low brass theme, thunderous taiko and war drums, driving low string ostinato in the background, rising horn calls, the feeling of one man standing his ground against all odds. Intense, brave and unstoppable, not dark horror, not sad. 92 BPM, strong steady energy, no choir, no solo violin. Seamless and loopable.
+```
+
+### Track 16 – Sieg (Outro, Endcard, Shorts-Ende)
+```
+Euphoric victory film score finale, instrumental, no vocals. Full heroic brass section playing a soaring major-key theme, big cinematic drums, bright cymbal swells, warm low brass underneath, the feeling of finally winning after a long fight. Uplifting, proud and emotional in a strong way, not sentimental. 96 BPM, confident ending, no choir, no solo violin. Ends on a clean final hit.
+```
+
+Hinweis zu Track 15 und 16: Ein volles Orchester enthält Streicher. Die Prompts verlangen sie nur als treibenden Hintergrund, nie als Solo-Geige. Klingt eine Fassung trotzdem traurig, neu erzeugen.
+
 ### Zuordnung (Vorschlag)
 | Thema oder Stelle | Track |
 |---|---|
@@ -81,7 +108,11 @@ Warm hopeful cinematic underscore, instrumental, no vocals. Slowly rising warm a
 | Disziplin, Fokus, Morgenroutine | Track 2 |
 | Denker-Blöcke, Zitate, Kanaltrailer-Anfang | Track 9 |
 | Outro, Kanaltrailer-Ende | Track 12 |
-| Shorts | Track 4, abwechselnd mit Track 6 |
+| Shorts | Track 4, Track 6 oder Track 14, abwechselnd |
+| Grenzen setzen, Konfrontation | Track 13 |
+| Comeback, Disziplin mit Schwung | Track 14 |
+| Outro und Endcard mit Schwung | Track 16 (statt Track 12) |
+| Hook-Anfang, erste drei bis fünf Sekunden | Track 13 oder 15, dann leise unter die Stimme |
 
 Innerhalb eines Videos darf die Musik einmal wechseln, zum Beispiel beim Studienteil auf Track 11 und zurück. Wechsel immer mit weicher Blende von zwei bis drei Sekunden in einer Satzpause, nie mitten im Satz.
 
