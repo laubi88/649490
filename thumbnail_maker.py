@@ -53,7 +53,7 @@ def marmor():
     """Dunkler Marmor über das Kanal-Skript, damit Hintergründe überall gleich aussehen."""
     with tempfile.TemporaryDirectory() as tmp:
         p = Path(tmp) / "marmor.jpg"
-        subprocess.run([sys.executable, "-I", str(MARMOR_SKRIPT), str(p), str(W), str(H)],
+        subprocess.run([sys.executable, str(MARMOR_SKRIPT), str(p), str(W), str(H)],
                        check=True, capture_output=True)
         return Image.open(p).convert("RGBA")
 
