@@ -74,6 +74,7 @@ Videolänge acht bis zwölf Minuten. Die Zeitpunkte richten sich nach der echten
 - Verboten: ElevenLabs, DaVinci Resolve. Nichts hochladen, nichts löschen, keine Kanaleinstellungen ändern ohne Renes Ja. Downloads nur mit Renes Erlaubnis (Anton: erlaubt am 12.10.2026).
 - Keine Fakten, Zahlen oder Zitate erfinden. Jede Angabe mit geprüfter Quelle in `02_Quellen_Faktencheck`.
 - Rhythmus: nie mehrere Videos am selben Tag.
+- Musik: Bibliothek in `musik/` (Übersicht `musik/00_Musikbibliothek.md`), Prompts für neue Tracks in `kanal_redesign/04_Musik_Prompts_und_8_Minuten.md`. Filmisch, ohne Gesang, keine schwermütige Streichermusik (Rene, 13.10.2026). Zwei Videos hintereinander nie mit demselben Track.
 
 Entscheidungen von Rene am 12.10.2026, die ältere Angaben in den Konto-Skills genauer fassen:
 
