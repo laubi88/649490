@@ -47,4 +47,5 @@ Titel ändern war nicht Teil des Auftrags. Punkte 1 und 2 sind deshalb nur gemel
 5. Hook V15 und V16 am 12.10.2026 neu (Anti-43-Sekunden-Regel): Befund aus Gollwitzer (V15) und Kross (V16) bei rund 0:30 bis 0:43. Bei V15 vor der Vertonung den Gollwitzer-Satz gegen das PDF prüfen (siehe 02_Quellen_Faktencheck).
 6. Titel V15 festgelegt: „4 Dinge, die ein Mann für sich BEHÄLT | Stoizismus“ (vidIQ 82).
 7. vidIQ am 12.10.2026 (Renes Ja): Titelwertungen, Vorbilder und Suchmengen stehen in den beiden 12_YouTube_Paket. Ersatz-Titel für V2 und V13 mit Beleg aus dem Transkript in `03_Titelvorschlaege_Altvideos.md`. Verbraucht 80 Credits, Rest 127 bis 02.11.2026.
+9. Standbild-Prompts (Englisch, Nano Banana Pro) je Video in `06_Standbild_Prompts_EN.txt`: zwei Thumbnail-Büsten und Startbilder für die Clips 46 bis 50 mit Bewegungs-Prompt. Achtung: Im kostenlosen Zugang trägt Nano Banana laut Berichten einen sichtbaren Gemini-Stern. Jedes Bild vor der Verwendung prüfen.
 8. Rene wählt noch: Titel V16 (81, 80 oder 79), Upload-Termin V15 (18.10. oder 20.10.).

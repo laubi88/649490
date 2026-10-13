@@ -1,0 +1,64 @@
+V15 Was ein Mann für sich behält – Standbild-Prompts (Englisch) für Nano Banana Pro
+Stand: 13.10.2026, Entwurf. Erzeugen macht Rene selbst (Gemini, Flow oder AI Studio).
+Ablauf: erst das Standbild erzeugen, prüfen, dann in Flow mit „Frames to Video“ (oder einem anderen Bild-zu-Video-Werkzeug) mit dem Bewegungs-Prompt zu einem Clip machen.
+Die fertigen Clips tragen die Nummern 46 bis 50 (siehe 05_Flow_Prompts_Zusatzclips_EN.txt, gleiche Einsatzstellen).
+
+PFLICHTPRÜFUNG WASSERZEICHEN (vor jedem weiteren Schritt)
+Laut mehreren Berichten (Stand Ende 2025 bis Juli 2026) setzt Google bei Nano Banana im kostenlosen Zugang einen sichtbaren Gemini-Stern, meist unten rechts. Eine offizielle Google-Seite dazu war nicht auffindbar.
+- Jedes Standbild in voller Größe öffnen und alle vier Ecken und die Mitte ansehen.
+- Ist ein Stern oder Logo zu sehen: Bild NICHT verwenden. Ein Bild mit Wasserzeichen wird im Video zu einem Clip mit Wasserzeichen. Wegretuschieren oder Zuschneiden nur mit Renes ausdrücklichem Ja (Videovorlage Abschnitt 7).
+- Das unsichtbare SynthID-Kennzeichen steckt in jedem Bild. Es ist im Bild nicht sichtbar und verstößt nicht gegen die Regel.
+
+Allgemein für alle Bilder: Seitenverhältnis 16:9, höchste Auflösung, die das Werkzeug anbietet. Nur Marmorweiß, Schwarz und ein Hauch Türkis.
+
+
+TEIL A: THUMBNAIL-BÜSTE (für thumbnail_maker.py)
+
+Thumbnail-Plan V15: Brustbild, Blick nach links zum Text, linke Bildhälfte leer und dunkel.
+
+BILD T1 (Hauptvorschlag)
+Weathered ancient Roman Carrara marble bust of a bearded man in his forties, head and shoulders, three quarter view turned to the left, calm closed lips, eyes looking slightly down to the left as if keeping a secret. Extreme low key lighting, single hard cool rim light from the right edge, deep black background. The bust occupies only the right third of a 16:9 frame, the left two thirds are empty pure black. Cracks, erosion and fine dust in the marble, a faint turquoise reflection on the edge of the shoulder. Photorealistic, cinematic, sharp focus. No text, no letters, no logo, no watermark.
+
+BILD T2 (Ersatz, näher)
+Extreme close crop of a weathered Carrara marble bust of a bearded Roman man, from chin to forehead, face turned three quarters to the left, lips firmly closed, a single index finger of a marble hand resting against the lips. Extreme low key lighting, hard cool rim light from the right, deep black background, the face fills the right 40 percent of a 16:9 frame, the left 60 percent is empty black. Photorealistic, cinematic, sharp. No text, no letters, no logo, no watermark.
+
+Danach (Kommando in Claude Code):
+python thumbnail_maker.py --zeile1 "WAS ER" --zeile2 "VERSCHWEIGT" --bild "<Bild>.png" -o "kanal_redesign/V15 Was ein Mann für sich behält/V15 Was ein Mann für sich behält THUMBNAIL.jpg"
+(Ein Bild im Format 16:9 füllt das Thumbnail genau. Die Büste muss deshalb schon im Bild rechts stehen, wie im Prompt verlangt.)
+
+
+TEIL B: STARTBILDER FÜR DIE CLIPS 46 BIS 50
+
+CLIP 46 – Einsatz Block 1, „Dein Chef erfährt von deiner Bewerbung …“
+STANDBILD:
+Two weathered ancient Roman Carrara marble statues of men in togas standing close together in a dark colonnade, one leaning toward the other's ear as if whispering, a third larger marble statue of a man in the softly blurred background. Extreme low key lighting, single hard cool rim light from the left, deep black shadows, faint turquoise reflection on the marble floor. Photorealistic, cinematic, 16:9. No text, no logo, no watermark.
+BEWEGUNG (Bild zu Video, 8 s):
+The whispering statue leans in slowly, the background statue slowly turns its head toward the two, slow dolly in, focus pull to the background at the end. Calm, subtle movement, no cuts.
+
+CLIP 47 – Einsatz Block 1, „Forscher gaben Jurastudenten …“ (rund 0:31)
+STANDBILD:
+Several weathered Carrara marble statues of young Roman students seated at long stone tables, bent over open papyrus scrolls without readable writing, a large stone hourglass sharp in the foreground. Dark Roman lecture hall with high arches fading into black. Extreme low key lighting, hard cool light from above right, faint turquoise glint on the hourglass glass. Photorealistic, cinematic, 16:9. No text, no logo, no watermark.
+BEWEGUNG (8 s):
+Sand runs steadily through the hourglass, one student statue in the middle slowly leans back and lets his scroll roll closed, slow lateral tracking shot along the tables. Calm, subtle movement.
+
+CLIP 48 – Einsatz Block 2, „Zenon.“
+STANDBILD:
+Weathered ancient Greek Carrara marble statue of an elderly bearded philosopher in a simple cloak, seated on wide stone steps under a painted portico, lips firmly closed, head slightly tilted as if listening. Dust floating in a single beam of cool light, background fading into black, extreme low key lighting, faint turquoise reflection in the dust. Photorealistic, cinematic, 16:9. No text, no logo, no watermark.
+BEWEGUNG (8 s):
+The head turns very slowly a few degrees toward the camera, dust drifts through the light beam, slow push in from medium shot to close up of the face.
+
+CLIP 49 – Einsatz Block 5, „Ein Weinstock trägt seine Trauben …“
+STANDBILD:
+Weathered ancient Roman Carrara marble relief of a grapevine with heavy bunches of grapes and leaves, deeply carved, cracks and erosion in the stone, on a dark villa wall. A narrow beam of hard cool light rakes across the left part of the relief, the rest falls into black. Faint turquoise tint at the edge of the light. Only marble white, black and turquoise. Photorealistic macro, cinematic, 16:9. No text, no logo, no watermark.
+BEWEGUNG (8 s):
+The beam of light slowly travels from left to right across the relief, revealing one bunch of grapes after another, slow macro slide parallel to the wall.
+
+CLIP 50 – Einsatz Block 6, „Werkzeug vier.“
+STANDBILD:
+Weathered ancient Roman Carrara marble statue of a mature man in a toga at a heavy stone desk, holding a rolled papyrus scroll, an open stone chest beside the desk. Dark Roman study chamber with an arched window showing a night sky. Extreme low key lighting, hard cool rim light from the window on the right, faint turquoise reflection on the chest. Photorealistic, cinematic, 16:9. No text, no logo, no watermark, no candles, no fire.
+BEWEGUNG (8 s):
+He slowly places the scroll into the chest and lowers the stone lid, then rests his hand on the closed lid, slow dolly in to the hands.
+
+
+PRÜFUNG NACH DEM VIDEO-SCHRITT (Videovorlage Abschnitt 7)
+Je Sekunde ein Stichbild, vier Ecken und Mitte: Wasserzeichen, verzerrte Hände oder Gesichter, Flackern, Sprünge. Clip mit Fehler neu erzeugen, nicht reparieren.

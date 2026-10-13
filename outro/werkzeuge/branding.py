@@ -13,7 +13,7 @@ MARMOR = Path(__file__).with_name("marmor.py")
 
 def marmor(w, h):
     p = OUT / f"_marmor_{w}x{h}.jpg"
-    subprocess.run([sys.executable, "-I", str(MARMOR), str(p), str(w), str(h)], check=True, capture_output=True)
+    subprocess.run([sys.executable, str(MARMOR), str(p), str(w), str(h)], check=True, capture_output=True)
     im = Image.open(p).convert("RGBA"); p.unlink(); return im
 
 def text_spaced(img, xy, text, size, fill, tracking=0.0, anchor="l", glow=None):

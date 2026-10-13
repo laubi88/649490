@@ -1,0 +1,64 @@
+V16 Kritik annehmen – Standbild-Prompts (Englisch) für Nano Banana Pro
+Stand: 13.10.2026, Entwurf. Erzeugen macht Rene selbst (Gemini, Flow oder AI Studio).
+Ablauf: erst das Standbild erzeugen, prüfen, dann in Flow mit „Frames to Video“ (oder einem anderen Bild-zu-Video-Werkzeug) mit dem Bewegungs-Prompt zu einem Clip machen.
+Die fertigen Clips tragen die Nummern 46 bis 50 (siehe 05_Flow_Prompts_Zusatzclips_EN.txt, gleiche Einsatzstellen).
+
+PFLICHTPRÜFUNG WASSERZEICHEN (vor jedem weiteren Schritt)
+Laut mehreren Berichten (Stand Ende 2025 bis Juli 2026) setzt Google bei Nano Banana im kostenlosen Zugang einen sichtbaren Gemini-Stern, meist unten rechts. Eine offizielle Google-Seite dazu war nicht auffindbar.
+- Jedes Standbild in voller Größe öffnen und alle vier Ecken und die Mitte ansehen.
+- Ist ein Stern oder Logo zu sehen: Bild NICHT verwenden. Wegretuschieren oder Zuschneiden nur mit Renes ausdrücklichem Ja (Videovorlage Abschnitt 7).
+- Das unsichtbare SynthID-Kennzeichen steckt in jedem Bild. Es ist nicht sichtbar und verstößt nicht gegen die Regel.
+
+Allgemein für alle Bilder: Seitenverhältnis 16:9, höchste Auflösung, die das Werkzeug anbietet. Nur Marmorweiß, Schwarz und ein Hauch Türkis.
+
+
+TEIL A: THUMBNAIL-BÜSTE (für thumbnail_maker.py)
+
+Thumbnail-Plan V16: Wechsel zu V15, diesmal Nahaufnahme der Augen, anderer Hintergrund.
+
+BILD T1 (Hauptvorschlag)
+Extreme close up of the eyes and brow of a weathered ancient Roman Carrara marble bust of a bearded man, calm steady gaze directed to the left, a single deep crack running across the forehead like a scar from criticism. Extreme low key lighting, hard cool rim light from the right, the background is dark weathered marble wall instead of pure black. The eyes sit in the right 40 percent of a 16:9 frame, the left 60 percent is deep shadow. Faint turquoise reflection in one eye. Photorealistic, cinematic, razor sharp. No text, no letters, no logo, no watermark.
+
+BILD T2 (Ersatz, ruhige Gesamtfigur)
+Weathered Carrara marble statue of a Roman man in a toga standing upright and calm while a pointing marble hand from the left edge of the frame accuses him, his face unmoved and composed. Extreme low key lighting, hard cool rim light from the right, dark marble hall fading into black. The statue stands in the right third of a 16:9 frame, the left two thirds stay dark except for the pointing hand. Photorealistic, cinematic. No text, no letters, no logo, no watermark.
+
+Danach (Kommando in Claude Code):
+python thumbnail_maker.py --zeile1 "ERST" --zeile2 "FRAGEN" --bild "<Bild>.png" -o "kanal_redesign/V16 Kritik annehmen/V16 Kritik annehmen THUMBNAIL.jpg"
+Bei Bild T2 vorher prüfen, ob die zeigende Hand links mit dem Text kollidiert. Wenn ja, Text bleibt Vorrang, Bild T1 nehmen.
+
+
+TEIL B: STARTBILDER FÜR DIE CLIPS 46 BIS 50
+
+CLIP 46 – Einsatz Block 1, „Dein Chef nennt deinen Bericht vor allen unbrauchbar.“
+STANDBILD:
+A tall weathered Carrara marble statue of a Roman senator in a toga pointing his arm at a younger marble statue of a man standing alone in the middle of a semicircle of seated marble statues. Dark Roman council chamber with stone benches, a single hard cool spotlight from above on the younger statue, deep shadows, faint turquoise reflection on the marble floor. Photorealistic, cinematic, 16:9. No text, no logo, no watermark.
+BEWEGUNG (Bild zu Video, 8 s):
+The pointing arm comes to rest, the younger statue slowly lowers his head, the seated statues stay still, slow dolly in toward the younger statue.
+
+CLIP 47 – Einsatz Block 1, „Forscher ließen Teilnehmer kurzfristig eine Rede halten.“ (rund 0:30)
+STANDBILD:
+Weathered ancient Roman Carrara marble statue of a man in a toga standing on a stone speaker's platform, facing rows of empty stone benches in a small amphitheater at night. Extreme low key lighting, single hard cool rim light from behind the statue, faint turquoise glow along the edge of the platform, benches fading into black. Photorealistic, cinematic, 16:9. No text, no logo, no watermark, no microphones.
+BEWEGUNG (8 s):
+The statue slowly lifts his chin and straightens his shoulders, one hand opens calmly at his side, slow arc from behind the statue to his profile.
+
+CLIP 48 – Einsatz Block 2, „Epiktet.“
+STANDBILD:
+Weathered ancient Greek Carrara marble bust of a bearded teacher with a plain simple cloak, calm and steady gaze, cracks and erosion in the marble, standing in a bare stone niche. Dust floating in a single beam of hard cool light from the left, background fading into black, faint turquoise reflection in the dust. Photorealistic, cinematic, 16:9. No text, no logo, no watermark, no chains.
+BEWEGUNG (8 s):
+Dust slowly drifts through the light beam, the bust stays still, slow push in from medium shot to a close up of the eyes.
+
+CLIP 49 – Einsatz Block 4, „Mark Aurel.“
+STANDBILD:
+Weathered ancient Roman Carrara marble statue of a bearded emperor with a marble laurel wreath seated at a stone table, a smaller marble statue of an advisor standing beside him pointing at an open scroll without readable writing. Dark imperial study with marble columns, extreme low key lighting, hard cool rim light from the right, faint turquoise reflection on the table. Everything is marble white, no gold. Photorealistic, cinematic, 16:9. No text, no logo, no watermark.
+BEWEGUNG (8 s):
+The emperor slowly leans forward toward the scroll and tilts his head as if listening, slow dolly in from wide shot to the emperor's face.
+
+CLIP 50 – Einsatz Block 6, „Werkzeug vier.“
+STANDBILD:
+Weathered ancient Roman Carrara marble statue of a man in a toga kneeling at the edge of a still black water basin, looking down at his own clear reflection. Dark Roman courtyard at night, columns fading into black, extreme low key lighting, hard cool moonlight from above left, faint turquoise shimmer on the water. Photorealistic, cinematic, 16:9. No text, no logo, no watermark.
+BEWEGUNG (8 s):
+A single ripple spreads across the water and slowly calms until the reflection becomes sharp again, slow tilt down from the face to the reflection.
+
+
+PRÜFUNG NACH DEM VIDEO-SCHRITT (Videovorlage Abschnitt 7)
+Je Sekunde ein Stichbild, vier Ecken und Mitte: Wasserzeichen, verzerrte Hände oder Gesichter, Flackern, Sprünge. Clip mit Fehler neu erzeugen, nicht reparieren.
