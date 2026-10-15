@@ -16,6 +16,8 @@ Die Produktions-Skills liegen als echte Claude-Code-Skills in `.claude/skills/<n
 
 Zusätzlich gelten die Konto-Skills `stoische-karriere-videovorlage`, `stoische-karriere-vidiq-regeln`, `stoische-karriere-untertitel-stil` und `opus-motion-design-hyperframes`. Die Repo-Skills widersprechen ihnen nicht. Wo sie strenger oder neuer sind, steht es in M5.
 
+Welcher Konnektor und welches Plugin wofür ist und was der Kanal davon braucht, steht in `00_Konnektoren_und_Skills.md` (Stand 15.10.2026).
+
 ## M1. Visuelle Identität
 
 - Bildwelt: verwitterter römischer Carrara-Marmor (Statuen, Büsten, Säulen, Torbögen) im extremen Low-Key-Licht. Fast schwarzer Hintergrund, ein hartes Kantenlicht von der Seite, tiefe Schatten, keine aufgehellten Flächen.
