@@ -1,6 +1,7 @@
 V15 Was ein Mann für sich behält
 Säule A, Respekt und Grenzen
 Stand: 12.10.2026, Entwurf zur Freigabe durch Rene
+Änderung 15.10.2026: Im Block V15_Outro heißt es jetzt „Gleich danach geht es um Kritik vom Chef.“ statt „Nächste Woche“, weil V16 am selben Tag erscheint (Rene, 15.10.2026). Ist V15_Outro schon vertont, nur diesen Block neu einsprechen.
 
 Grund für das Thema: Das Outro von V14 (Manipulation erkennen) kündigt an: „Nächste Woche geht es um vier Dinge. Vier Dinge, die ein Mann für sich behält.“ V15 löst diese Ankündigung ein.
 
@@ -206,7 +207,7 @@ DATEI: V15_Outro
 TEXT:
 Was behältst du ab heute für dich?
 Stärke zeigt sich oft in dem, was ein Mann nicht erzählt.
-Nächste Woche geht es um Kritik vom Chef.
+Gleich danach geht es um Kritik vom Chef.
 Wie du sie ruhig annimmst, zeigt dir das nächste Video.
 Lass einen Daumen hoch da.
 Aktiviere die Glocke.
