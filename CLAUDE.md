@@ -86,6 +86,12 @@ Entscheidungen von Rene am 12.10.2026, die ältere Angaben in den Konto-Skills g
 
 Thumbnail-Maße, Thumbnail-Farben und CTA-Positionen entsprechen unverändert den Konto-Skills und Teil B.
 
+## M6. Sprache gegenüber Rene (Rene, 17.10.2026)
+
+- Jede Frage und jede Auswahloption an Rene wird auf Deutsch gestellt. Englische Fachwörter bekommen die deutsche Bedeutung in Klammern dahinter.
+- Zeigt das Programm selbst einen englischen Dialog (zum Beispiel „Enable hot reloading for this session?“ beim Laden eines Mods), erklärt Claude vorher oder gleich danach im Chat auf Deutsch, was der Dialog bedeutet, was die Antworten bewirken und welche Antwort Claude empfiehlt. Die Dialoge des Programms selbst kann Claude nicht übersetzen.
+- Der Erklär-Mod für die Oberfläche liegt in `mods/erklaer-mod/` (Anleitung in der README dort).
+
 ---
 
 Ab hier folgt Teil B, die bisherige Übergabe, unverändert.

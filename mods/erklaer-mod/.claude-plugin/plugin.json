@@ -1,0 +1,6 @@
+{
+  "name": "erklaer-mod",
+  "version": "0.1.0",
+  "description": "Erklärt die Oberfläche von Claude Code auf Deutsch: Umgebung, Branch, Modus, Modell, Aufwand, Symbole und ein Wörterbuch Englisch zu Deutsch.",
+  "types": "./types/index.d.ts"
+}
