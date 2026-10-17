@@ -5,6 +5,7 @@ Ein Mod (Plugin) für Claude Code, der eine Spalte „Erklärung“ öffnet. Dar
 - neun Themen zur Oberfläche: Umgebung (Default, Claude Home, video-automation), Repository, Branch, Berechtigungsmodus „Auto“, Modell „Fable 5.1“, Aufwand „Hoch“, die Symbole oben rechts, die Eingabezeile, Schrägstrich-Befehle
 - ein Wörterbuch Englisch → Deutsch mit dreißig Begriffen
 - die gerade aktiven Werte (Modell, Projektordner)
+- ein **Verbrauchsband über der Eingabe**: Gedächtnis (Kontextfenster), Fünf-Stunden-Limit, Wochenlimit, jeweils als Balken mit Prozent und Zeit bis zum Zurücksetzen, dazu die Kosten der Sitzung, wenn Claude Code sie kennt. Grün unter siebzig Prozent, gelb ab siebzig, rot ab neunzig. Es aktualisiert sich nach jedem Zug und wenn ein Limit sich um einen ganzen Punkt bewegt.
 
 Quellen der Texte: offizielle Doku unter code.claude.com/docs (Stand 17.10.2026). Was die Doku nicht hergibt (Mikrofon, Maskottchen, Zuordnung des Globus), ist im Text so markiert.
 
@@ -23,6 +24,8 @@ Quellen der Texte: offizielle Doku unter code.claude.com/docs (Stand 17.10.2026)
 | Wörterbuch | „Wörterbuch“ anklicken oder Taste w |
 | zurück zur Übersicht | „Zurück“ oder Taste z |
 | schließen | „Schließen“, Taste x, oder die Schließmarke der Spalte |
+| Verbrauchsband verstecken | „ausblenden“ im Band |
+| Verbrauchsband zurückholen | `/verbrauch` |
 
 ## Einrichten auf dem Windows-PC
 
@@ -45,4 +48,4 @@ Beim ersten Laden fragt Claude Code auf Englisch „Enable hot reloading for thi
 
 ## Texte ändern
 
-Alle Texte stehen in `hooks/inhalte.ts`. Logik in `hooks/register.tsx`. Nach einer Änderung `claude plugin validate` und `claude plugin test` laufen lassen.
+Alle Texte stehen in `hooks/inhalte.ts`. Logik in `hooks/register.tsx`, das Band in `hooks/verbrauch.tsx`. Nach einer Änderung `claude plugin validate` und `claude plugin test` laufen lassen.

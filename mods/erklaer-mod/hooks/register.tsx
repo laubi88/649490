@@ -1,14 +1,17 @@
 import { atom, read, update } from 'claude-code'
 import type { Register } from 'claude-code'
 
-import type { Ansicht } from '../types'
+import type { Ansicht, Verbrauch } from '../types'
 import { THEMEN, WOERTERBUCH } from './inhalte'
+import { lesen, messen, zeichneBand } from './verbrauch'
 
 const PANE = 'erklaer-mod'
 const TITEL = 'Erklärung'
 
 const thema = atom({ plugin: 'erklaer-mod', key: 'thema' } as const, null as string | null)
 const ansicht = atom({ plugin: 'erklaer-mod', key: 'ansicht' } as const, 'themen' as Ansicht)
+const verbrauch = atom({ plugin: 'erklaer-mod', key: 'verbrauch' } as const, null as Verbrauch | null)
+const bandAus = atom({ plugin: 'erklaer-mod', key: 'bandAus' } as const, false)
 
 export const register: Register = on => {
   on('session.start', async ($, e, next) => {
@@ -16,9 +19,43 @@ export const register: Register = on => {
       name: 'erklaeren',
       description: 'Öffnet die Erklärspalte: Umgebung, Branch, Modus, Modell, Aufwand, Symbole, Wörterbuch',
     })
+    await $.command.register({
+      name: 'verbrauch',
+      description: 'Blendet das Verbrauchsband über der Eingabe wieder ein (Gedächtnis, 5-Stunden-Limit, Wochenlimit)',
+    })
     void $.ui.open({ id: PANE, title: TITEL })
+    const start = await lesen($)
+    await update($, verbrauch, () => start)
 
     return next(e)
+  })
+
+  on('session.measure', async ($, e, next) => {
+    const neu = messen(e)
+    await update($, verbrauch, () => neu)
+
+    return next(e)
+  })
+
+  on('command.run', { command: 'verbrauch' }, async $ => {
+    await update($, bandAus, () => false)
+    const jetzt = await lesen($)
+    await update($, verbrauch, () => jetzt)
+    const zeilen = jetzt.fenster.map(f => `${f.kind}: ${f.percentUsed} %`)
+    if (jetzt.kontextProzent !== null) zeilen.unshift(`Gedächtnis: ${jetzt.kontextProzent} %`)
+
+    return { text: zeilen.length > 0 ? `Verbrauchsband eingeblendet. ${zeilen.join(', ')}` : 'Verbrauchsband eingeblendet. Noch keine Messwerte.' }
+  })
+
+  on('ui.render', { component: 'AbovePrompt' }, async ($, e, next) => {
+    const v = await read($, verbrauch)
+    const aus = await read($, bandAus)
+    if (e.props.hasSurvey || aus || v === null) return next(e)
+    if (v.kontextProzent === null && v.fenster.length === 0 && v.kostenUsd === null) return next(e)
+    const jetzt = await $.clock.now()
+    const t = $.ui.resolve(e)
+
+    return zeichneBand(t, v, jetzt, () => void update($, bandAus, () => true))
   })
 
   on('command.run', { command: 'erklaeren' }, async $ => {

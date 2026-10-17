@@ -124,6 +124,7 @@ export const THEMEN: readonly Thema[] = [
       '- **+** links: Dateien und Bilder anhängen, Schrägstrich-Befehle, Verbindungen (Connectors) und Plugins. Bilder gehen auch per Ziehen und Ablegen.',
       '- **Mikrofon** rechts: Spracheingabe. In der Doku nicht beschrieben, die Funktion kennst du aus eigener Nutzung.',
       '- **Orangenes Pixelwesen**: in der Doku nicht beschrieben. Nach allem, was sichtbar ist, ein Maskottchen ohne eigene Funktion.',
+      '- **Band über der Eingabe** (aus diesem Mod): „Gedächtnis“ ist der Füllstand des Kontextfensters dieser Sitzung. „5 Std“ ist das Fünf-Stunden-Limit deines Tarifs, „Woche“ das Sieben-Tage-Limit, dahinter die Zeit bis zum Zurücksetzen. Grün unter siebzig Prozent, gelb ab siebzig, rot ab neunzig. „ausblenden“ versteckt es, `/verbrauch` holt es zurück.',
       '- **Kreis ganz rechts** neben „Hoch“: laut Doku sitzt neben der Modellauswahl ein **Nutzungsring**. Er zeigt den Füllstand des Kontextfensters (Gedächtnis dieser Sitzung) und den Verbrauch deines Tarifs. Voll bedeutet: Claude fasst die Unterhaltung zusammen und verliert Details.',
     ].join('\n'),
   },
