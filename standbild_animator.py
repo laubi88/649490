@@ -21,8 +21,10 @@ Aufruf (Beispiele):
 Bewegungen (--bewegung, eine für alle oder je Bild durch Komma getrennt):
   fahrt_rein      langsame Fahrt ins Bild (Dolly in)
   fahrt_raus      langsame Fahrt aus dem Bild
-  schwenk_links   Kamera gleitet nach links, mit leichter Fahrt hinein
-  schwenk_rechts  Kamera gleitet nach rechts, mit leichter Fahrt hinein
+  schwenk_links   Kamera gleitet nach links, der Bildinhalt wandert nach rechts
+  schwenk_rechts  Kamera gleitet nach rechts, der Bildinhalt wandert nach links
+                  (Figur rechts im Bild: schwenk_rechts, Figur links: schwenk_links, sonst
+                  wandert sie aus dem Bild), jeweils mit leichter Fahrt hinein
   licht           kaum Fahrt, ein weicher Lichtkegel wandert von links nach rechts
   auto            Standard: die vier Bewegungen fahrt_rein, schwenk_links, licht, fahrt_raus
                   im Wechsel, damit kein Clip wie der vorige aussieht.
@@ -38,16 +40,12 @@ Weitere Schalter:
   --vorschau           schnelle Probe: 960×540, 15 fps, Dateiname mit _VORSCHAU.
   --zusammen NAME.mp4  zusätzlich alle Clips mit 0,8 s weicher Blende in einer Datei.
   --parallaxe          Figur und Hintergrund getrennt bewegen (zwei Ebenen, räumliche Tiefe).
-                       Die Figur wird mit rembg freigestellt (pip install rembg, läuft auf der CPU,
-                       lädt beim ersten Lauf ein Modell von rund 170 MB). Das Loch hinter der Figur
-                       wird nur aus Hintergrundpixeln gefüllt, damit kein heller Saum entsteht.
-                       Je Clip entsteht NAME_freistellung.png zur Kontrolle der Maske.
-  --maske DATEI        eigene Maske statt rembg (weiß = Figur, schwarz = Hintergrund), je Bild
-                       durch Komma getrennt, „-“ für rembg. Setzt --parallaxe voraus.
-  --tiefe 0..0.9       wie viel weniger sich der Hintergrund bewegt (Standard 0.6: der Hintergrund
-                       macht vierzig Prozent der Bewegung der Figur).
-  --rembg-modell NAME  Standard u2net. Alternative isnet-general-use, wenn die Maske schlecht ist.
-  --start-nr 46        Dateinamen Clip_46.mp4, Clip_47.mp4, ... (ohne: Name des Bildes).
+                       Die Figur wird einmal je Clip mit rembg freigestellt (pip install rembg,
+                       läuft auf der CPU, lädt beim ersten Lauf ein Modell von rund 170 MB).
+                       Der Hintergrund macht ein Drittel der Kamerabewegung der Figur mit. Das
+                       Loch hinter der Figur wird nur aus Hintergrundpixeln gefüllt (Maske vorher
+                       erweitert), damit kein heller Saum entsteht. Je Clip entsteht
+                       NAME_freistellung.png zur Kontrolle der Maske.
 
 Regeln, die das Skript erzwingt (Abbruch mit Exitcode 1): Dauer 8 bis 10 Sekunden, höchstens
 fünf Bilder (Zusatzclips 46 bis 50), Bild lesbar. Ist ein Bild kleiner als die Ausgabe,
@@ -56,7 +54,7 @@ Einstellung um den Zoomfaktor vergrößert (Standard zwölf Prozent), das ist no
 Prüfblatt ansehen (vier Ecken und Mitte je Sekunde).
 Braucht Python 3 mit Pillow und NumPy sowie ffmpeg und ffprobe im Pfad; für --parallaxe rembg.
 Die Freistellung muss ein Mensch prüfen (NAME_freistellung.png): Fehlt ein Stück der Figur oder
-hängt Hintergrund an ihr, eigene Maske mit --maske geben oder ohne --parallaxe rendern.
+hängt Hintergrund an ihr, den Clip ohne --parallaxe rendern.
 """
 import argparse, json, math, shutil, subprocess, sys
 from pathlib import Path
@@ -74,6 +72,8 @@ FPS = 30
 BLENDE = 0.8            # Sekunden weiche Blende zwischen Clips (M3)
 MAX_BILDER = 5          # Zusatzclips 46 bis 50
 SEED = 7                # festes Korn: gleiche Eingabe, gleiches Video
+PARALLAXE_HINTERGRUND = 1 / 3   # Anteil der Kamerabewegung, den der Hintergrund mitmacht
+REMBG_MODELL = "u2net"
 
 
 def fehler(msg):
@@ -151,31 +151,19 @@ def lichtkoordinate(W, H):
 _REMBG_SITZUNGEN = {}
 
 
-def maske_erzeugen(img, maske_pfad, modell):
-    """Liefert die Figur-Maske (L, 255 = Figur) in Bildgröße: eigene Datei oder rembg."""
-    if maske_pfad and maske_pfad != "-":
-        try:
-            m = Image.open(maske_pfad).convert("L")
-        except Exception as e:
-            fehler(f"Maske {maske_pfad} nicht lesbar ({e})")
-        if m.size != img.size:
-            v1, v2 = m.size[0] / m.size[1], img.size[0] / img.size[1]
-            if abs(v1 - v2) > 0.01:
-                fehler(f"Maske {maske_pfad} hat ein anderes Seitenverhältnis als das Bild.")
-            m = m.resize(img.size, Image.LANCZOS)
-        return m
+def maske_erzeugen(img):
+    """Figur-Maske (L, 255 = Figur) in Bildgröße, einmal je Clip mit rembg."""
     try:
         from rembg import new_session, remove
     except ImportError:
-        fehler("rembg fehlt. Installieren mit: pip install rembg   (oder eigene Maske mit --maske)")
-    if modell not in _REMBG_SITZUNGEN:
-        _REMBG_SITZUNGEN[modell] = new_session(modell)
-    out = remove(img, session=_REMBG_SITZUNGEN[modell])
-    alpha = out.split()[-1]
+        fehler("rembg fehlt. Installieren mit: pip install rembg")
+    if REMBG_MODELL not in _REMBG_SITZUNGEN:
+        _REMBG_SITZUNGEN[REMBG_MODELL] = new_session(REMBG_MODELL)
+    alpha = remove(img, session=_REMBG_SITZUNGEN[REMBG_MODELL]).split()[-1]
     anteil = np.asarray(alpha, np.float32).mean() / 255.0
     if anteil < 0.02 or anteil > 0.90:
         warnung(f"rembg hat {anteil * 100:.0f} Prozent des Bildes als Figur erkannt. "
-                f"Maske in der Datei _freistellung.png prüfen, notfalls --maske oder --rembg-modell.")
+                f"Maske in der Datei _freistellung.png prüfen.")
     return alpha
 
 
@@ -318,13 +306,13 @@ def encoder_start(ziel, W, H, fps, bitrate):
     return subprocess.Popen(cmd, stdin=subprocess.PIPE)
 
 
-def clip_rendern(bild_pfad, ziel, bewegung, dauer, W, H, fps, a, maske_pfad=None):
+def clip_rendern(bild_pfad, ziel, bewegung, dauer, W, H, fps, a):
     img = bild_laden(bild_pfad)
     basis = grundbild(img, W, H, a.zoom, a.fokus_x, a.fokus_y)
     alpha = None
     if a.parallaxe:
         # Maske getrennt vom Bild skalieren (gleiche Parameter, gleicher Ausschnitt), nie als RGBA
-        alpha = grundbild(maske_erzeugen(img, maske_pfad, a.rembg_modell), W, H, a.zoom, a.fokus_x, a.fokus_y, still=True)
+        alpha = grundbild(maske_erzeugen(img), W, H, a.zoom, a.fokus_x, a.fokus_y, still=True)
     if not a.ohne_grading:
         # Farbkurve einmal auf das Grundbild, nicht je Einzelbild (sie hängt nur vom Pixel ab)
         basis = Image.fromarray(grading(np.asarray(basis, dtype=np.float32)).astype(np.uint8))
@@ -337,7 +325,7 @@ def clip_rendern(bild_pfad, ziel, bewegung, dauer, W, H, fps, a, maske_pfad=None
         basis_fg = basis.copy()
         basis_fg.putalpha(alpha_weich)
         freistellung_speichern(basis, alpha_weich, ziel.with_name(ziel.stem + "_freistellung.png"))
-        zoom_bg = 1.0 + (a.zoom - 1.0) * (1.0 - a.tiefe)
+        zoom_bg = 1.0 + (a.zoom - 1.0) * PARALLAXE_HINTERGRUND
     vig = vignette(W, H) if not a.ohne_grading else None
     u = lichtkoordinate(W, H) if bewegung == "licht" else None
     rng = np.random.default_rng(SEED)
@@ -462,9 +450,6 @@ def main():
     p.add_argument("--zusammen", metavar="NAME.mp4", help="alle Clips mit 0,8 s Blende in einer Datei")
     p.add_argument("--start-nr", type=int, help="Dateinamen Clip_NN.mp4 ab dieser Nummer, z. B. 46")
     p.add_argument("--parallaxe", action="store_true", help="Figur und Hintergrund getrennt bewegen (rembg)")
-    p.add_argument("--maske", help="eigene Masken statt rembg, je Bild durch Komma, - für rembg")
-    p.add_argument("--tiefe", type=float, default=0.6, help="Anteil, um den der Hintergrund weniger mitgeht, 0 bis 0.9")
-    p.add_argument("--rembg-modell", default="u2net", help="rembg-Modell (Standard u2net)")
     a = p.parse_args()
 
     ffmpeg_pruefen()
@@ -474,18 +459,6 @@ def main():
         fehler("Zoom muss zwischen 1.06 und 1.25 liegen.")
     if not (0 <= a.korn <= 10):
         fehler("Korn muss zwischen 0 und 10 liegen.")
-    if a.maske and not a.parallaxe:
-        fehler("--maske setzt --parallaxe voraus.")
-    if not (0.0 <= a.tiefe <= 0.9):
-        fehler("--tiefe muss zwischen 0 und 0.9 liegen.")
-    masken = [None] * len(a.bilder)
-    if a.maske:
-        masken = a.maske.split(",")
-        if len(masken) != len(a.bilder):
-            fehler(f"{len(masken)} Masken für {len(a.bilder)} Bilder angegeben.")
-        for m in masken:
-            if m != "-" and not Path(m).is_file():
-                fehler(f"Maske nicht gefunden: {m}")
     if len(a.bilder) > MAX_BILDER:
         fehler(f"Höchstens {MAX_BILDER} Bilder je Aufruf (Zusatzclips 46 bis 50), es sind {len(a.bilder)}.")
     for b in a.bilder:
@@ -512,14 +485,14 @@ def main():
 
     fertige = []
     print(f"Ausgabe {W}×{H}, {fps} fps, {len(a.bilder)} Clip(s) à {a.dauer:g} s nach {aus}/"
-          + (f", Parallaxe (Tiefe {a.tiefe:g})" if a.parallaxe else ""))
+          + (", Parallaxe" if a.parallaxe else ""))
     for k, (bild, bw) in enumerate(zip(a.bilder, bewegungen)):
         name = f"Clip_{a.start_nr + k}" if a.start_nr is not None else Path(bild).stem
         if a.vorschau:
             name += "_VORSCHAU"
         ziel = aus / f"{name}.mp4"
         print(f"[{k + 1}/{len(a.bilder)}] {bild}")
-        stich = clip_rendern(bild, ziel, bw, a.dauer, W, H, fps, a, masken[k])
+        stich = clip_rendern(bild, ziel, bw, a.dauer, W, H, fps, a)
         pruefblatt(stich, aus / f"{name}_pruefblatt.jpg", f"{name}  ·  {bw}  ·  Stichbilder je Sekunde", W, H)
         w, h, f, d, kbit, ton, codec = ffprobe(ziel)
         ok = (w, h) == (W, H) and abs(f - fps) < 0.01 and abs(d - a.dauer) < 0.15 and codec == "h264"
