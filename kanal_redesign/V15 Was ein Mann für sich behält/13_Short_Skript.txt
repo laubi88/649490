@@ -1,4 +1,5 @@
-V15 Begleit-Short (veröffentlichen einen Tag nach dem Longform, im YouTube Studio als verwandtes Video verknüpfen)
+V15 Begleit-Short (Regel: einen Tag nach dem Longform. Ausnahme Rene, 17.10.2026: Short am Samstag VOR dem Longform, das Longform folgt um zehn Uhr, siehe 12_YouTube_Paket Abschnitt 6. Im YouTube Studio als verwandtes Video verknüpfen, sobald das Longform öffentlich ist.)
+Änderung 17.10.2026 (Rene): Das Ende kündigt jetzt Samstag zehn Uhr an statt Mittwoch. Der neue Schlusssatz steht als eigener Block V15_Short_Ende unten. Nur diesen Block neu einsprechen und im Schnitt den alten Schlusssatz „Freu dich auf Mittwoch …“ damit ersetzen. Der alte Satz stand nie in dieser Datei, nur im geschnittenen Short.
 Ziel 30 bis 35 Sekunden, höchstens rund 36 Sekunden.
 Erstes Bild: Statue plus das Wort PLÄNE in Großbuchstaben.
 Ende: Logo-Clip A2 im Hochformat, darunter @Stoische.Karriere. Gesprochen „Stoische Karriere“ aus der Tonspur V15_Outro geschnitten (kein „at“, kein „Punkt“). Dieser Teil steht NICHT im TEXT unten.
@@ -12,3 +13,11 @@ In Versuchen setzten Menschen bemerkte Vorsätze weniger entschlossen um.
 Sie fühlten sich schon am Ziel, bevor die Arbeit getan war.
 Erzähl es erst, wenn es geschafft ist.
 Drei weitere Dinge zeigt dir das ganze Video.
+
+
+DATEI: V15_Short_Ende
+TEXT:
+Freu dich auf Samstag um zehn Uhr.
+
+
+Reihenfolge im fertigen Short: V15_Short, dann V15_Short_Ende, dann Logo A2 im Hochformat mit „Stoische Karriere“.

@@ -1,0 +1,50 @@
+Upload Samstag 17.10.2026 – V15 und V16 mit Shorts
+Stand: 17.10.2026, 03:45 Uhr. Erstellt in der Cloud-Sitzung. Nichts davon ist hochgeladen.
+
+ZEITPLAN (Rene, 17.10.2026)
+vor 10:00, Vorschlag 09:00   V15 Short
+10:00                        V15 Longform „4 Dinge, die ein Mann für sich BEHÄLT | Stoizismus“
+vor 13:00, Vorschlag 12:00   V16 Short
+13:00                        V16 Longform (Titel noch wählen, siehe V16 12_YouTube_Paket Abschnitt 1)
+Danach heute nichts mehr hochladen.
+
+INHALT DIESER MAPPE
+V15 Short Skript mit neuem Ende.txt
+V16 Short Skript mit neuem Ende.txt
+    Neuer Schlusssatz als eigener Block „Short_Ende“:
+    V15: „Freu dich auf Samstag um zehn Uhr.“
+    V16: „Freu dich auf Samstag um dreizehn Uhr.“
+    Nur diesen einen Satz mit Valentino 0,90 neu einsprechen und im Schnitt den alten Schlusssatz ersetzen.
+    Prüfskript: 0 Verstöße.
+    Achtung Länge: Mit dem neuen Satz liegen die Shorts geschätzt bei rund 37 Sekunden (V15) und 39 Sekunden (V16), jeweils mit Logo.
+    Die Kanalregel sagt höchstens rund 36 Sekunden. Nach dem Schnitt messen.
+
+V15 Untertitel Transkript fuer Autosync.txt
+V16 Untertitel Transkript fuer Autosync.txt
+    EMPFOHLEN. Der gesprochene Text, ein Satz pro Zeile, ohne Blocknamen.
+    YouTube Studio: Video öffnen, „Untertitel“, Sprache Deutsch, „Hinzufügen“, „Automatisch synchronisieren“, Text einfügen.
+    YouTube legt die Zeiten selbst an die Tonspur. Das ist genauer als jede Schätzung.
+
+V15 Untertitel GESCHAETZT.srt
+V16 Untertitel GESCHAETZT.srt
+    SRT mit GESCHÄTZTEN Zeiten (rund 125 Wörter pro Minute plus Pausen). Ohne Tonspur kann niemand exakte Zeiten setzen.
+    Zum Ende hin laufen die Zeiten mit hoher Wahrscheinlichkeit um mehrere Sekunden neben dem Ton.
+    Nur verwenden, wenn du die Zeiten in YouTube Studio selbst nachziehst.
+
+V15 THUMBNAIL TEXTPROBE ohne Bueste.jpg   Text „WAS ER / VERSCHWEIGT“
+V16 THUMBNAIL TEXTPROBE ohne Bueste.jpg   Text „ERST / FRAGEN“
+    NICHT HOCHLADEN. Nur Text und Anordnung. Die Büste rechts fehlt noch.
+    Die Büsten sind bei OpenArt erzeugt (Kling 3 Omni, je 10 Credits), Projekt in deinem OpenArt-Konto:
+      V15: Büste im Halbprofil nach links, rechtes Bilddrittel
+      V16: Nahaufnahme der Augen mit Riss in der Stirn
+    Die Cloud-Sitzung durfte cdn.openart.ai nicht erreichen, deshalb fehlt der letzte Schritt.
+
+THUMBNAIL FERTIG MACHEN (auf deinem PC oder in einer Sitzung mit freigegebenem cdn.openart.ai)
+1. Bild bei OpenArt in voller Größe herunterladen.
+2. Wasserzeichen-Prüfung: alle vier Ecken und die Mitte in voller Größe ansehen.
+   Die Bildadresse bei OpenArt lautet „watermarked_images“. Im kostenlosen Tarif kann ein Wasserzeichen im Bild sein.
+   Ist eines zu sehen: Bild nicht verwenden.
+3. Dann:
+   python thumbnail_maker.py --zeile1 "WAS ER" --zeile2 "VERSCHWEIGT" --bild "<V15 Bild>.png" -o "V15 Was ein Mann für sich behält THUMBNAIL.jpg"
+   python thumbnail_maker.py --zeile1 "ERST" --zeile2 "FRAGEN" --bild "<V16 Bild>.png" -o "V16 Kritik annehmen THUMBNAIL.jpg"
+4. Vorschau mit 168 px prüfen, Ecke unten rechts frei.
