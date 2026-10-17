@@ -1,4 +1,5 @@
-V16 Begleit-Short (Regel: einen Tag nach dem Longform. Ausnahme Rene, 15.10.2026: am selben Tag, zwei Stunden nach dem Longform, siehe 12_YouTube_Paket Abschnitt 6. Im YouTube Studio als verwandtes Video verknüpfen.)
+V16 Begleit-Short (Regel: einen Tag nach dem Longform. Ausnahme Rene, 17.10.2026: Short am Samstag VOR dem Longform, das Longform folgt um dreizehn Uhr, siehe 12_YouTube_Paket Abschnitt 6. Im YouTube Studio als verwandtes Video verknüpfen, sobald das Longform öffentlich ist.)
+Änderung 17.10.2026 (Rene): Das Ende kündigt jetzt Samstag dreizehn Uhr an statt Mittwoch. Der neue Schlusssatz steht als eigener Block V16_Short_Ende unten. Nur diesen Block neu einsprechen und im Schnitt den alten Schlusssatz „Freu dich auf Mittwoch …“ damit ersetzen. Der alte Satz stand nie in dieser Datei, nur im geschnittenen Short.
 Ziel 30 bis 35 Sekunden, höchstens rund 36 Sekunden.
 Erstes Bild: Statue plus das Wort KRITIK in Großbuchstaben.
 Ende: Logo-Clip A2 im Hochformat, darunter @Stoische.Karriere. Gesprochen „Stoische Karriere“ aus der Tonspur V16_Outro geschnitten. Dieser Teil steht NICHT im TEXT unten.
@@ -13,3 +14,11 @@ Du gewinnst Zeit, und dein Puls kommt runter.
 Und aus einem Urteil wird eine Aufgabe.
 Mit einer Aufgabe kannst du arbeiten, mit einem Urteil nicht.
 Drei weitere Werkzeuge gegen den Ärger zeigt dir das ganze Video.
+
+
+DATEI: V16_Short_Ende
+TEXT:
+Freu dich auf Samstag um dreizehn Uhr.
+
+
+Reihenfolge im fertigen Short: V16_Short, dann V16_Short_Ende, dann Logo A2 im Hochformat mit „Stoische Karriere“.

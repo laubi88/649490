@@ -1,5 +1,5 @@
 V15 Was ein Mann für sich behält – YouTube Paket
-Stand: 12.10.2026, Abschnitt 6 neu am 15.10.2026 (Renes Entscheidung: V15 und V16 beide am Donnerstag, 15.10.2026). Nichts davon ist hochgeladen oder im Kanal eingetragen.
+Stand: 12.10.2026, Abschnitt 6 neu am 17.10.2026 (Renes Entscheidung: V15 und V16 beide am Samstag, 17.10.2026, um zehn und dreizehn Uhr). Nichts davon ist hochgeladen oder im Kanal eingetragen.
 Grundlage: Skill stoische-karriere-vidiq-regeln (Titel, Thumbnail, Beschreibung, Tags, Rhythmus, Messen), Skills packaging-agent und thumbnail-agent.
 
 
@@ -93,30 +93,32 @@ Schreib die Zahl unter dieses Video.
 
 6. UPLOAD SLOT
 Regel (Konto-Skill vidIQ-Regeln, CLAUDE.md M5): Slots Dienstag 18 Uhr, Freitag 15 Uhr, Sonntag 18 Uhr, optional Samstag 14 Uhr. Nie mehrere Videos am selben Tag. Short einen Tag nach dem Longform.
-ENTSCHEIDUNG (Rene, 15.10.2026): V15 war für Mittwoch, 14.10.2026 vorgesehen und ist nicht erschienen. V15 und V16 erscheinen deshalb beide am Donnerstag, 15.10.2026, in kurzen Abständen, jeweils mit Begleit-Short. Das ist eine bewusste, einmalige Ausnahme von der Regel „nie mehrere Videos am selben Tag“. Die Regel selbst bleibt bestehen. Ab V17 gelten wieder die Slots.
+ENTSCHEIDUNG (Rene, 17.10.2026, ersetzt den Plan vom 15.10.2026): Mittwoch und Donnerstag sind ausgefallen. V15 und V16 erscheinen am Samstag, 17.10.2026, mit Shorts. Die Shorts kommen jeweils VOR ihrem Longform und kündigen es an. Einmalige Ausnahme von „nie mehrere Videos am selben Tag“ und von „Short einen Tag nach dem Longform“. Die Regeln selbst bleiben. Ab V17 gelten wieder die Slots.
 
-Reihenfolge am 15.10.2026 (Startzeit verschiebt sich, wenn die Prüfung länger dauert; die Abstände bleiben):
-| Zeit | Was | Warum diese Stelle |
+Reihenfolge am 17.10.2026:
+| Zeit | Was | Hinweis |
 |---|---|---|
-| 13:00 | V15 Longform öffentlich | zuerst, weil das Outro von V14 V15 ankündigt und V16 auf V15 aufbaut |
-| 15:00 | V15 Short öffentlich | nach dem Longform, damit die Verknüpfung „verwandtes Video“ auf ein öffentliches Video zeigt |
-| 18:00 | V16 Longform öffentlich | 18 Uhr ist die Slot-Uhrzeit der Regel |
-| 20:00 | V16 Short öffentlich | letzter Upload, nicht später (Regel: nie nachts) |
-Abstand mindestens zwei Stunden. Grund: Die Aufrufe kommen fast nur aus dem Abo-Feed und aus verwandten Videos (vidIQ-Regeln). Zwei Uploads innerhalb weniger Minuten verdrängen sich dort gegenseitig und lösen zwei Benachrichtigungen kurz hintereinander aus.
+| vor 10:00, Vorschlag 09:00 | V15 Short öffentlich | Schluss „Freu dich auf Samstag um zehn Uhr.“ Muss vor zehn Uhr online sein, sonst kündigt er Vergangenes an |
+| 10:00 | V15 Longform öffentlich | Outro „Gleich danach geht es um Kritik vom Chef.“ passt, V16 folgt drei Stunden später |
+| vor 13:00, Vorschlag 12:00 | V16 Short öffentlich | Schluss „Freu dich auf Samstag um dreizehn Uhr.“ |
+| 13:00 | V16 Longform öffentlich | Titel V16 muss bis dahin feststehen |
+Danach am 17.10.2026 nichts mehr hochladen. Begleit-Shorts für ältere Videos frühestens Sonntag, 18.10.2026, und nur einer pro Tag.
 
 Schritte:
-1. Alle vier Dateien (V15 Longform, V15 Short, V16 Longform, V16 Short) zuerst als „Privat“ hochladen, nicht als „Geplant“. So gibt es für jedes Video schon eine Video-ID, bevor etwas sichtbar ist.
-2. Die vier IDs notieren. Beschreibung V15: „Nächstes Video“ mit der ID von V16 füllen. Beschreibung V16: „Letztes Video“ mit der ID von V15 füllen. Titel, Thumbnail, Tags, Kapitel und angehefteten Kommentar laut Abschnitt 1 bis 5 eintragen.
-3. Jeden Short im YouTube Studio mit seinem Longform als verwandtes Video verknüpfen. Ob das schon mit privaten Videos klappt, ist nicht geprüft. Wenn nicht, nach dem Veröffentlichen des Longforms nachholen.
-4. In der Reihenfolge der Tabelle auf „Öffentlich“ stellen, entweder von Hand oder mit „Geplant“ und den Uhrzeiten der Tabelle. Vor jedem Schritt die Sichtbarkeit des vorherigen Videos prüfen.
-5. Nach dem Short von V16 nichts mehr am selben Tag hochladen. Die Begleit-Shorts für ältere Videos (Begleit_Shorts_bestehende_Videos.txt) frühestens am Samstag, 17.10.2026.
+1. Den alten Schlusssatz in beiden Shorts ersetzen (13_Short_Skript, Block Short_Ende). Das geht nur auf deinem PC im Schnitt.
+2. Alle vier Dateien als „Privat“ hochladen, die vier Video-IDs notieren.
+3. Beschreibung V15: „Nächstes Video“ mit der ID von V16 füllen. Beschreibung V16: „Letztes Video“ mit der ID von V15 füllen.
+4. Untertitel: „Untertitel hinzufügen“, dann „Automatisch synchronisieren“, Text aus „V15 Untertitel Transkript fuer Autosync.txt“ einfügen. Für V16 genauso. Die SRT-Dateien haben nur geschätzte Zeiten.
+5. Thumbnail, Titel, Tags, Kapitel und angehefteten Kommentar laut Abschnitt 1 bis 5 eintragen.
+6. In der Reihenfolge der Tabelle auf „Öffentlich“ stellen, von Hand oder mit „Geplant“.
+7. Nach 10:00 den V15 Short mit dem V15 Longform als verwandtes Video verknüpfen, nach 13:00 den V16 Short mit dem V16 Longform. Ob die Verknüpfung schon vorher mit privaten oder geplanten Videos geht, ist nicht geprüft.
 
-Folgen dieser Entscheidung, die im Text schon umgesetzt sind:
-- Das Outro von V15 sagte „Nächste Woche geht es um Kritik vom Chef.“ Das stimmt bei einem Upload am selben Tag nicht mehr. Der Satz heißt jetzt „Gleich danach geht es um Kritik vom Chef.“ (01_Sprechertext_komplett, Block V15_Outro). Wenn V15_Outro schon vertont ist, nur diesen einen Block neu einsprechen, der Rest der Tonspuren bleibt.
-- Das Outro von V16 sagt weiter „Nächste Woche geht es um deinen Aufstieg im Beruf.“ Das hält nur, wenn V17 in der Woche vom 19. bis 25.10.2026 erscheint. Sonst vor der Vertonung von V16_Outro ändern.
-- Messzettel: Die Werte nach 24 Stunden und 7 Tagen sind für V15 und V16 nur eingeschränkt mit V14 vergleichbar, weil zwei Longforms am selben Tag sich die Aufrufe aus dem Abo-Feed teilen. Beim Vergleich dazuschreiben.
+Folgen dieser Entscheidung:
+- Ein Short bleibt dauerhaft online. Ab Sonntag kündigt „Freu dich auf Samstag um zehn Uhr“ einen vergangenen Termin an.
+- Das Outro von V16 sagt „Nächste Woche geht es um deinen Aufstieg im Beruf.“ Das hält, wenn V17 zwischen dem 18. und 24.10.2026 erscheint.
+- Messzettel: Die Werte nach 24 Stunden und 7 Tagen sind nur eingeschränkt mit V14 vergleichbar, weil zwei Longforms und zwei Shorts am selben Tag erscheinen.
 
-Alter Vorschlag vom 12.10.2026 (überholt, nur zur Nachvollziehbarkeit): V15 Sonntag, 18.10.2026, 18 Uhr, Short Montag, 19.10.; Rückfall Dienstag, 20.10.2026, Short Mittwoch, 21.10.
+Überholt: Plan vom 15.10.2026 (Donnerstag 13, 15, 18 und 20 Uhr) und Vorschlag vom 12.10.2026 (Sonntag, 18.10.2026).
 
 
 7. MESSZETTEL (nach dem Upload ausfüllen)
@@ -126,7 +128,7 @@ Alter Vorschlag vom 12.10.2026 (überholt, nur zur Nachvollziehbarkeit): V15 Son
 | vidIQ Thumbnail Wertung | über 70 | |
 | Aufrufe nach 24 Stunden | rund 8 | |
 | Aufrufe nach 7 Tagen | rund 66 (Spanne 35 bis 99) | |
-| Hinweis | am 15.10.2026 zusammen mit V16 erschienen, Vergleich mit V14 nur eingeschränkt | |
+| Hinweis | am 17.10.2026 zusammen mit V16 erschienen, Vergleich mit V14 nur eingeschränkt | |
 | Durchschnittliche Wiedergabedauer | | |
 | Zuschauerbindung bei Sekunde 43 | höher als bei V14 (neuer Hook) | |
 | Quellen der Aufrufe: Suche | soll wachsen | |
