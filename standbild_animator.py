@@ -40,7 +40,7 @@ Weitere Schalter:
   --vorschau           schnelle Probe: 960×540, 15 fps, Dateiname mit _VORSCHAU.
   --zusammen NAME.mp4  zusätzlich alle Clips mit 0,8 s weicher Blende in einer Datei.
   --parallaxe          Figur und Hintergrund getrennt bewegen (zwei Ebenen, räumliche Tiefe).
-                       Die Figur wird einmal je Clip mit rembg freigestellt (pip install rembg,
+                       Die Figur wird einmal je Clip mit rembg freigestellt (pip install "rembg[cpu]",
                        läuft auf der CPU, lädt beim ersten Lauf ein Modell von rund 170 MB).
                        Der Hintergrund macht ein Drittel der Kamerabewegung der Figur mit. Das
                        Loch hinter der Figur wird nur aus Hintergrundpixeln gefüllt (Maske vorher
@@ -156,7 +156,7 @@ def maske_erzeugen(img):
     try:
         from rembg import new_session, remove
     except ImportError:
-        fehler("rembg fehlt. Installieren mit: pip install rembg")
+        fehler('rembg oder onnxruntime fehlt. Installieren mit: pip install "rembg[cpu]"')
     if REMBG_MODELL not in _REMBG_SITZUNGEN:
         _REMBG_SITZUNGEN[REMBG_MODELL] = new_session(REMBG_MODELL)
     alpha = remove(img, session=_REMBG_SITZUNGEN[REMBG_MODELL]).split()[-1]
