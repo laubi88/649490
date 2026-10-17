@@ -34,9 +34,19 @@ Weitere Schalter:
   --zoom 1.06..1.25    Stärke der Fahrt (Standard 1.12).
   --korn 0..10         Filmkorn (Standard 3, 0 = aus).
   --licht-tuerkis      Lichtkegel mit einem Hauch Türkis statt reinem Weiß.
-  --ohne-grading       kein Low-Key-Grading (Kontrast, Vignette, leichte Entsättigung).
+  --ohne-grading       kein Grading (leichte Entsättigung, mildes Gamma, sanfte Vignette).
   --vorschau           schnelle Probe: 960×540, 15 fps, Dateiname mit _VORSCHAU.
   --zusammen NAME.mp4  zusätzlich alle Clips mit 0,8 s weicher Blende in einer Datei.
+  --parallaxe          Figur und Hintergrund getrennt bewegen (zwei Ebenen, räumliche Tiefe).
+                       Die Figur wird mit rembg freigestellt (pip install rembg, läuft auf der CPU,
+                       lädt beim ersten Lauf ein Modell von rund 170 MB). Das Loch hinter der Figur
+                       wird nur aus Hintergrundpixeln gefüllt, damit kein heller Saum entsteht.
+                       Je Clip entsteht NAME_freistellung.png zur Kontrolle der Maske.
+  --maske DATEI        eigene Maske statt rembg (weiß = Figur, schwarz = Hintergrund), je Bild
+                       durch Komma getrennt, „-“ für rembg. Setzt --parallaxe voraus.
+  --tiefe 0..0.9       wie viel weniger sich der Hintergrund bewegt (Standard 0.6: der Hintergrund
+                       macht vierzig Prozent der Bewegung der Figur).
+  --rembg-modell NAME  Standard u2net. Alternative isnet-general-use, wenn die Maske schlecht ist.
   --start-nr 46        Dateinamen Clip_46.mp4, Clip_47.mp4, ... (ohne: Name des Bildes).
 
 Regeln, die das Skript erzwingt (Abbruch mit Exitcode 1): Dauer 8 bis 10 Sekunden, höchstens
@@ -44,13 +54,15 @@ fünf Bilder (Zusatzclips 46 bis 50), Bild lesbar. Ist ein Bild kleiner als die 
 warnt es (Hochskalierung, Schärfe prüfen). Ein Bild in Ausgabegröße wird bei der engsten
 Einstellung um den Zoomfaktor vergrößert (Standard zwölf Prozent), das ist normal. Wasserzeichen erkennt es nicht: dafür das
 Prüfblatt ansehen (vier Ecken und Mitte je Sekunde).
-Braucht Python 3 mit Pillow und NumPy sowie ffmpeg und ffprobe im Pfad.
+Braucht Python 3 mit Pillow und NumPy sowie ffmpeg und ffprobe im Pfad; für --parallaxe rembg.
+Die Freistellung muss ein Mensch prüfen (NAME_freistellung.png): Fehlt ein Stück der Figur oder
+hängt Hintergrund an ihr, eigene Maske mit --maske geben oder ohne --parallaxe rendern.
 """
 import argparse, json, math, shutil, subprocess, sys
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 ROOT = Path(__file__).resolve().parent
 SCHRIFT = ROOT / "outro" / "projekt" / "assets" / "fonts" / "BebasNeue-Regular.ttf"
@@ -89,14 +101,16 @@ def bild_laden(pfad):
     return img.convert("RGB")
 
 
-def grundbild(img, W, H, zoom_max, fokus_x, fokus_y):
+def grundbild(img, W, H, zoom_max, fokus_x, fokus_y, still=False):
     """Bild formatfüllend auf W*zoom_max × H*zoom_max bringen (Ausschnitt nach Fokus).
 
     Bei Zoom = zoom_max zeigt der Clip genau 1:1-Pixel dieser Fläche, bei Zoom = 1 die ganze
-    Fläche verkleinert. So wird nie über die Vorlage hinaus vergrößert."""
+    Fläche verkleinert. So wird nie über die Vorlage hinaus vergrößert.
+    Nur mit RGB- oder L-Bildern aufrufen: Pillow multipliziert beim Skalieren von RGBA mit dem
+    Alphakanal vor, dadurch würde der ganze Hintergrund hinter einer Maske schwarz."""
     BW, BH = int(round(W * zoom_max)), int(round(H * zoom_max))
     bw, bh = img.size
-    if bw < W or bh < H:
+    if (bw < W or bh < H) and not still:
         warnung(f"Bild {bw}×{bh} ist kleiner als die Ausgabe {W}×{H}. "
                 f"Es wird deutlich hochskaliert, Schärfe im Prüfblatt kontrollieren.")
     skala = max(BW / bw, BH / bh)
@@ -108,22 +122,21 @@ def grundbild(img, W, H, zoom_max, fokus_x, fokus_y):
 
 
 def grading(arr):
-    """Low-Key-Look: leichte S-Kurve, Schwarz etwas tiefer, Farben leicht zurück (Marmor)."""
+    """Low-Key-Look, schattenschonend: Farben leicht zurück (Marmor bleibt neutral), Mitten
+    über ein mildes Gamma etwas tiefer. Kein Schwarzpunkt, keine S-Kurve: Der Kanalhintergrund
+    liegt bei rund zehn von 255, eine harte Kurve würde ihn zu reinem Schwarz machen."""
     a = arr / 255.0
-    # Entsättigen um 20 Prozent, Marmor soll nicht bunt werden
     grau = a @ np.array([0.299, 0.587, 0.114], np.float32)
-    a = a * 0.8 + grau[..., None] * 0.2
-    # S-Kurve um 0,45, Schwarzpunkt leicht anheben, damit Schatten zulaufen
-    a = (a - 0.03) / 0.97
-    a = np.clip(a, 0, 1)
-    a = 0.5 + (a - 0.5) * 1.10 - 0.18 * (a - 0.5) ** 3
-    return np.clip(a, 0, 1) * 255.0
+    a = a * 0.8 + grau[..., None] * 0.2            # Entsättigen um zwanzig Prozent
+    a = np.clip(a, 0, 1) ** 1.06                    # Mitten leicht tiefer, Schatten bleiben
+    return a * 255.0
 
 
 def vignette(W, H):
     y, x = np.mgrid[0:H, 0:W].astype(np.float32)
     d = np.sqrt(((x - W / 2) / (W * 0.62)) ** 2 + ((y - H * 0.45) / (H * 0.78)) ** 2)
-    return np.clip(1.08 - d * 0.55, 0.45, 1.0)[..., None].astype(np.float32)
+    # sanft: Mitte 1,0, Ecken rund 0,8. Die Bilder sind schon Low-Key, mehr nimmt Zeichnung weg.
+    return np.clip(1.04 - d * 0.22, 0.78, 1.0)[..., None].astype(np.float32)
 
 
 def lichtkoordinate(W, H):
@@ -131,6 +144,100 @@ def lichtkoordinate(W, H):
     y, x = np.mgrid[0:H, 0:W].astype(np.float32)
     u = (x / W) * 0.85 + (y / H) * 0.15
     return (u - u.min()) / (u.max() - u.min())
+
+
+# ---------------------------------------------------------------- Parallaxe (zwei Ebenen)
+
+_REMBG_SITZUNGEN = {}
+
+
+def maske_erzeugen(img, maske_pfad, modell):
+    """Liefert die Figur-Maske (L, 255 = Figur) in Bildgröße: eigene Datei oder rembg."""
+    if maske_pfad and maske_pfad != "-":
+        try:
+            m = Image.open(maske_pfad).convert("L")
+        except Exception as e:
+            fehler(f"Maske {maske_pfad} nicht lesbar ({e})")
+        if m.size != img.size:
+            v1, v2 = m.size[0] / m.size[1], img.size[0] / img.size[1]
+            if abs(v1 - v2) > 0.01:
+                fehler(f"Maske {maske_pfad} hat ein anderes Seitenverhältnis als das Bild.")
+            m = m.resize(img.size, Image.LANCZOS)
+        return m
+    try:
+        from rembg import new_session, remove
+    except ImportError:
+        fehler("rembg fehlt. Installieren mit: pip install rembg   (oder eigene Maske mit --maske)")
+    if modell not in _REMBG_SITZUNGEN:
+        _REMBG_SITZUNGEN[modell] = new_session(modell)
+    out = remove(img, session=_REMBG_SITZUNGEN[modell])
+    alpha = out.split()[-1]
+    anteil = np.asarray(alpha, np.float32).mean() / 255.0
+    if anteil < 0.02 or anteil > 0.90:
+        warnung(f"rembg hat {anteil * 100:.0f} Prozent des Bildes als Figur erkannt. "
+                f"Maske in der Datei _freistellung.png prüfen, notfalls --maske oder --rembg-modell.")
+    return alpha
+
+
+def _kasten(a, r, achse):
+    """Gleitender Mittelwert über 2r+1 Werte entlang einer Achse (Randwerte wiederholt)."""
+    pad = [(0, 0)] * a.ndim
+    pad[achse] = (r, r)
+    c = np.cumsum(np.pad(a, pad, mode="edge"), axis=achse, dtype=np.float64)
+    null = np.zeros_like(np.take(c, [0], axis=achse))
+    c = np.concatenate([null, c], axis=achse)
+    n = a.shape[achse]
+    summe = np.take(c, range(2 * r + 1, 2 * r + 1 + n), axis=achse) - np.take(c, range(0, n), axis=achse)
+    return (summe / (2 * r + 1)).astype(np.float32)
+
+
+def _blur_f(arr2d, radius):
+    """Weichzeichner für Fließkomma-Felder: dreifacher Kastenfilter, nahe an einer Gaußglocke."""
+    a = arr2d
+    for _ in range(3):
+        a = _kasten(_kasten(a, radius, 0), radius, 1)
+    return a
+
+
+def hintergrund_fuellen(rgb, alpha):
+    """Füllt das Loch hinter der Figur nur aus Hintergrundpixeln (normalisierte Faltung).
+
+    Die Figurmaske wird erst erweitert, damit keine hellen Randpixel der Figur übrig bleiben.
+    Dann werden Hintergrundfarben in mehreren Stufen von nah nach fern nach innen gezogen.
+    So entsteht kein heller Saum, wie ihn ein Weichzeichnen des ganzen Bildes erzeugen würde."""
+    h, w = alpha.shape
+    rand = max(6, int(round(min(w, h) * 0.008)))
+    erweitert = Image.fromarray((alpha * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(2 * rand + 1))
+    erweitert = erweitert.filter(ImageFilter.GaussianBlur(2))
+    loch = np.asarray(erweitert, np.float32) / 255.0          # 1 = muss gefüllt werden
+    halt = 1.0 - loch                                        # Gewicht der echten Hintergrundpixel
+    fuellung = np.zeros_like(rgb)
+    gewicht = np.zeros((h, w), np.float32)
+    for radius in (8, 32, 128, 400):
+        den = _blur_f(halt, radius)
+        offen = (gewicht < 0.5) & (den > 0.03)
+        if not offen.any():
+            break
+        for k in range(3):
+            num = _blur_f(rgb[:, :, k] * halt, radius)
+            fuellung[:, :, k][offen] = (num / np.maximum(den, 1e-4))[offen]
+        gewicht[offen] = 1.0
+    # Rest (sehr große Löcher): mittlere Hintergrundfarbe
+    rest = gewicht < 0.5
+    if rest.any():
+        mittel = (rgb * halt[..., None]).sum(axis=(0, 1)) / max(halt.sum(), 1.0)
+        fuellung[rest] = mittel
+    return rgb * halt[..., None] + fuellung * loch[..., None]
+
+
+def freistellung_speichern(basis_rgb, alpha_weich, ziel):
+    """Kontrollbild: Figur auf türkisem Grund, damit Fehler der Maske sofort auffallen."""
+    fg = basis_rgb.copy()
+    fg.putalpha(alpha_weich)
+    grund = Image.new("RGBA", fg.size, TUERKIS + (255,))
+    bild = Image.alpha_composite(grund, fg).convert("RGB")
+    bild.thumbnail((1280, 1280), Image.LANCZOS)
+    bild.save(ziel, quality=85)
 
 
 # ---------------------------------------------------------------- Bewegung
@@ -211,13 +318,26 @@ def encoder_start(ziel, W, H, fps, bitrate):
     return subprocess.Popen(cmd, stdin=subprocess.PIPE)
 
 
-def clip_rendern(bild_pfad, ziel, bewegung, dauer, W, H, fps, a):
+def clip_rendern(bild_pfad, ziel, bewegung, dauer, W, H, fps, a, maske_pfad=None):
     img = bild_laden(bild_pfad)
     basis = grundbild(img, W, H, a.zoom, a.fokus_x, a.fokus_y)
+    alpha = None
+    if a.parallaxe:
+        # Maske getrennt vom Bild skalieren (gleiche Parameter, gleicher Ausschnitt), nie als RGBA
+        alpha = grundbild(maske_erzeugen(img, maske_pfad, a.rembg_modell), W, H, a.zoom, a.fokus_x, a.fokus_y, still=True)
     if not a.ohne_grading:
         # Farbkurve einmal auf das Grundbild, nicht je Einzelbild (sie hängt nur vom Pixel ab)
         basis = Image.fromarray(grading(np.asarray(basis, dtype=np.float32)).astype(np.uint8))
     BW, BH = basis.size
+    basis_bg = basis_fg = None
+    if a.parallaxe:
+        alpha_f = np.asarray(alpha, np.float32) / 255.0
+        basis_bg = Image.fromarray(np.clip(hintergrund_fuellen(np.asarray(basis, np.float32), alpha_f), 0, 255).astype(np.uint8))
+        alpha_weich = alpha.filter(ImageFilter.GaussianBlur(1.5))
+        basis_fg = basis.copy()
+        basis_fg.putalpha(alpha_weich)
+        freistellung_speichern(basis, alpha_weich, ziel.with_name(ziel.stem + "_freistellung.png"))
+        zoom_bg = 1.0 + (a.zoom - 1.0) * (1.0 - a.tiefe)
     vig = vignette(W, H) if not a.ohne_grading else None
     u = lichtkoordinate(W, H) if bewegung == "licht" else None
     rng = np.random.default_rng(SEED)
@@ -229,7 +349,14 @@ def clip_rendern(bild_pfad, ziel, bewegung, dauer, W, H, fps, a):
     for i in range(n):
         t = i / max(n - 1, 1)
         box = kamera(bewegung, t, a.zoom, W, H, BW, BH)
-        frame = basis.resize((W, H), Image.LANCZOS, box=box, reducing_gap=None)
+        if a.parallaxe:
+            # Figur folgt der vollen Kamerabewegung, der Hintergrund nur einem Teil davon
+            box_bg = kamera(bewegung, t, zoom_bg, W, H, BW, BH)
+            hinten = basis_bg.resize((W, H), Image.LANCZOS, box=box_bg, reducing_gap=None).convert("RGBA")
+            vorne = basis_fg.resize((W, H), Image.LANCZOS, box=box, reducing_gap=None)
+            frame = Image.alpha_composite(hinten, vorne).convert("RGB")
+        else:
+            frame = basis.resize((W, H), Image.LANCZOS, box=box, reducing_gap=None)
         arr = np.asarray(frame, dtype=np.float32)
         if not a.ohne_grading:
             arr = arr * vig
@@ -334,6 +461,10 @@ def main():
     p.add_argument("--vorschau", action="store_true", help="960×540, 15 fps, schnelle Probe")
     p.add_argument("--zusammen", metavar="NAME.mp4", help="alle Clips mit 0,8 s Blende in einer Datei")
     p.add_argument("--start-nr", type=int, help="Dateinamen Clip_NN.mp4 ab dieser Nummer, z. B. 46")
+    p.add_argument("--parallaxe", action="store_true", help="Figur und Hintergrund getrennt bewegen (rembg)")
+    p.add_argument("--maske", help="eigene Masken statt rembg, je Bild durch Komma, - für rembg")
+    p.add_argument("--tiefe", type=float, default=0.6, help="Anteil, um den der Hintergrund weniger mitgeht, 0 bis 0.9")
+    p.add_argument("--rembg-modell", default="u2net", help="rembg-Modell (Standard u2net)")
     a = p.parse_args()
 
     ffmpeg_pruefen()
@@ -343,6 +474,18 @@ def main():
         fehler("Zoom muss zwischen 1.06 und 1.25 liegen.")
     if not (0 <= a.korn <= 10):
         fehler("Korn muss zwischen 0 und 10 liegen.")
+    if a.maske and not a.parallaxe:
+        fehler("--maske setzt --parallaxe voraus.")
+    if not (0.0 <= a.tiefe <= 0.9):
+        fehler("--tiefe muss zwischen 0 und 0.9 liegen.")
+    masken = [None] * len(a.bilder)
+    if a.maske:
+        masken = a.maske.split(",")
+        if len(masken) != len(a.bilder):
+            fehler(f"{len(masken)} Masken für {len(a.bilder)} Bilder angegeben.")
+        for m in masken:
+            if m != "-" and not Path(m).is_file():
+                fehler(f"Maske nicht gefunden: {m}")
     if len(a.bilder) > MAX_BILDER:
         fehler(f"Höchstens {MAX_BILDER} Bilder je Aufruf (Zusatzclips 46 bis 50), es sind {len(a.bilder)}.")
     for b in a.bilder:
@@ -368,14 +511,15 @@ def main():
     aus.mkdir(parents=True, exist_ok=True)
 
     fertige = []
-    print(f"Ausgabe {W}×{H}, {fps} fps, {len(a.bilder)} Clip(s) à {a.dauer:g} s nach {aus}/")
+    print(f"Ausgabe {W}×{H}, {fps} fps, {len(a.bilder)} Clip(s) à {a.dauer:g} s nach {aus}/"
+          + (f", Parallaxe (Tiefe {a.tiefe:g})" if a.parallaxe else ""))
     for k, (bild, bw) in enumerate(zip(a.bilder, bewegungen)):
         name = f"Clip_{a.start_nr + k}" if a.start_nr is not None else Path(bild).stem
         if a.vorschau:
             name += "_VORSCHAU"
         ziel = aus / f"{name}.mp4"
         print(f"[{k + 1}/{len(a.bilder)}] {bild}")
-        stich = clip_rendern(bild, ziel, bw, a.dauer, W, H, fps, a)
+        stich = clip_rendern(bild, ziel, bw, a.dauer, W, H, fps, a, masken[k])
         pruefblatt(stich, aus / f"{name}_pruefblatt.jpg", f"{name}  ·  {bw}  ·  Stichbilder je Sekunde", W, H)
         w, h, f, d, kbit, ton, codec = ffprobe(ziel)
         ok = (w, h) == (W, H) and abs(f - fps) < 0.01 and abs(d - a.dauer) < 0.15 and codec == "h264"
