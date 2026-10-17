@@ -71,6 +71,7 @@ Videolänge acht bis zwölf Minuten. Die Zeitpunkte richten sich nach der echten
 ## M5. Werkzeuge, Grenzen und Entscheidungen
 
 - `thumbnail_maker.py` (Hauptverzeichnis): Thumbnails 1920×1080 unter 2 MB, Schrift Anton. Braucht Python 3 mit Pillow und NumPy. Aufruf im Kopf der Datei und im Skill `thumbnail-agent`.
+- `standbild_animator.py` (Hauptverzeichnis): macht aus bis zu fünf Standbildern (Startbilder der Clips 46 bis 50) je einen Clip von 8 bis 10 s in der Kanalnorm aus M1, mit Prüfblatt (ein Stichbild je Sekunde) für die Wasserzeichen-Prüfung. Bewegt nur Kamera und Licht (Fahrt, Schwenk, Lichtkegel, Korn), keine Figuren. Mit `--parallaxe` werden Figur und Hintergrund getrennt bewegt (Freistellung per rembg, Kontrollbild `_freistellung.png` prüfen). Für bewegte Figuren bleibt Flow zuständig. Braucht Python 3 mit Pillow und NumPy sowie ffmpeg, für `--parallaxe` zusätzlich rembg (`pip install "rembg[cpu]"`, ohne `[cpu]` fehlt onnxruntime). Aufruf im Kopf der Datei.
 - Verboten: ElevenLabs, DaVinci Resolve. Nichts hochladen, nichts löschen, keine Kanaleinstellungen ändern ohne Renes Ja. Downloads nur mit Renes Erlaubnis (Anton: erlaubt am 12.10.2026).
 - Keine Fakten, Zahlen oder Zitate erfinden. Jede Angabe mit geprüfter Quelle in `02_Quellen_Faktencheck`.
 - Rhythmus: nie mehrere Videos am selben Tag.
