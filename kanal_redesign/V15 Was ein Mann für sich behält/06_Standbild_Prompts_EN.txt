@@ -60,5 +60,29 @@ BEWEGUNG (8 s):
 He slowly places the scroll into the chest and lowers the stone lid, then rests his hand on the closed lid, slow dolly in to the hands.
 
 
+TEIL C: VARIANTE B FÜR CLIP 47, 49 UND 50 (17.10.2026, nach Prüfung der ersten Bilder)
+Die ersten Bilder liegen in standbilder/. Befund: Papyrus bei 47 und 50 beige (außerhalb der Kanalfarben),
+Licht bei 49 hart links eingebrannt (der Lichtkegel von standbild_animator.py kann dann nicht enthüllen),
+Hand bei 50 liegt auf dem Tisch (keine Parallaxe möglich, Kontakt-Regel in CLAUDE.md M5).
+Nur neu erzeugen, wenn das stört. Nach dem Erzeugen wieder vier Ecken und Mitte prüfen.
+
+CLIP 47 B (Papyrus grau statt beige)
+Several weathered Carrara marble statues of young Roman students seated at long stone tables, bent over open papyrus scrolls without readable writing, a large stone hourglass sharp in the foreground. Dark Roman lecture hall with high arches fading into black. Extreme low key lighting, hard cool light from above right, faint turquoise glint on the hourglass glass. Photorealistic, cinematic, 16:9. No text, no logo, no watermark. The scrolls are pale grey weathered parchment, fully desaturated, stone-coloured, no warm beige, no cream, no yellow, no bronze, no gold.
+
+CLIP 49 B (flaches Basislicht, Lichtstrahl bewusst gestrichen; Animation mit --bewegung licht)
+Weathered ancient Roman Carrara marble relief of a grapevine with heavy bunches of grapes and leaves, deeply carved, cracks and erosion in the stone, on a dark villa wall. Only marble white, black and turquoise. Photorealistic macro, cinematic, 16:9. No text, no logo, no watermark. Evenly lit in dim cool ambient light, low contrast, uniform dark marble and black tones, no harsh directional spotlight, no burned-in light beam, faint turquoise tint only.
+
+CLIP 50 B (Papyrus grau, stehende Pose ohne Kontakt zum Tisch, damit --parallaxe möglich ist)
+Weathered ancient Roman Carrara marble statue of a mature man in a toga standing upright beside a heavy stone desk, holding a rolled papyrus scroll with both hands in front of his chest, no physical contact with the desk, chest or chair, clear separation between figure and background, an open stone chest beside the desk. Dark Roman study chamber with an arched window showing a night sky. Extreme low key lighting, hard cool rim light from the window on the right, faint turquoise reflection on the chest. Photorealistic, cinematic, 16:9. No text, no logo, no watermark, no candles, no fire. The scroll is pale grey weathered parchment, fully desaturated, no warm beige, no cream, no yellow, no bronze, no gold.
+Der Bewegungs-Prompt für Flow (Rolle in die Kiste legen, Deckel senken) bleibt gültig, die Figur steht dabei.
+
+RENDER-BEFEHLE (im Ordner standbilder/, nach git pull auf main)
+Lauf 1, alle fünf ohne Parallaxe (bei Bild 49 Original: fahrt_raus statt licht):
+python ../../../standbild_animator.py bild46.png bild47.png bild48.png bild49.png bild50.png -o render --start-nr 46 --dauer 8 --bewegung fahrt_rein,schwenk_rechts,fahrt_rein,fahrt_raus,fahrt_rein
+Lauf 2, Parallaxe einzeln mit eigener Startnummer (50 nur mit Variante B):
+python ../../../standbild_animator.py --parallaxe bild46.png -o render_parallaxe --start-nr 46 --dauer 8 --bewegung fahrt_rein
+python ../../../standbild_animator.py --parallaxe bild48.png -o render_parallaxe --start-nr 48 --dauer 8 --bewegung fahrt_rein
+python ../../../standbild_animator.py --parallaxe bild50.png -o render_parallaxe --start-nr 50 --dauer 8 --bewegung fahrt_rein
+
 PRÜFUNG NACH DEM VIDEO-SCHRITT (Videovorlage Abschnitt 7)
 Je Sekunde ein Stichbild, vier Ecken und Mitte: Wasserzeichen, verzerrte Hände oder Gesichter, Flackern, Sprünge. Clip mit Fehler neu erzeugen, nicht reparieren.
