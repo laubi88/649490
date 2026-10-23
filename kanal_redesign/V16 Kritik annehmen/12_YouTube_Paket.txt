@@ -1,10 +1,10 @@
 V16 Kritik annehmen – YouTube Paket
-Stand: 12.10.2026, Entwurf zur Freigabe durch Rene. Nichts davon ist hochgeladen oder im Kanal eingetragen.
+Stand: 12.10.2026, Abschnitt 6 neu am 17.10.2026 (Renes Entscheidung: V15 und V16 beide am Samstag, 17.10.2026, um zehn und dreizehn Uhr). Nichts davon ist hochgeladen oder im Kanal eingetragen.
 Grundlage: Skill stoische-karriere-vidiq-regeln (Titel, Thumbnail, Beschreibung, Tags, Rhythmus, Messen), Skills packaging-agent und thumbnail-agent.
 
 
 1. TITEL
-Noch nicht festgelegt (Renes Wahl). Hauptvorschlag nach vidIQ Wertung:
+Noch nicht festgelegt (Renes Wahl). Muss vor dem Upload am 17.10.2026 um 13:00 entschieden sein. Hauptvorschlag nach vidIQ Wertung:
 Kritik annehmen: 4 Wege, RUHIG zu bleiben | Stoizismus  (54 Zeichen, vidIQ 81)
 Prüfung: Suchbegriff „Kritik annehmen“ am Anfang, eine Zahl (vier Werkzeuge), ein Wort in Großbuchstaben, Endung | Stoizismus, keine Frage, unter 60 Zeichen.
 Alternativen:
@@ -51,7 +51,7 @@ Epiktet, Handbüchlein, Kapitel 13 (sinngemäß)
 Mark Aurel, Selbstbetrachtungen VI,21 und VIII,47 (sinngemäß)
 Kross, E. et al. (2014). Self-talk as a regulatory mechanism: How you do it matters. Journal of Personality and Social Psychology, 106(2), 304–324.
 
-Letztes Video: 4 Dinge, die ein Mann für sich BEHÄLT [Link nach dem Upload von V15 nachtragen]
+Letztes Video: 4 Dinge, die ein Mann für sich BEHÄLT https://youtu.be/<ID von V15> [ID eintragen, sobald V15 privat hochgeladen ist, siehe Abschnitt 6]
 Nächstes Video: Aufstieg im Beruf, ohne dich zu verbiegen [Link nach dem Upload von V17 nachtragen]
 
 Hinweis: Die Stimme und Teile der Bilder sind mit KI erstellt.
@@ -90,10 +90,11 @@ Schreib die Zahl unter dieses Video.
 
 
 6. UPLOAD SLOT
-Das Outro von V15 verspricht V16 für „nächste Woche“. Deshalb eine Woche nach V15:
-- Wenn V15 am Sonntag, 18.10.2026 erscheint: V16 am Sonntag, 25.10.2026, 18 Uhr, Short am Montag, 26.10.
-- Wenn V15 am Dienstag, 20.10.2026 erscheint: V16 am Dienstag, 27.10.2026, 18 Uhr, Short am Mittwoch, 28.10.
-Ein bis zwei Tage vorher als Geplant hochladen. Nie mehrere Videos am selben Tag.
+ENTSCHEIDUNG (Rene, 17.10.2026, ersetzt den Plan vom 15.10.2026): V16 erscheint am Samstag, 17.10.2026, um 13:00, drei Stunden nach V15. Der V16 Short kommt vorher, Vorschlag 12:00, und kündigt dreizehn Uhr an. Vollständiger Ablauf im 12_YouTube_Paket von V15, Abschnitt 6.
+- Titel V16 bis spätestens 13:00 festlegen (Abschnitt 1).
+- Das Outro von V16 kündigt V17 für „nächste Woche“ an. Das hält, wenn V17 zwischen dem 18. und 24.10.2026 erscheint. Sonst vor der Vertonung von V16_Outro ändern.
+
+Überholt: Plan vom 15.10.2026 (Donnerstag 18 Uhr) und Vorschlag vom 12.10.2026 (eine Woche nach V15).
 
 
 7. MESSZETTEL (nach dem Upload ausfüllen)
@@ -103,6 +104,7 @@ Ein bis zwei Tage vorher als Geplant hochladen. Nie mehrere Videos am selben Tag
 | vidIQ Thumbnail Wertung | über 70 | |
 | Aufrufe nach 24 Stunden | rund 8 | |
 | Aufrufe nach 7 Tagen | rund 66 (Spanne 35 bis 99) | |
+| Hinweis | am 17.10.2026 zusammen mit V15 erschienen, Vergleich mit V14 nur eingeschränkt | |
 | Durchschnittliche Wiedergabedauer | | |
 | Zuschauerbindung bei Sekunde 43 | höher als bei V14 (neuer Hook) | |
 | Quellen der Aufrufe: Suche | soll wachsen | |
