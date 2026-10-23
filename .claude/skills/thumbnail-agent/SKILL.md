@@ -57,6 +57,26 @@ python thumbnail_maker.py --zeile1 "WAS ER" --zeile2 "VERSCHWEIGT" --bild buese.
 - Das Skript bricht ab bei weniger als zwei oder mehr als vier Wörtern, bei Ziffern und bei Bindestrichen. Englische Wörter erkennt es nicht.
 - Ausgabe: JPG 1920×1080 unter 2 MB plus `_vorschau_168px.png` für die Lesbarkeitsprüfung.
 
+## Shorts-Cover (Hochformat 1080×1920)
+
+Gleiche Schrift, gleiche Farben, gleiche Wortregeln. Unterschied: Der Text darf **nie über Kopf oder Gesicht der Figur** liegen. Dafür hat das Skript drei Textlagen:
+
+```powershell
+python thumbnail_maker.py --format short --textlage rechts --zeile1 "FÜNFZEHN MINUTEN" --zeile2 "STILLE" --bild standbild.jpg -o "Short Stille COVER.jpg"
+```
+
+| `--textlage` | Lage | Für Bilder, bei denen |
+|---|---|---|
+| `oben` | mittig im oberen Viertel, volle Breite, Zeile 2 bis 300 px | die Figur unten oder in der unteren Hälfte steht |
+| `rechts` | rechtsbündig im oberen Drittel, höchstens 58 Prozent der Breite | die Figur links steht (Kopf im linken Drittel) |
+| `unten` | mittig bei rund 60 Prozent der Höhe | die Figur oben steht. Tiefer nicht: ab rund 70 Prozent liegen Titel und Bedienelemente der Shorts-Ansicht |
+
+- Hinter dem Text legt das Skript ein weiches dunkles Band, damit Weiß und Türkis auch über hellem Marmor lesbar bleiben.
+- `--bild` als PNG mit Transparenz: Büste unten links, 72 Prozent der Höhe. Als JPG: füllt die Fläche, Ausschnitt per `--fokus`.
+- Das Standbild **ohne eingebrannten Text** verwenden. Ein Cover mit altem Text lässt sich nicht sauber umbauen, Wegretuschieren nur mit Renes Ja.
+- Bei `rechts` wird Zeile 1 klein (rund 80 px bei zwei langen Wörtern). Lieber ein kurzes Wort in Zeile 1 oder das Bild so planen, dass die Figur unten steht und `oben` geht.
+- Ausgabe: JPG 1080×1920 unter 2 MB plus `_vorschau_168px.png` (168×299, Größe im Shorts-Raster).
+
 ## Prüfung vor der Abgabe
 
 1. Vorschau mit 168 px Breite: Beide Zeilen sind lesbar.
